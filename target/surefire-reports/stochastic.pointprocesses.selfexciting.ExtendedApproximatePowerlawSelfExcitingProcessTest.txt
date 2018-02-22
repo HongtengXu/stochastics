@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.502 sec <<< FAILURE! - in stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest
+testSimulation(stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest)  Time elapsed: 0.405 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: null
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest.testSimulation(ExtendedApproximatePowerlawSelfExcitingProcessTest.java:38)
+
+testLL(stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest)  Time elapsed: 0.009 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: null
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest.testLL(ExtendedApproximatePowerlawSelfExcitingProcessTest.java:275)
+

@@ -1,0 +1,531 @@
+<TeXmacs|1.99.5>
+
+<style|generic>
+
+<\body>
+  <doc-data|<doc-title|Convergence of the Newton-Kantorovich and Generalized
+  Steffensen Methods for the Zeros of the Hardy Z
+  Function>|<doc-author|<\author-data|<author-name|Stephen Crowley<\footnote>
+    stephencrowley214@gmail.com
+  </footnote>>>
+    \;
+  <|author-data>
+    <\footnote>
+      \;
+    </footnote>
+  <|author-data>
+    \;
+  <|author-data>
+    \;
+  <|author-data>
+    \;
+  </author-data>>>
+
+  <abstract-data|<abstract|Some theorems, corollaries, conjectures, and
+  proofs regarding the convergence of the iterates of the relaxed Newton's
+  method <math|lim<rsub|m\<rightarrowlim\>\<infty\>><around*|{|N<rsup|\<omicron\>m><rsub|\<lambda\><rsub|n>,Z<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>>|}>=y<rsup|<around*|(|-|)>><rsub|n>>
+  with relaxation paramter <math|\<lambda\><rsub|n>> applied to the Hardy Z
+  function <math|<tabular|<tformat|<table|<row|<cell|Z<around*|(|t|)>=e<rsup|i
+  \<vartheta\><around*|(|t|)>>\<zeta\><around*|(|<frac|1|2>+i
+  t|)>>>>>>><math|> with starting points <math|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>=<frac|<around*|(|8n-11|)>\<pi\>|4
+  W<around*|(|<frac|8n-11|8 e>|)>>> to the roots of the Riemann
+  <math|\<zeta\>> function <math|<frac|1|2>+i
+  y<rsub|n><rsup|<around*|(|-|)>>> are given.<space|2em> \ >>
+
+  The Hardy <math|Z> function\ 
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|Z<around*|(|t|)>>|<cell|=e<rsup|i
+    \<vartheta\><around*|(|t|)>> \<zeta\><around*|(|<frac|1|2>+i
+    t|)>>>>>><label|Z>
+  </equation>
+
+  is isomorphic to the Riemann <math|\<zeta\>> function\ 
+
+  <\equation>
+    \<zeta\><around*|(|t|)>=e<rsup|-i \<vartheta\><around*|(|<frac|i|2>-i
+    t|)>>Z<around*|(|<frac|i|2>-i t|)><label|Zz>
+  </equation>
+
+  where
+
+  <\equation>
+    \<vartheta\><around*|(|t|)>=-<frac|i|2><around*|(|ln
+    \<Gamma\><around*|(|<frac|1|4>+<frac|i t|2>|)>-ln
+    \<Gamma\><around*|(|<frac|1|4>-<frac|i
+    t|2>|)>|)>-<frac|ln<around*|(|\<pi\>|)> t|2>
+  </equation>
+
+  is the Riemann-Siegel theta(aka vartheta) function and <math|ln\<Gamma\>>
+  is the principal branch of the logarithm of the <math|\<Gamma\>> function
+  which is the analytic continuation of the factorial,
+  <math|\<Gamma\><around*|(|s+1|)>=s!=1\<cdot\>2\<cdot\>*3\<cdot\>\<ldots\>\<cdot\>s>.
+  <cite|HardyZ> The <math|n>-th Riemann zero's<cite-detail|edwardszeta|6.5>
+  location <math|y<rsup|<around*|(|-|)>><rsub|n>> is approximated very well
+  by
+
+  <\equation>
+    <wide|y|~><rsup|<around*|(|-|)>><rsub|n>=<frac|<around*|(|8n-11|)>\<pi\>|4
+    W<around*|(|<frac|8n-11|8 e>|)>>+O<around*|(|*r<rsub|n><rsup|\<ast\>>|)><label|yb>
+  </equation>
+
+  \;
+
+  where <math|W> is the Lambert W function which is derived by replacing
+  <math|<wide|\<vartheta\>|~>\<rightarrow\>\<vartheta\><around*|(|t|)>> with
+  its asymptotic expansion
+
+  <\equation>
+    <wide|\<vartheta\>|~><around*|(|t|)>=<frac|1|2>t ln<around*|(|<frac|t|2
+    \<pi\> e>|)>-<frac|\<pi\>|8>=\<vartheta\><around*|(|t|)>+O<around*|(|0.05|)>\<forall\>t\<geqslant\>1
+  </equation>
+
+  The equation
+
+  <\equation>
+    <wide|\<vartheta\>|~><around*|(|t|)>=y
+  </equation>
+
+  has a unique solution given by <math|t=<frac|\<pi\>+8 y|4
+  W<around*|(|<frac|\<pi\>+8 y|8 \<pi\> e>|)>>> so that
+
+  <\equation>
+    <wide|\<vartheta\>|~><around*|(|<frac|\<pi\>+8 y|4
+    W<around*|(|<frac|\<pi\>+8 y|8 \<pi\> e>|)>>|)>=<frac|1|2> <frac|\<pi\>+8
+    y|4 W<around*|(|<frac|\<pi\>+8 y|8 \<pi\> e>|)>>
+    ln<around*|(|<frac|<frac|\<pi\>+8 y|4 W<around*|(|<frac|\<pi\>+8 y|8
+    \<pi\> e>|)>>|2 \<pi\> e>|)>-<frac|\<pi\>|8>=y
+  </equation>
+
+  and the derivative of <math|<wide|\<vartheta\>|~><around*|(|t|)>> is given
+  by
+
+  <\equation>
+    <wide|<wide|\<vartheta\>|\<dot\>>|~><around*|(|t|)>=<frac|1|2>ln<around*|(|<frac|t|2
+    \<pi\> e>|)>+<frac|1|2>+O<around*|(|0.1|)>\<forall\>t\<geqslant\>1
+  </equation>
+
+  <cite-detail|francca2014theory|Eq. 163><\footnote>
+    The authors notation leads to the impression that
+    <math|<wide|g|~><rsub|n>> is actually the <math|n>-th Gram point, rather
+    than a very good approximation to it
+  </footnote><cite|marca2009mean> and <math|r<rsub|n><rsup|\<ast\>>> is a
+  certain sequence of increasing positive numbers starting with
+  <math|r<rsub|1><rsup|*\<ast\>>=\<ldots\>,r<rsub|2><rsup|\<ast\>>=\<ldots\>>
+  to be derived below. The goal of this paper is to find if Newtons method
+  and the Generalized Steffenens method is sufficient to prove that a unique
+  solution exists to Leclaire's exact transcendental equation for the
+  <math|n>-th zero, and if not, why. In <cite|NKG> the convergence theorem
+  <cite-detail|gutierrez1997new|Theorem 3> for the Newton-Kantorivich method
+  was applied to provide sufficient conditions to show that the iteration
+  function <math|N<rsub|\<vartheta\><rsub|n>><around*|(|t|)>=t-<frac|\<vartheta\><around*|(|t|)>-<around*|(|n-1|)>\<pi\>|<wide|\<vartheta\>|\<dot\>><around*|(|t|)>>>
+  for<math|> the Gram points <math|<wide|y|~><rsup|<around*|(|+|)>><rsub|n>=<wide|g|~><rsub|n>=<frac|<around*|(|8n-7|)>\<pi\>|4
+  W<around*|(|<frac|8n-7|8 e>|)>>> converges <math|\<forall\>n\<geqslant\>1>.
+  In <cite|argyros2012weaker> it is mentioned that there are some functions
+  for which <math|h\<gtr\>0.5> yet Newton's iteration still convergences even
+  though that particular theorem does not provide the guarantee. This is the
+  case if that method is applied to the Newton iteration of
+  <math|Z<around*|(|t|)>> with starting points
+  <math|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>>. Let
+
+  <\equation>
+    N<rsub|Z><around*|(|t|)>=t-<frac|Z<around*|(|t|)>|<wide|Z|\<dot\>><around*|(|t|)>>
+  </equation>
+
+  then it can be shown that\ 
+
+  <\equation>
+    lim<rsub|m\<rightarrow\>\<infty\>>N<rsup|\<circ\>m><rsub|Z<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|299>|)>>=y<rsup|<around*|(|-|)>><rsub|299>
+  </equation>
+
+  even though
+
+  <\equation>
+    h<rsub|299>=0.6025007583\<ldots\>\<gtr\><frac|1|2>
+  </equation>
+
+  Note also that the theorem in <cite|NKG> isn't even applicable to this case
+  because <math|<frac|Z<around*|(|t|)>|<wide|Z|\<dot\>><around*|(|t|)>>>
+  fails to be differentiable at the points where
+  <math|<wide|Z|\<dot\>><around*|(|t|)>> is zero since the Newton derivative
+  isn't Frechet differentiable at this point and for the theorems to be
+  applicable the initial radius must be chosen small enough such that the
+  ball <math|B<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>,R|)>>
+  cannot contain any singularities, yet if we try to set
+  <math|R=<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n-1>>
+  in the same way that the Gram points are handled in <cite|NKG>, we find
+  singularities of <math|<frac|Z<around*|(|t|)>|<wide|Z|\<dot\>><around*|(|t|)>>
+  >in the ball.
+
+  <big-figure|<image|singball.eps|500px|300px||>|The function
+  <math|<frac|Z<around*|(|t|)>|<wide|Z|\<dot\>><around*|(|t|)>>> ball
+  <math|B<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|2>,<wide|y|~><rsup|<around*|(|-|)>><rsub|3>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n1>|)>>>
+
+  Let
+
+  <\equation>
+    a<rsup|><rsub|n>=<around*|\||<frac|Z<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>>|\|>
+  </equation>
+
+  and
+
+  <\equation>
+    b<rsup|><rsub|n>=<around*|\||<frac|<frac|<wide|Z|\<dot\>><around*|(|<around*|\<nobracket\>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>|)>|\<nobracket\>>-<wide|Z|\<dot\>><around*|(|<around*|\<nobracket\>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>|)>|\<nobracket\>>|<wide|Z|\<dot\>><around*|(|<around*|\<nobracket\>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|\<nobracket\>>>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n-1>>|\|>
+  </equation>
+
+  then Newtons iteration starting from <math|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>>
+  converges to <math|y<rsup|<around*|(|-|)>><rsub|n>> for indices <math|n>
+  where
+
+  <\equation>
+    h<rsub|n>=a<rsub|n>*b<rsub|n>=<around*|\||<around*|\<nobracket\>|<frac|Z<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>><frac|<frac|<wide|Z|\<dot\>><around*|(|<around*|\<nobracket\>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>|)>|\<nobracket\>>-<wide|Z|\<dot\>><around*|(|<around*|\<nobracket\>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>|)>|\<nobracket\>>|<wide|Z|\<dot\>><around*|(|<around*|\<nobracket\>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|\<nobracket\>>>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n-1>>|)>|\|>\<leqslant\>0.5
+  </equation>
+
+  whereas Newtons iteration starting from
+  <math|<around*|{|<wide|y|~><rsub|n>:h<rsub|n>\<gtr\>0.5|}>><math|>
+  converges to some other root <math|<wide|y|~><rsub|m><rsup|<around*|(|-|)>>>
+  where <math|m\<neq\>n>. These parameters
+  <math|a<rsub|n>,b<rsub|n>,h<rsub|n>> are derived from
+  <cite-detail|gutierrez1997new|Theorem 3> and the more general
+  <cite-detail|argyros2008convergence|Theorem 2.2.4>. In order to expand the
+  domain of convergence, define the modified iteration function
+  <math|M<rsub|Z><around*|(|t|)>> using the hypberbolic tangent\ 
+
+  <\equation>
+    M<rsub|Z><around*|(|t|)>=t-tanh<around*|(|<frac|Z<around*|(|t|)>|<wide|Z|\<dot\>><around*|(|t|)>>|)>
+  </equation>
+
+  and likewise as calculated for <math|N<rsub|Z><around*|(|t|)>> let
+
+  <\equation>
+    \<alpha\><rsup|><rsub|n>=<around*|\||tanh<around*|(|<frac|Z<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>>|)>|\|>
+  </equation>
+
+  and
+
+  <\equation>
+    \<beta\><rsup|><rsub|n>=<around*|\||<frac|<frac|tanh<around*|(|<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>|)>|\<nobracket\>>-<around*|\<nobracket\>|<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n-1>|)>|)>|tanh<around*|(|<wide|Z|\<dot\>><around*|(|<around*|\<nobracket\>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|\<nobracket\>>|)>>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n-1>>|\|>
+  </equation>
+
+  then Newtons modified iteration <math|M<rsub|Z><around*|(|t|)>> starting
+  from <math|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>> converges to
+  <math|y<rsup|<around*|(|-|)>><rsub|n>> for indices <math|n> where
+
+  <\equation>
+    \<cal-h\><rsub|n>=\<alpha\><rsub|n>*\<beta\><rsub|n>=<around*|\||tanh<around*|(|<frac|Z<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>>|)><around*|(|<frac|<frac|tanh<around*|(|<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>|)>|\<nobracket\>>-<around*|\<nobracket\>|<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n-1>|)>|)>|tanh<around*|(|<wide|Z|\<dot\>><around*|(|<around*|\<nobracket\>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|\<nobracket\>>|)>>|<wide|y|~><rsup|<around*|(|-|)>><rsub|n+1>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n-1>>|)>|\|>\<leqslant\>0.5
+  </equation>
+
+  <big-figure|<image|tamedball.eps|500px|300px||>|The function
+  <math|tanh<around*|(|<frac|Z<around*|(|t|)>|<wide|Z|\<dot\>><around*|(|t|)>>|)>>
+  in the ball <math|B<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|2>,<wide|y|~><rsup|<around*|(|-|)>><rsub|3>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n1>|)>>>
+
+  The smallest index <math|n> for which the modified Newton's modified
+  <math|M<rsub|Z><around*|(|t|)>> starting from
+  <math|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>> does not converge to
+  <math|y<rsup|<around*|(|-|)>><rsub|n>>, such as
+
+  <\equation>
+    lim<rsub|m\<rightarrow\>\<infty\>>M<rsup|\<circ\>m><rsub|Z><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>\<neq\>y<rsup|<around*|(|-|)>><rsub|n>
+  </equation>
+
+  is <math|n=1444> where
+
+  <\equation>
+    lim<rsub|m\<rightarrow\>\<infty\>>M<rsup|\<circ\>m><rsub|Z><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|1444>|)>=y<rsup|<around*|(|-|)>><rsub|1443>\<neq\>y<rsup|<around*|(|-|)>><rsub|1444>
+  </equation>
+
+  since
+
+  <\equation>
+    \<cal-h\><rsub|1444>=.5622933978\<gtr\>0.5
+  </equation>
+
+  And also at the 21-st point\ 
+
+  <\equation>
+    lim<rsub|m\<rightarrow\>\<infty\>>M<rsup|\<circ\>m><rsub|Z><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|6400>|)>=y<rsup|<around*|(|-|)>><rsub|6399
+    >\<neq\>y<rsup|<around*|(|-|)>><rsub|6400>
+  </equation>
+
+  \;
+
+  <big-figure|<image|2ndDivergentPoint.eps|555px|555px||><image|WrongSide6400.png|133px|500px||>0.|<math|<around*|{|M<rsub|Z><around*|(|t|)>:t\<in\>6727\<ldots\>6728|}>>
+  near <math|t=y<rsup|<around*|(|-|)>><rsub|6400>=6727.861353\<ldots\>>>
+
+  <\definition>
+    The <em|1st> order divided difference of a function is defined by the
+    ratio of differences
+
+    <\equation>
+      f<around*|[|x<rsub|0>,x<rsub|1>|]>=<frac|f<around*|(|x<rsub|0>|)>-f<around*|(|x<rsub|1>|)>|x<rsub|0>-x<rsub|1>>
+    </equation>
+
+    <cite-detail|conte1980elementary|Eq. 2.11 p.41>
+
+    \;
+  </definition>
+
+  <subsubsection|Semi-local Convergence Analysis of a Steffensen Type Method
+  for <math|tanh<around*|(|Z<around*|(|t|)>|)>>>
+
+  <\definition>
+    The Laplacian <math|\<mathLaplace\>=\<nabla\>\<cdot\>\<nabla\>=\<nabla\><rsup|2>>
+    is a differential operator which corresponds to the <em|divergence> of
+    the <em|gradient> of a function <math|f<around*|(|x|)>> on a Euclidean
+    space <math|x\<in\>X<wide*|\<subset\>|\<wide-bar\>>\<bbb-R\><rsup|d>> and
+    is denoted by
+
+    <\equation>
+      \<mathLaplace\>f<around*|(|x|)>=<big|sum><rsub|i=1><rsup|d><frac|\<partial\>|\<partial\>x<rsup|2><rsub|i>>f<around*|(|x<rsub|i>|)>\<forall\>x\<in\>X\<subseteq\>\<bbb-R\><rsup|d>
+    </equation>
+
+    and is simply the second derivative of a function when <math|d=1>\ 
+
+    <\equation>
+      \<mathLaplace\>f<around*|(|x|)>=<wide|f|\<ddot\>><around*|(|x|)>=<frac|\<mathd\>|\<mathd\>
+      x<rsup|2>>f<around*|(|x|)>\<forall\>x\<in\>X\<subseteq\>\<bbb-R\>
+    </equation>
+  </definition>
+
+  Semilocal converged is demonstrated in <cite-detail|chen1990convergence|Theorem
+  2.11> by observing that the maximum of the absolute value of the Laplacian
+  of the hyberbolic tangent function has its maximum at plus or minus
+
+  <\equation>
+    t<rsup|\<ast\>>=<frac|ln<around*|(|2+<sqrt|3>|)>|2>
+  </equation>
+
+  and letting K
+
+  <\equation>
+    K=<frac|2 sinh<around*|(|t<rsup|\<ast\>>|)>|cosh<around*|(|t<rsup|\<ast\>>|)><rsup|3>>=.7698003589195010\<ldots\>
+  </equation>
+
+  which is the maximum value obtained by the absolute value of the Laplacian
+  of the hyperbolic tangent function at any point in its domain <math|>so
+  that the inequality
+
+  <\equation>
+    <around*|\||\<Delta\>tanh<around*|(|Z<around*|(|t|)>|)>|\|>\<leqslant\>K=<frac|2
+    sinh<around*|(|t<rsup|\<ast\>>|)>|cosh<around*|(|t<rsup|\<ast\>>|)><rsup|3>>
+  </equation>
+
+  It can be verified that the derivative of the Laplacian of
+  <math|tanh<around*|(|Z<around*|(|t|)>|)>> vanishes at
+  <math|\<pm\>t<rsup|\<ast\>>>
+
+  <\equation>
+    <around*|\||<frac|\<mathd\>|\<mathd\>t<rsup|3>>tanh<around*|(|t|)><mid|\|><rsub|t=\<pm\>t<rsup|\<ast\>>>|\|>=<frac|6
+    sinh<around*|(|t<rsup|\<ast\>>|)><rsup|2>-2|cosh<around*|(|t<rsup|\<ast\>>|)><rsup|4>>=0
+  </equation>
+
+  The iteration is defined by
+
+  <\equation>
+    \<psi\><rsub|n,m>=\<xi\><rsub|n,m>+\<alpha\>
+    tanh<around*|(|Z<around*|(|\<xi\><rsub|n,m>|)>|)>
+  </equation>
+
+  <\equation>
+    \<xi\><rsub|n,m+1>=\<xi\><rsub|n,m>+<frac|\<alpha\>
+    tanh<around*|(|Z<around*|(|\<psi\><rsub|n,m>|)>|)>|1-<frac|tanh<around*|(|Z<around*|(|\<psi\><rsub|n,m>|)>|)>|tanh<around*|(|Z<around*|(|\<xi\><rsub|n,m>|)>|)>>>
+  </equation>
+
+  where
+
+  <\equation>
+    \<xi\><rsub|n,0>=<wide|y|~><rsub|n><rsup|<around*|(|-|)>>
+  </equation>
+
+  Note that due to the requirement that the parameters be such that
+
+  <\equation>
+    -<frac|1|\<alpha\>>\<leqslant\>tanh<around*|(|Z<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>|)>\<leqslant\>-<frac|1|\<beta\>>
+    and \<infty\>\<gtr\>\<alpha\>\<gtr\>0
+  </equation>
+
+  needs to be reconciled with the fact that <math|\<alpha\>> would need to be
+  negative apparently and the theorem has that value defined as a positive
+  constant
+
+  <\equation>
+    \<alpha\><rsub|n>=\<beta\><rsub|n>=-<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>
+  </equation>
+
+  and
+
+  <\equation*>
+    <tabular|<tformat|<table|<row|<cell|\<eta\><rsub|n>>|<cell|=<around*|\||<wide|y|~><rsub|n><rsup|<around*|(|-|)>>+\<alpha\><rsub|n>Z<around*|(|<wide|y|~><rsub|n><rsup|<around*|(|-|)>>|)>|\|>>>|<row|<cell|>|<cell|=<around*|\||<wide|y|~><rsub|n><rsup|<around*|(|-|)>>-<wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>Z<around*|(|<wide|y|~><rsub|n><rsup|<around*|(|-|)>>|)>|\|>>>>>>
+  </equation*>
+
+  \;
+
+  this means that Steffensens method will not converge for <math|n> such that
+
+  <\equation>
+    <wide|Z|\<dot\>><around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|n>|)>\<less\>0
+  </equation>
+
+  <\definition>
+    The exact equation for the <math|n>-th Riemann zeros is\ 
+
+    <cite-detail|francca2014theory|Eq. 163>
+
+    <\equation>
+      \<vartheta\><around*|(|t<rsub|n>|)>+S<around*|(|t<rsub|n>|)>=<around*|(|n-<frac|3|2>|)>\<pi\>
+    </equation>
+  </definition>
+
+  allows us to make the ansatz that
+
+  <\equation>
+    S<around*|(|t<rsub|n>|)>=\<vartheta\><around*|(|t<rsub|n>|)>-<around*|(|n-<frac|3|2>|)>\<pi\>
+  </equation>
+
+  \;
+
+  <\bibliography|bib|tm-plain|references.bib>
+    <\bib-list|10>
+      <bibitem*|1><label|bib-argyros2008convergence>Ioannis<nbsp>K
+      Argyros.<newblock> <with|font-shape|italic|Convergence and applications
+      of Newton-type iterations>.<newblock> Springer Science & Business
+      Media, 2008.<newblock>
+
+      <bibitem*|2><label|bib-argyros2012weaker>Ioannis<nbsp>K
+      Argyros<localize| and >Sa<math|<wide|<text|\Y>|\<ddot\>>>d
+      Hilout.<newblock> Weaker conditions for the convergence of newton's
+      method.<newblock> <with|font-shape|italic|Journal of Complexity>,
+      28(3):364\U387, 2012.<newblock>
+
+      <bibitem*|3><label|bib-chen1990convergence>Dong Chen.<newblock> On the
+      convergence of a class of generalized steffensen's iterative procedures
+      and error analysis.<newblock> <with|font-shape|italic|International
+      Journal of Computer Mathematics>, 31(3-4):195\U203, 1990.<newblock>
+
+      <bibitem*|4><label|bib-conte1980elementary>Samuel<nbsp>Daniel
+      Conte<localize| and >Carl<nbsp>W<nbsp>De Boor.<newblock>
+      <with|font-shape|italic|Elementary numerical analysis: an algorithmic
+      approach>.<newblock> McGraw-Hill Higher Education, 1980.<newblock>
+
+      <bibitem*|5><label|bib-NKG>Stephen Crowley.<newblock> Convergence of
+      the newton-kantorovich method for the gram points.<newblock>
+      <with|font-shape|italic|<slink|http://vixra.org/abs/1612.0176>>,
+      2016.<newblock>
+
+      <bibitem*|6><label|bib-edwardszeta>H.M.<nbsp>Edwards.<newblock>
+      <with|font-shape|italic|Riemann's Zeta Function>.<newblock> Academic
+      Press & Dover, 1974.<newblock>
+
+      <bibitem*|7><label|bib-francca2014theory>Guilherme França<localize| and
+      >André LeClair.<newblock> A theory for the zeros of riemann zeta and
+      other l-functions.<newblock> <with|font-shape|italic|ArXiv preprint
+      arXiv:1407.4358>, 2014.<newblock>
+
+      <bibitem*|8><label|bib-gutierrez1997new>JoséM Gutiérrez.<newblock> A
+      new semilocal convergence theorem for newton's method.<newblock>
+      <with|font-shape|italic|Journal of Computational and Applied
+      Mathematics>, 79(1):131\U145, 1997.<newblock>
+
+      <bibitem*|9><label|bib-HardyZ>A.<nbsp>Ivi¢.<newblock>
+      <with|font-shape|italic|The Theory of Hardy's Z-Function>.<newblock>
+      Cambridge Tracts in Mathematics. Cambridge University Press,
+      2013.<newblock>
+
+      <bibitem*|10><label|bib-marca2009mean>Davide<nbsp>A Marca, Stefano
+      Beltraminelli<localize|, and >Danilo Merlini.<newblock> Mean staircase
+      of the riemann zeros: a comment on the lambert w function and an
+      algebraic aspect.<newblock> <with|font-shape|italic|ArXiv preprint
+      arXiv:0901.3377>, 2009.<newblock>
+    </bib-list>
+  </bibliography>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|font-base-size|8>
+    <associate|page-medium|paper>
+    <associate|page-type|letter>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|Z|<tuple|1|1>>
+    <associate|Zz|<tuple|2|1>>
+    <associate|auto-1|<tuple|1|2>>
+    <associate|auto-2|<tuple|2|3>>
+    <associate|auto-3|<tuple|3|4>>
+    <associate|auto-4|<tuple|1|4>>
+    <associate|auto-5|<tuple|37|5>>
+    <associate|bib-HardyZ|<tuple|9|6>>
+    <associate|bib-NKG|<tuple|5|6>>
+    <associate|bib-argyros2008convergence|<tuple|1|5>>
+    <associate|bib-argyros2012weaker|<tuple|2|5>>
+    <associate|bib-chen1990convergence|<tuple|3|5>>
+    <associate|bib-conte1980elementary|<tuple|4|5>>
+    <associate|bib-edwardszeta|<tuple|6|6>>
+    <associate|bib-francca2014theory|<tuple|7|6>>
+    <associate|bib-gutierrez1997new|<tuple|8|6>>
+    <associate|bib-marca2009mean|<tuple|10|6>>
+    <associate|footnote-1|<tuple|1|1>>
+    <associate|footnote-2|<tuple|2|1>>
+    <associate|footnr-1|<tuple|1|1>>
+    <associate|footnr-2|<tuple|2|1>>
+    <associate|yb|<tuple|4|1>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|bib>
+      HardyZ
+
+      edwardszeta
+
+      francca2014theory
+
+      marca2009mean
+
+      NKG
+
+      gutierrez1997new
+
+      argyros2012weaker
+
+      NKG
+
+      NKG
+
+      gutierrez1997new
+
+      argyros2008convergence
+
+      conte1980elementary
+
+      chen1990convergence
+
+      francca2014theory
+    </associate>
+    <\associate|figure>
+      <tuple|normal|The function <with|mode|<quote|math>|<frac|Z<around*|(|t|)>|<wide|Z|\<dot\>><around*|(|t|)>>>
+      ball <with|mode|<quote|math>|B<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|2>,<wide|y|~><rsup|<around*|(|-|)>><rsub|3>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n1>|)>>|<pageref|auto-1>>
+
+      <tuple|normal|The function <with|mode|<quote|math>|tanh<around*|(|<frac|Z<around*|(|t|)>|<wide|Z|\<dot\>><around*|(|t|)>>|)>>
+      in the ball <with|mode|<quote|math>|B<around*|(|<wide|y|~><rsup|<around*|(|-|)>><rsub|2>,<wide|y|~><rsup|<around*|(|-|)>><rsub|3>-<wide|y|~><rsup|<around*|(|-|)>><rsub|n1>|)>>|<pageref|auto-2>>
+
+      <tuple|normal|<with|mode|<quote|math>|<around*|{|M<rsub|Z><around*|(|t|)>:t\<in\>6727\<ldots\>6728|}>>
+      near <with|mode|<quote|math>|t=y<rsup|<around*|(|-|)>><rsub|6400>=6727.861353\<ldots\>>|<pageref|auto-3>>
+    </associate>
+    <\associate|toc>
+      <with|par-left|<quote|2tab>|1<space|2spc>Semi-local Convergence
+      Analysis of a Steffensen Type Method for
+      <with|mode|<quote|math>|tanh<around*|(|Z<around*|(|t|)>|)>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Bibliography>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>

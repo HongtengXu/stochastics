@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.497" tests="11" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="9.0.1+11"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-9-oracle/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/stephen/s"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/stephen/workspace/stochastics"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="9.0.1+11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="53.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.13.0-32-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native/linux64"/>
+    <property name="user.home" value="/home/stephen"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="9"/>
+    <property name="user.name" value="stephen"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="9"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
+    <property name="java.home" value="/usr/lib/jvm/java-9-oracle"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="9.0.1"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testInvLambda" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.07"/>
+  <testcase name="testSimulation" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.405">
+    <failure type="junit.framework.AssertionFailedError:">junit.framework.AssertionFailedError: null
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest.testSimulation(ExtendedApproximatePowerlawSelfExcitingProcessTest.java:38)
+</failure>
+    <system-out><![CDATA[simulating &amp#27;[93mExtendedApproximatePowerlawSelfExcitingProcess{τ=1.0,ε=0.0,η=3.0,b=1.78,Z=20.340000000000003,Edt=134.03546154209246}&amp#27;[39m from 1 points with seed=5
+seed=5 i=0 y=0.46103972722894193 = q = 0.4610397272289417 dt=9.08860344054775 marginal=1627816.475222816 Λmean=0.4610397272289417 Λvar=0.0 nextTime=9.08860344054775 Edt=4.544301720273875
+seed 5:&amp#27;[91mrejecting dt=1.3348464120463105E13 for y=2.49157609649945#1 points since last reject=0&amp#27;[39m
+seed 5:&amp#27;[91mrejecting dt=18057.610183600336 for y=2.0004614318204124#2 points since last reject=4&amp#27;[39m
+seed 5:&amp#27;[91mrejecting dt=13769.476067872998 for y=1.2646529452469402#3 points since last reject=2&amp#27;[39m
+seed 5:&amp#27;[91mrejecting dt=2.9240240156459992E13 for y=3.0577174766110313#4 points since last reject=4&amp#27;[39m
+seed 5:&amp#27;[91mrejecting dt=2.766553796449456E14 for y=2.86401381788756#5 points since last reject=7&amp#27;[39m
+seed 5:&amp#27;[91mrejecting dt=7.59553514521294E20 for y=1.9326783571938646#6 points since last reject=1&amp#27;[39m
+seed 5:&amp#27;[91mrejecting dt=13571.425514797633 for y=1.4129409591209554#7 points since last reject=1&amp#27;[39m
+seed 5:&amp#27;[91mrejecting dt=8.177714802796849E8 for y=5.357807293721479#8 points since last reject=14&amp#27;[39m
+write simulated.5.mat
+simulation rate: -3333.3333333333335 points/second
+pdiff = 627.3469253531945
+&amp#27;[31mForkJoinPool.commonPool-worker-22      #1/20  Storing 1.0000000000 0.0000000000 3.2910646480 1.6711861754  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-8      #3/20  Storing 1.0000000000 0.0000000000 3.2911052698 1.6711890922  with LL score 30476.203912087785&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-26      #2/20  Storing 1.0000000000 0.0000000000 3.2910658048 1.6711858686  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-18      #7/20  Storing 1.0000000000 0.0000000000 3.2910625910 1.6711762988  with LL score 30476.203912088164&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-4      #6/20  Storing 1.0000000000 0.0000000000 3.2910657381 1.6711858841  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-15      #5/20  Storing 1.0000000000 0.0000000000 3.2910656317 1.6711861122  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-19      #4/20  Storing 1.0000000000 0.0000000000 3.2910662629 1.6711869324  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31m                main      #8/20  Storing 1.0000000000 0.0000000000 3.2910624696 1.6711873062  with LL score 30476.20391208823&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-8     #10/20  Storing 1.0718668747 0.0833193762 0.1092196059 0.0000000000  with LL score 30474.203199022548&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-22      #9/20  Storing 1.0000000000 0.0000000000 3.2910660433 1.6711855275  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-26     #13/20  Storing 1.0718397962 0.0833192558 0.1008144510 0.0000000000  with LL score 30474.20319902397&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-18     #12/20  Storing 1.0000000000 0.0000000000 3.2912164394 1.6711282744  with LL score 30476.203912084864&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-29     #11/20  Storing 1.0000000000 0.0000000000 3.2910656584 1.6711858674  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-25     #15/20  Storing 1.0000000000 0.0000000000 3.2910657060 1.6711860246  with LL score 30476.20391208823&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-11     #14/20  Storing 1.0000000000 0.0000000000 3.2910669537 1.6711854071  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-15     #19/20  Storing 1.0000000000 0.0000000000 3.2910655162 1.6711863551  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-4     #18/20  Storing 1.0000000000 0.0000000000 3.2910652295 1.6711862134  with LL score 30476.203912088233&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-8     #17/20  Storing 1.0000000000 0.0000000000 3.2908950228 1.6712697893  with LL score 30476.20391208381&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-19     #16/20  Storing 1.0000000000 0.0000000000 3.2910986382 1.6711692850  with LL score 30476.203912088065&amp#27;[39m
+&amp#27;[31mForkJoinPool.commonPool-worker-1     #20/20  Storing 1.0000000000 0.0000000000 3.2911827798 1.6710350122  with LL score 30476.20391208018&amp#27;[39m
+estimation completed in 0.004950 minutes at 9717.171717 evals/sec
+parameter estimates for ExtendedApproximatePowerlawSelfExcitingProcess{τ=1.0718668746749151,ε=0.08331937622632814,η=0.10921960590424726,b=0.0,Z=8.760840054701609,Edt=263.1732056061707}
+    __________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    | τ                 | ε                  | η                  | b                 | Log-Lik           | KS(Λ)             | mean(Λ)           | var(Λ)            | MM(Λ)              | LB(Λ)            | MMLB(Λ)           | E[dt]             |
+    |=================================================================================================================================================================================================================================================|
+ 1. | 1.0718668746749151| 0.08331937622632814| 0.10921960590424726| 0.0               | 30474.203199022548| 0.8806620643988827| 0.9301406067920452| 1.1114004654348726| 0.08157838628878133| 644.82533783221  | 0.527855321788688 | 263.1732056061707 |
+ 2. | 1.0718397961756487| 0.0833192557633292 | 0.10081445099001499| 0.0               | 30474.20319902397 | 0.8806603899618061| 0.9301393868221548| 1.1114049967502697| 0.08157847534376339| 644.823101332518 | 0.5278556155139639| 263.1660290205246 |
+ 3. | 1.0               | 0.0                | 3.2911827798072966 | 1.6710350122386566| 30476.20391208018 | 0.9239354161784936| 0.9208481802830573| 0.9460216504866219| 0.1821603089083228 | 698.196108235357 | 1.1931375013403693| 131.96041450191848|
+ 4. | 1.0               | 0.0                | 3.2912164393754804 | 1.6711282744390668| 30476.203912084864| 0.9239346417506661| 0.9208495825892427| 0.9460084202200653| 0.18216423042333363| 698.2162013168191| 1.1931684218460954| 131.9557420315641 |
+ 5. | 1.0               | 0.0                | 3.291062590981665  | 1.671176298760817 | 30476.203912088164| 0.923934849473601 | 0.9208492001590822| 0.9460072984640591| 0.18216552589207757| 698.1983311073186| 1.193172251361852 | 131.95701438353439|
+ 6. | 1.0               | 0.0                | 3.291098638216035  | 1.6711692850317539| 30476.203912088065| 0.9239347710253253| 0.9208493436283641| 0.9460070108353472| 0.1821653941235677 | 698.2031791960115| 1.1931726513774745| 131.95653677435263|
+ 7. | 1.0               | 0.0                | 3.2910660433393284 | 1.6711855275491883| 30476.203912088233| 0.9239347724117731| 0.92084933970419  | 0.9460059852595074| 0.1821659144492349 | 698.2003393491271| 1.1931753196030823| 131.9565494242358 |
+ 8. | 1.0               | 0.0                | 3.291066953712965  | 1.6711854070576189| 30476.203912088233| 0.9239347700326503| 0.9208493440472769| 0.946005970639941 | 0.1821659134166026 | 698.2004706212572| 1.1931753470403401| 131.95653496374726|
+ 9. | 1.0               | 0.0                | 3.291065658390803  | 1.6711858673684061| 30476.203912088233| 0.9239347713885466| 0.9208493415383515| 0.9460059539295302| 0.18216592659107544| 698.2003288885866| 1.193175396406043 | 131.95654330724875|
+10. | 1.0               | 0.0                | 3.291065804755858  | 1.6711858686291972| 30476.203912088233| 0.9239347708611041| 0.920849342498788 | 0.9460059488997553| 0.18216592726110925| 698.2003532113831| 1.1931754071316543| 131.9565401087167 |
+11. | 1.0               | 0.0                | 3.2910657381359187 | 1.671185884079465 | 30476.203912088233| 0.9239347709886111| 0.920849342265249 | 0.9460059491082725| 0.18216592760544403| 698.2003446394131| 1.1931754071537302| 131.9565408860628 |
+12. | 1.0               | 0.0                | 3.2910646480496055 | 1.6711861753532147| 30476.203912088233| 0.9239347728047775| 0.920849338932671 | 0.9460059475253005| 0.18216593479831011| 698.2002103766185| 1.1931754192864352| 131.95655197689652|
+13. | 1.0               | 0.0                | 3.2910657060275534 | 1.6711860246248833| 30476.20391208823 | 0.9239347701150811| 0.9208493438439591| 0.946005931924914 | 0.1821659331646589 | 698.2003612639969| 1.1931754478975194| 131.95653562493095|
+14. | 1.0               | 0.0                | 3.2910656317021867 | 1.6711861122034595| 30476.203912088233| 0.9239347697632078| 0.920849344477224 | 0.9460059230232276| 0.18216593639909562| 698.2003626698586| 1.193175469449153 | 131.9565335137391 |
+15. | 1.0               | 0.0                | 3.2910652294680753 | 1.6711862134481557| 30476.203912088233| 0.9239347704771472| 0.9208493431683215| 0.946005923248553 | 0.18216593880063747| 698.2003121557979| 1.1931754720184369| 131.95653787011113|
+16. | 1.0               | 0.0                | 3.2910655162147537 | 1.6711863551426955| 30476.203912088233| 0.9239347684658099| 0.9208493468190349| 0.9460058953153194| 0.18216594575478395| 698.2003815182704| 1.1931755356389904| 131.95652570864698|
+17. | 1.0               | 0.0                | 3.2910624695995616 | 1.671187306178285 | 30476.20391208823 | 0.9239347725795151| 0.9208493392454913| 0.9460058731044104| 0.1821659714078746 | 698.200027635248 | 1.1931756114662921| 131.95655090597919|
+18. | 1.0               | 0.0                | 3.2910662628999523 | 1.6711869323562476| 30476.203912088233| 0.923934761765463 | 0.9208493589715565| 0.9460057955357221| 0.18216597230141918| 698.2005946115806| 1.1931757650359849| 131.95648522276008|
+19. | 1.0               | 0.0                | 3.2911052698320695 | 1.6711890922264174| 30476.203912087785| 0.9239346083878816| 0.920849638107012 | 0.9460042182530676| 0.18216622476554656| 698.2073612051528| 1.1931791815861894| 131.95555557623504|
+20. | 1.0               | 0.0                | 3.2908950228034435 | 1.6712697893371409| 30476.20391208381 | 0.9239347864698626| 0.9208493068456354| 0.9460007294628836| 0.18216860546387925| 698.185288344259 | 1.19318902417191  | 131.95665668011029|
+simulated ExtendedApproximatePowerlawSelfExcitingProcess{τ=1.0,ε=0.0,η=3.0,b=1.78,Z=20.340000000000003,Edt=134.03546154209246}
+inferred ExtendedApproximatePowerlawSelfExcitingProcess{τ=1.0718668746749151,ε=0.08331937622632814,η=0.10921960590424726,b=0.0,Z=8.760840054701609,Edt=263.1732056061707}
+]]></system-out>
+  </testcase>
+  <testcase name="testInvLambdaExpectation" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0"/>
+  <testcase name="testSaveLoad" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.008"/>
+  <testcase name="testfandF" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.001"/>
+  <testcase name="testinvΛ" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.002"/>
+  <testcase name="testLL" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.009">
+    <failure type="junit.framework.AssertionFailedError:">junit.framework.AssertionFailedError: null
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at junit.framework.TestCase.assertTrue(TestCase.java:201)
+	at stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest.testLL(ExtendedApproximatePowerlawSelfExcitingProcessTest.java:275)
+</failure>
+    <system-out><![CDATA[lp=0.0000000000 0.0036816789 0.0327504928 0.0712866010 
+mp=0.0000000000 0.0036816789 0.0299298601 0.0543369490 
+ucomp=Λ = 0.5226769505 0.4001247383 0.3737457020 
+mcomp=0.5226769505 0.4001247383 0.3737457020 
+]]></system-out>
+  </testcase>
+  <testcase name="testA" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.001"/>
+  <testcase name="testφ" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0.001"/>
+  <testcase name="testNormalization" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0"/>
+  <testcase name="testTotalΛ" classname="stochastic.pointprocesses.selfexciting.ExtendedApproximatePowerlawSelfExcitingProcessTest" time="0"/>
+</testsuite>

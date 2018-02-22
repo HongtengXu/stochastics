@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: stochastic.pointprocesses.autoexciting.multivariate.ExtendedMututallyExcitingExponentialPowerlawApproximationProcessTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec - in stochastic.pointprocesses.autoexciting.multivariate.ExtendedMututallyExcitingExponentialPowerlawApproximationProcessTest

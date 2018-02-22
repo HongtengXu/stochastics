@@ -1,0 +1,37 @@
+<TeXmacs|1.99.5>
+
+<style|generic>
+
+<\body>
+  The zero-inflated Poisson distribution is given by
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|P<around*|(|Z<rsub|t>=i|)>=>|<cell|<choice|<tformat|<table|<row|<cell|<around*|(|1-p|)>+p
+    e<rsup|-\<lambda\>>>|<cell|i=0>>|<row|<cell|p<frac|e<rsup|-\<lambda\>>\<lambda\><rsup|i>|i!>>|<cell|i\<geqslant\>1>>>>>>>>>>
+  </equation>
+
+  with a marginal mean\ 
+
+  <\equation>
+    \<mu\><rsub|Z>=p \<lambda\>
+  </equation>
+
+  and variance
+
+  <\equation*>
+    <tabular|<tformat|<table|<row|<cell|\<sigma\><rsub|Z><rsup|2>>|<cell|=\<mu\><rsub|Z>+p<around*|(|1-p|)>\<lambda\><rsup|2>>>|<row|<cell|>|<cell|=p
+    \<lambda\>+p<around*|(|1-p|)>\<lambda\><rsup|2>>>>>>
+  </equation*>
+
+  and transition probability function given by
+
+  <\equation>
+    p<around*|(|i<mid|\|>j|)>=P<around*|(|Z<rsub|t>=i<mid|\|>|)>
+  </equation>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-type|letter>
+  </collection>
+</initial>

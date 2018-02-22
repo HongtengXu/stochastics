@@ -1,0 +1,5461 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.3.9)  14 MAR 2017 18:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**\documentclass{amsart}
+
+*\usepackage[english]{babel}
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsart.cls
+Document Class: amsart 2015/03/04 v2.20.2
+\linespacing=\dimen102
+\normalparindent=\dimen103
+\normaltopskip=\skip41
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip42
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count79
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count80
+\leftroot@=\count81
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count82
+\DOTSCASE@=\count83
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count84
+\c@MaxMatrixCols=\count85
+\dotsspace@=\muskip10
+\c@parentequation=\count86
+\dspbrk@lvl=\count87
+\tag@help=\toks15
+\row@=\count88
+\column@=\count89
+\maxfields@=\count90
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip43
+\multlinetaggap=\skip44
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 388.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\copyins=\insert199
+\abstractbox=\box28
+\listisep=\skip45
+\c@part=\count91
+\c@section=\count92
+\c@subsection=\count93
+\c@subsubsection=\count94
+\c@paragraph=\count95
+\c@subparagraph=\count96
+\c@figure=\count97
+\c@table=\count98
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\captionindent=\dimen113
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+)
+*\usepackage{amssymb,graphicx,bbm,theorem}
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2016/02/24 3.9q The Babel package
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2012/08/20 v3.3p English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2016/02/24 3.9q Babel common definitions
+\babel@savecnt=\count99
+\U@D=\dimen114
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+*
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks25
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 2015/12/30 v3.0k Driver-dependent file (DPC,SPQR)
+))
+\Gin@req@height=\dimen115
+\Gin@req@width=\dimen116
+)
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/bbm.sty
+Package: bbm 1999/03/15 V 1.2 provides fonts for set symbols - TH
+LaTeX Font Info:    Overwriting math alphabet `\mathbbm' in version `bold'
+(Font)                  U/bbm/m/n --> U/bbm/bx/n on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathbbmss' in version `bold'
+(Font)                  U/bbmss/m/n --> U/bbmss/bx/n on input line 35.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/theorem.sty
+Package: theorem 2014/10/28 v2.2c Theorem extension package (FMi)
+\theorem@style=\toks26
+\theorem@bodyfont=\toks27
+\theorempreskipamount=\skip51
+\theorempostskipamount=\skip52
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/thp.sty
+File: thp.sty 2014/10/28 v2.2c Theorem extension package (FMi)
+))
+(Please type a command or say `\end')
+*%%%%%%%%%% Start TeXmacs macros
+
+*\catcode`\<=\active \def<{
+
+*\fontencoding{T1}\selectfont\symbol{60}\fontencoding{\encodingdefault}}
+
+*\catcode`\>=\active \def>{
+
+*\fontencoding{T1}\selectfont\symbol{62}\fontencoding{\encodingdefault}}
+
+*\newcommand{\nobracket}{}
+
+*\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+
+*\newcommand{\tmtextit}[1]{{\itshape{#1}}}
+
+*\newcommand{\tmverbatim}[1]{{\ttfamily{#1}}}
+
+*\newtheorem{conjecture}{Conjecture}
+
+*\newtheorem{corollary}{Corollary}
+
+*\newtheorem{definition}{Definition}
+
+*\newtheorem{lemma}{Lemma}
+
+*\newtheorem{proposition}{Proposition}
+
+*{\theorembodyfont{\rmfamily}\newtheorem{remark}{Remark}}
+
+*\newtheorem{theorem}{Theorem}
+
+*%%%%%%%%%% End TeXmacs macros
+
+*
+Runaway argument?
+{conjecture}{Conjecture} \newtheorem {corollary}{Corollary} \newtheorem \ETC.
+! Paragraph ended before \@xnthm was complete.
+<to be read again> 
+                   \par 
+<*> 
+    
+? \begin{document}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+(Please type a command or say `\end')
+*\title{An Expression For The Argument of $\zeta$ at Zeros on the Critical
+
+*Line}
+
+*
+(Please type a command or say `\end')
+*\author{Stephen Crowley <stephencrowley214@gmail.com>}
+
+*
+(Please type a command or say `\end')
+*\begin{abstract}
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{abstract}
+                    
+?   It is conjectured that when $t = t_n$ is the imaginary part of the $n$-th
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   zero of $\zeta$ on the critical line, the normalised argument $S (t_{})_{} 
+=
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \pi^{- 1} \arg \zeta \left( \frac{1}{2} + i t_{} \right)$ is equal to $S (t
+)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   = S_n (t_n) =_{} n - \frac{3}{2} - \frac{\vartheta (t_n)}{\pi}$ where \
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   $\vartheta (t)$ is the Riemann-Siegel $\vartheta$ function. If $S (t_n) =
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   S_n (t_n) \forall n \in \mathbbm{Z}^+$ then the exact transcendental
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   equation for the Riemann zeros has a solution for each positive integer $n$
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   which proves that Riemann's hypothesis is true since the counting function
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   for zeros on the critical line is equal to the counting function for zeros
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   on the critical strip in that case.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{abstract}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+Overfull \hbox (12.0pt too wide) detected at line 0
+[] 
+ []
+
+
+*{\maketitle}
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 0.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <6> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 0.
+
+Overfull \hbox (118.10199pt too wide) detected at line 0
+[]
+ []
+
+
+Overfull \hbox (72.0pt too wide) detected at line 0
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 0.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 0.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Overfull \hbox (72.0pt too wide) detected at line 0
+ [] 
+ []
+
+
+Overfull \hbox (89.69435pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 AN 
+ []
+
+
+Overfull \hbox (92.08322pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 EX- 
+ []
+
+
+Overfull \hbox (106.2637pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 PRES- 
+ []
+
+
+Overfull \hbox (100.38873pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 SION 
+ []
+
+
+Overfull \hbox (96.18042pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 FOR 
+ []
+
+
+Overfull \hbox (96.55542pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 THE 
+ []
+
+
+Overfull \hbox (93.15266pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 AR- 
+ []
+
+
+Overfull \hbox (93.72209pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 GU- 
+ []
+
+
+Overfull \hbox (107.47203pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 MENT 
+ []
+
+
+Overfull \hbox (87.87491pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 OF 
+ []
+
+
+Overfull \hbox (77.11285pt too wide) detected at line 0
+ \OML/cmm/m/it/10 ^^P$ 
+ []
+
+
+Overfull \hbox (87.73602pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 AT 
+ []
+
+
+Overfull \hbox (90.41656pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 ZE- 
+ []
+
+
+Overfull \hbox (95.3332pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 ROS 
+ []
+
+
+Overfull \hbox (89.6388pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 ON 
+ []
+
+
+Overfull \hbox (96.55542pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 THE 
+ []
+
+
+Overfull \hbox (105.12482pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 CRIT- 
+ []
+
+
+Overfull \hbox (80.1944pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 I- 
+ []
+
+
+Overfull \hbox (95.91653pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 CAL 
+ []
+
+
+Overfull \hbox (99.83318pt too wide) detected at line 0
+ \OT1/cmr/bx/n/10 LINE 
+ []
+
+
+Overfull \hbox (72.0pt too wide) detected at line 0
+ [] 
+ []
+
+
+Overfull \hbox (112.9367pt too wide) detected at line 0
+ \OT1/cmr/m/n/8 STEPHEN 
+ []
+
+
+Overfull \hbox (102.0921pt too wide) detected at line 0
+ \OT1/cmr/m/n/8 CROW- 
+ []
+
+
+Overfull \hbox (89.45581pt too wide) detected at line 0
+ \OT1/cmr/m/n/8 LEY 
+ []
+
+
+Overfull \hbox (122.36826pt too wide) detected at line 0
+ \T1/cmr/m/n/8 <STEPHEN- 
+ []
+
+
+Overfull \hbox (102.08432pt too wide) detected at line 0
+ \T1/cmr/m/n/8 CROW- 
+ []
+
+
+Overfull \hbox (160.8769pt too wide) detected at line 0
+ \T1/cmr/m/n/8 LEY214@GMAIL.COM 
+ []
+
+
+Overfull \hbox (78.6095pt too wide) detected at line 0
+ \T1/cmr/m/n/8 > 
+ []
+
+
+*
+(Please type a command or say `\end')
+*\section{Introduction}
+
+Overfull \hbox (84.0pt too wide) detected at line 0
+[] 
+ []
+
+
+Overfull \hbox (137.23436pt too wide) detected at line 0
+ []\OT1/cmr/m/sc/8 Introduction 
+ []
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \r@tocindent1 
+<*> \section{Introduction}
+                          
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \r@tocindent1 
+<*> \section{Introduction}
+                          
+? \subsection{Motivation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*The goal of this paper is to show that a solution $t_n$ exists for each $n$ of
+
+
+*the exact transcendental equation for the Riemann zeros
+
+*
+
+Overfull \hbox (98.6391pt too wide) detected at line 0
+[]\OT1/cmr/m/n/8 The
+ []
+
+
+Overfull \hbox (87.11133pt too wide) detected at line 0
+\OT1/cmr/m/n/8 goal
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (85.74187pt too wide) detected at line 0
+\OT1/cmr/m/n/8 this
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 pa-
+ []
+
+
+Overfull \hbox (84.04878pt too wide) detected at line 0
+\OT1/cmr/m/n/8 per
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (79.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 to
+ []
+
+
+Overfull \hbox (90.22804pt too wide) detected at line 0
+\OT1/cmr/m/n/8 show
+ []
+
+
+Overfull \hbox (87.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 that
+ []
+
+
+Overfull \hbox (76.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 a
+ []
+
+
+Overfull \hbox (82.43626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 so-
+ []
+
+
+Overfull \hbox (81.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 lu-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (80.18752pt too wide) detected at line 0
+\OML/cmm/m/it/8 t[]$
+ []
+
+
+Overfull \hbox (83.09738pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ex-
+ []
+
+
+Overfull \hbox (84.3724pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ists
+ []
+
+
+Overfull \hbox (82.15987pt too wide) detected at line 0
+\OT1/cmr/m/n/8 for
+ []
+
+
+Overfull \hbox (88.2919pt too wide) detected at line 0
+\OT1/cmr/m/n/8 each
+ []
+
+
+Overfull \hbox (77.15747pt too wide) detected at line 0
+\OML/cmm/m/it/8 n$
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (83.09738pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ex-
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 act
+ []
+
+
+Overfull \hbox (90.42387pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tran-
+ []
+
+
+Overfull \hbox (90.46416pt too wide) detected at line 0
+\OT1/cmr/m/n/8 scen-
+ []
+
+
+Overfull \hbox (88.05579pt too wide) detected at line 0
+\OT1/cmr/m/n/8 den-
+ []
+
+
+Overfull \hbox (81.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tal
+ []
+
+
+Overfull \hbox (92.06973pt too wide) detected at line 0
+\OT1/cmr/m/n/8 equa-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (82.15987pt too wide) detected at line 0
+\OT1/cmr/m/n/8 for
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (87.22522pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Rie-
+ []
+
+
+Overfull \hbox (92.77808pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mann
+ []
+
+
+Overfull \hbox (82.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ze-
+ []
+
+
+Overfull \hbox (82.91544pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ros 
+ []
+
+(Please type a command or say `\end')
+*\begin{definition}
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{definition}
+                      
+?   The \tmverbatim{exact equation} for the imaginary part of the $n$-th zero o
+f
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   $\zeta$ on the critical line
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \frac{\vartheta (t_n)}{\pi} + S (t_n) + 1 = n - \frac{3}{8}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{definition}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*which is the same equation as in {\cite[Equation 20]{z0t}} but with 1 added to
+
+\citation{z0t}
+
+LaTeX Warning: Citation `z0t' on page 1 undefined on input line 0.
+
+
+*both the left and right sides of the equation. $\zeta \left( \frac{1}{2} + i
+
+*t_n \right) = 0$
+
+*
+
+Overfull \hbox (105.48642pt too wide) detected at line 0
+[]\OT1/cmr/m/n/8 which
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (90.46416pt too wide) detected at line 0
+\OT1/cmr/m/n/8 same
+ []
+
+
+Overfull \hbox (92.06973pt too wide) detected at line 0
+\OT1/cmr/m/n/8 equa-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (79.60289pt too wide) detected at line 0
+\OT1/cmr/m/n/8 as
+ []
+
+
+Overfull \hbox (79.08344pt too wide) detected at line 0
+\OT1/cmr/m/n/8 in
+ []
+
+
+Overfull \hbox (81.35011pt too wide) detected at line 0
+\OT1/cmr/m/n/8 [[],
+ []
+
+
+Overfull \hbox (94.07254pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Equa-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (82.86127pt too wide) detected at line 0
+\OT1/cmr/m/n/8 20]
+ []
+
+
+Overfull \hbox (84.75018pt too wide) detected at line 0
+\OT1/cmr/m/n/8 but
+ []
+
+
+Overfull \hbox (88.52802pt too wide) detected at line 0
+\OT1/cmr/m/n/8 with
+ []
+
+
+Overfull \hbox (76.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 1
+ []
+
+
+Overfull \hbox (94.19476pt too wide) detected at line 0
+\OT1/cmr/m/n/8 added
+ []
+
+
+Overfull \hbox (79.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 to
+ []
+
+
+Overfull \hbox (89.23636pt too wide) detected at line 0
+\OT1/cmr/m/n/8 both
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (84.04184pt too wide) detected at line 0
+\OT1/cmr/m/n/8 left
+ []
+
+
+Overfull \hbox (85.69464pt too wide) detected at line 0
+\OT1/cmr/m/n/8 and
+ []
+
+
+Overfull \hbox (89.71553pt too wide) detected at line 0
+\OT1/cmr/m/n/8 right
+ []
+
+
+Overfull \hbox (89.56693pt too wide) detected at line 0
+\OT1/cmr/m/n/8 sides
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (92.06973pt too wide) detected at line 0
+\OT1/cmr/m/n/8 equa-
+ []
+
+
+Overfull \hbox (89.00024pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion.
+ []
+
+
+Overfull \hbox (122.0027pt too wide) detected at line 0
+\OML/cmm/m/it/8 ^^P [] \OT1/cmr/m/n/8 =
+ []
+
+
+Overfull \hbox (76.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 0$ 
+ []
+
+(Please type a command or say `\end')
+*\
+
+*
+
+Overfull \hbox (84.0pt too wide) detected at line 0
+[] 
+ []
+
+(Please type a command or say `\end')
+*\subsubsection{The Riemann-Siegel $\vartheta (t)$ Function}
+
+Overfull \hbox (84.0pt too wide) detected at line 0
+[] 
+ []
+
+
+*
+(Please type a command or say `\end')
+*The Riemann-Siegel $\vartheta$ function is defined by
+
+*\begin{equation}
+
+Overfull \hbox (110.56705pt too wide) detected at line 0
+ \OT1/cmr/m/n/8 1.0.1.\OT1/cmr/m/it/8 The
+ []
+
+
+Overfull \hbox (108.7612pt too wide) detected at line 0
+\OT1/cmr/m/it/8 Riemann-
+ []
+
+
+Overfull \hbox (93.06674pt too wide) detected at line 0
+\OT1/cmr/m/it/8 Siegel
+ []
+
+
+Overfull \hbox (86.73724pt too wide) detected at line 0
+\OML/cmm/m/it/8 #\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (93.40007pt too wide) detected at line 0
+\OT1/cmr/m/it/8 Func-
+ []
+
+
+Overfull \hbox (89.33618pt too wide) detected at line 0
+\OT1/cmr/m/it/8 tion.[]
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 The
+ []
+
+
+Overfull \hbox (108.0033pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Riemann-
+ []
+
+
+Overfull \hbox (93.2503pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Siegel
+ []
+
+
+Overfull \hbox (77.05655pt too wide) detected at line 0
+\OML/cmm/m/it/8 #$
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 de-
+ []
+
+
+Overfull \hbox (89.9447pt too wide) detected at line 0
+\OT1/cmr/m/n/8 fined
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 by 
+ []
+
+
+*  \begin{array}{cl}
+
+*    \vartheta (t) & = - \frac{i}{2} \left( \ln \Gamma \left( \frac{1}{4} +
+
+*    \frac{i t}{2} \right) - \ln \Gamma \left( \frac{1}{4} - \frac{i t}{2}
+
+*    \right) \right) - \frac{\ln (\pi) t}{2} \text{}\\
+
+*    & = \arg \left( \Gamma \left( \frac{1}{4} + \frac{i t}{2} \right) \right)
+
+*    - \frac{\ln (\pi) t}{2}
+
+*  \end{array}
+
+*\end{equation}
+
+Overfull \hbox (274.96967pt too wide) detected at line 0
+[]
+ []
+
+
+*Let
+
+*\[ \tilde{\vartheta} (t) = \frac{t \ln \left( \frac{t}{2 \pi e} \right)}{2} -
+
+Overfull \hbox (84.39185pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Let 
+ []
+
+
+*   \frac{\pi}{8} \]
+
+Overfull \hbox (149.60443pt too wide) detected at line 0
+[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 ) = [] \OMS/cmsy/m/n/8 ^^@ []
+
+ []
+
+
+*be the approximate $\vartheta$ function where the $\Gamma$ function has been
+
+*replaced with its Stirling approximation.
+
+*\begin{equation}
+
+Overfull \hbox (80.73624pt too wide) detected at line 0
+\OT1/cmr/m/n/8 be
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ap-
+ []
+
+
+Overfull \hbox (91.36833pt too wide) detected at line 0
+\OT1/cmr/m/n/8 prox-
+ []
+
+
+Overfull \hbox (77.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (90.41693pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mate
+ []
+
+
+Overfull \hbox (77.05655pt too wide) detected at line 0
+\OML/cmm/m/it/8 #$
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (93.72948pt too wide) detected at line 0
+\OT1/cmr/m/n/8 where
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (77.30841pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ^^@$
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (84.32518pt too wide) detected at line 0
+\OT1/cmr/m/n/8 has
+ []
+
+
+Overfull \hbox (89.23636pt too wide) detected at line 0
+\OT1/cmr/m/n/8 been
+ []
+
+
+Overfull \hbox (81.92375pt too wide) detected at line 0
+\OT1/cmr/m/n/8 re-
+ []
+
+
+Overfull \hbox (95.61145pt too wide) detected at line 0
+\OT1/cmr/m/n/8 placed
+ []
+
+
+Overfull \hbox (88.52802pt too wide) detected at line 0
+\OT1/cmr/m/n/8 with
+ []
+
+
+Overfull \hbox (81.01958pt too wide) detected at line 0
+\OT1/cmr/m/n/8 its
+ []
+
+
+Overfull \hbox (88.53496pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Stir-
+ []
+
+
+Overfull \hbox (85.69464pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ling
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ap-
+ []
+
+
+Overfull \hbox (91.36833pt too wide) detected at line 0
+\OT1/cmr/m/n/8 prox-
+ []
+
+
+Overfull \hbox (77.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (86.16687pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ma-
+ []
+
+
+Overfull \hbox (89.00024pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion. 
+ []
+
+
+*  \Gamma (s) \simeq \sqrt{2 \pi} s^{s - \frac{1}{2}} e^{- s}
+
+*\end{equation}
+
+Overfull \hbox (148.93121pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ^^@(\OML/cmm/m/it/8 s\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n/8 ' []\OML/c
+mm/m/it/8 s[]e[]
+ []
+
+
+*The $\vartheta (t)$ function is not invertible but the inverse of its
+
+*approximation $\tilde{\vartheta} (t)$ is defined by a linear function of the
+
+*Lambert W function given by
+
+*\begin{equation}
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 The
+ []
+
+
+Overfull \hbox (86.73724pt too wide) detected at line 0
+\OML/cmm/m/it/8 #\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (84.27795pt too wide) detected at line 0
+\OT1/cmr/m/n/8 not
+ []
+
+
+Overfull \hbox (81.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 in-
+ []
+
+
+Overfull \hbox (89.47942pt too wide) detected at line 0
+\OT1/cmr/m/n/8 vert-
+ []
+
+
+Overfull \hbox (85.22241pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ible
+ []
+
+
+Overfull \hbox (84.75018pt too wide) detected at line 0
+\OT1/cmr/m/n/8 but
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (81.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 in-
+ []
+
+
+Overfull \hbox (90.4711pt too wide) detected at line 0
+\OT1/cmr/m/n/8 verse
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (81.01958pt too wide) detected at line 0
+\OT1/cmr/m/n/8 its
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ap-
+ []
+
+
+Overfull \hbox (91.36833pt too wide) detected at line 0
+\OT1/cmr/m/n/8 prox-
+ []
+
+
+Overfull \hbox (77.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (86.16687pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ma-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (86.73724pt too wide) detected at line 0
+[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 de-
+ []
+
+
+Overfull \hbox (89.9447pt too wide) detected at line 0
+\OT1/cmr/m/n/8 fined
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 by
+ []
+
+
+Overfull \hbox (76.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 a
+ []
+
+
+Overfull \hbox (84.27795pt too wide) detected at line 0
+\OT1/cmr/m/n/8 lin-
+ []
+
+
+Overfull \hbox (83.34044pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ear
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (91.47528pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Lam-
+ []
+
+
+Overfull \hbox (87.35439pt too wide) detected at line 0
+\OT1/cmr/m/n/8 bert
+ []
+
+
+Overfull \hbox (80.7279pt too wide) detected at line 0
+\OT1/cmr/m/n/8 W
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (91.36139pt too wide) detected at line 0
+\OT1/cmr/m/n/8 given
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 by 
+ []
+
+
+*  \tilde{\vartheta}^{- 1} (t) = \frac{\pi + 8 t}{4 W \left( \frac{\pi + 8 t}{8
+
+
+*  \pi e} \right)}
+
+*\end{equation}
+
+Overfull \hbox (152.18814pt too wide) detected at line 0
+[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 ) = []
+ []
+
+
+*Let $\tmop{frac} (x) = \left\{ \begin{array}{ll}
+
+*  x - \lfloor x \rfloor & x \geqslant 0\\
+
+*  x - \lceil x \rceil & x < 0
+
+*\end{array} \right. \forall x \in \mathbbm{R}$ be the function which gives the
+
+LaTeX Font Info:    Try loading font information for U+bbm on input line 0.
+(/usr/share/texlive/texmf-dist/tex/latex/bbm-macros/ubbm.fd
+File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
+)
+*fractional part of a real number by subtracting either the floor $\lfloor x
+
+*\rfloor$ or the ceiling $\lceil x \rceil$ of $x$ from $x$, depending upon its
+
+*sign. Furthermore, let
+
+*\begin{equation}
+
+Overfull \hbox (84.39185pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Let
+ []
+
+
+Overfull \hbox (106.30603pt too wide) detected at line 0
+[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 x\OT1/cmr/m/n/8 ) =
+ []
+
+
+Overfull \hbox (166.40932pt too wide) detected at line 0
+[] \OMS/cmsy/m/n/8 8\OML/cmm/m/it/8 x \OMS/cmsy/m/n/8 2
+ []
+
+
+Overfull \hbox (79.05843pt too wide) detected at line 0
+\U/bbm/m/n/8 R$
+ []
+
+
+Overfull \hbox (80.73624pt too wide) detected at line 0
+\OT1/cmr/m/n/8 be
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (93.48642pt too wide) detected at line 0
+\OT1/cmr/m/n/8 which
+ []
+
+
+Overfull \hbox (89.99193pt too wide) detected at line 0
+\OT1/cmr/m/n/8 gives
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (88.77107pt too wide) detected at line 0
+\OT1/cmr/m/n/8 frac-
+ []
+
+
+Overfull \hbox (93.2503pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tional
+ []
+
+
+Overfull \hbox (87.5905pt too wide) detected at line 0
+\OT1/cmr/m/n/8 part
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (76.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 a
+ []
+
+
+Overfull \hbox (85.70158pt too wide) detected at line 0
+\OT1/cmr/m/n/8 real
+ []
+
+
+Overfull \hbox (91.12527pt too wide) detected at line 0
+\OT1/cmr/m/n/8 num-
+ []
+
+
+Overfull \hbox (84.04878pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ber
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 by
+ []
+
+
+Overfull \hbox (87.63078pt too wide) detected at line 0
+\OT1/cmr/m/n/8 sub-
+ []
+
+
+Overfull \hbox (92.78502pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tract-
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ei-
+ []
+
+
+Overfull \hbox (87.11827pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ther
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (88.77107pt too wide) detected at line 0
+\OT1/cmr/m/n/8 floor
+ []
+
+
+Overfull \hbox (84.34044pt too wide) detected at line 0
+\OMS/cmsy/m/n/8 b\OML/cmm/m/it/8 x\OMS/cmsy/m/n/8 c$
+ []
+
+
+Overfull \hbox (79.5626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 or
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (87.11133pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ceil-
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (84.34044pt too wide) detected at line 0
+\OMS/cmsy/m/n/8 d\OML/cmm/m/it/8 x\OMS/cmsy/m/n/8 e$
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (76.78477pt too wide) detected at line 0
+\OML/cmm/m/it/8 x$
+ []
+
+
+Overfull \hbox (89.2433pt too wide) detected at line 0
+\OT1/cmr/m/n/8 from
+ []
+
+
+Overfull \hbox (79.14592pt too wide) detected at line 0
+\OML/cmm/m/it/8 x$\OT1/cmr/m/n/8 ,
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 de-
+ []
+
+
+Overfull \hbox (93.01419pt too wide) detected at line 0
+\OT1/cmr/m/n/8 pend-
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 upon
+ []
+
+
+Overfull \hbox (81.01958pt too wide) detected at line 0
+\OT1/cmr/m/n/8 its
+ []
+
+
+Overfull \hbox (89.04747pt too wide) detected at line 0
+\OT1/cmr/m/n/8 sign.
+ []
+
+
+Overfull \hbox (87.70439pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Fur-
+ []
+
+
+Overfull \hbox (89.95164pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ther-
+ []
+
+
+Overfull \hbox (92.78502pt too wide) detected at line 0
+\OT1/cmr/m/n/8 more,
+ []
+
+
+Overfull \hbox (81.44458pt too wide) detected at line 0
+\OT1/cmr/m/n/8 let 
+ []
+
+
+*  S (t) = \pi^{- 1} \arg \left( \zeta \left( \frac{1}{2} + \tmop{it} \right)
+
+*  \right) = \lim_{\varepsilon \rightarrow 0}  \frac{1}{2} ((S \nobracket (t +
+
+*  i \varepsilon) - S (t - i \varepsilon))
+
+*\end{equation}
+
+Overfull \hbox (289.84644pt too wide) detected at line 0
+\OML/cmm/m/it/8 S\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 ) = \OML/cmm/m
+/it/8 ^^Y[] [] [] \OT1/cmr/m/n/8 = [] []((\OML/cmm/m/it/8 S\OT1/cmr/m/n/8 (\OML
+/cmm/m/it/8 t \OT1/cmr/m/n/8 + \OML/cmm/m/it/8 i"\OT1/cmr/m/n/8 ) \OMS/cmsy/m/n
+/8 ^^@ \OML/cmm/m/it/8 S\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t \OMS/cmsy/m/n/8 ^^@ \
+OML/cmm/m/it/8 i"\OT1/cmr/m/n/8 ))
+ []
+
+
+*be the argument of $\zeta$ on the critical line.
+
+*
+
+Overfull \hbox (80.73624pt too wide) detected at line 0
+\OT1/cmr/m/n/8 be
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (82.39598pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ar-
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 gu-
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ment
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (76.28477pt too wide) detected at line 0
+\OML/cmm/m/it/8 ^^P$
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 on
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (87.5905pt too wide) detected at line 0
+\OT1/cmr/m/n/8 crit-
+ []
+
+
+Overfull \hbox (77.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (82.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 cal
+ []
+
+
+Overfull \hbox (87.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 line. 
+ []
+
+(Please type a command or say `\end')
+*\begin{definition}
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{definition}
+                      
+?   The Riemann-von-Mangoldt formula makes use of Cauchy's argument principle t
+o
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   count the number of zeros \tmverbatim{inside the critical strip} $0 <
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \tmop{Im} (\rho_n) < t$ where $\zeta (\sigma + i \rho_n)$ with $0 < \sigma 
+<
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   1$
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \tilde{N}_s (t) = \frac{t}{2 \pi} \ln \left( \frac{t}{2 \pi e} \right) +
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \frac{7}{8} + S (t) + O (t^{- 1})
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   and this definition does not depend on the Riemann hypothesis(Conjecture
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \ref{RH}). This equation has exactly the same form as the asymptotic
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   Equation \ref{ae}. {\cite[Equation 15]{z0t}}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{definition}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{definition}
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{definition}
+                      
+?   The \tmverbatim{asymptotic equation} for the $n$-th zero of the Hardy $Z$
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   function
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \frac{t_n}{2 \pi} \ln \left( \frac{t_n}{2 \pi} \right) + S (t_n) + O
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \left( \frac{1}{t_n} \right) + 1 = n - \frac{3}{8} \label{ae}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   {\cite[Equation 20]{z0t}}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{definition}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{corollary}
+
+! LaTeX Error: Environment corollary undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{corollary}
+                     
+?   The number of solutions of the asymptotic equation (\ref{ae}) for the zeros
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   of the Hardy $Z (t)$ function, over the interval $[0, t]$ is given by
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \tilde{N}_l (t) = \frac{t}{2 \pi} \ln \left( \frac{t}{2 \pi e} \right) +
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \frac{7}{8} + S (t) + O (t^{- 1}) \label{N0}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{corollary}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*which counts the number of zeros \tmverbatim{on the critical line}.
+
+*
+
+Overfull \hbox (105.48642pt too wide) detected at line 0
+[]\OT1/cmr/m/n/8 which
+ []
+
+
+Overfull \hbox (95.89479pt too wide) detected at line 0
+\OT1/cmr/m/n/8 counts
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (91.12527pt too wide) detected at line 0
+\OT1/cmr/m/n/8 num-
+ []
+
+
+Overfull \hbox (84.04878pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ber
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (82.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ze-
+ []
+
+
+Overfull \hbox (82.91544pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ros
+ []
+
+
+Overfull \hbox (80.50012pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 on
+ []
+
+
+Overfull \hbox (84.75018pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 the
+ []
+
+
+Overfull \hbox (106.00049pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 critical
+ []
+
+
+Overfull \hbox (91.36139pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 line\OT1/cmr/m/n/8 . 
+ []
+
+(Please type a command or say `\end')
+*\
+
+*
+
+Overfull \hbox (84.0pt too wide) detected at line 0
+[] 
+ []
+
+(Please type a command or say `\end')
+*\begin{conjecture}
+
+! LaTeX Error: Environment conjecture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{conjecture}
+                      
+?   \label{ec}The \tmverbatim{exact equation} for the imaginary part of the
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   $n$-th zero of $\zeta \left( \frac{1}{2} + i t \right)${\cite[Equation
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   20]{z0t}}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \begin{array}{cc}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \frac{\vartheta (t_n)}{\pi} + S (t_n) - \left( n - \frac{3}{2} \right)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \pi & = 0 = \frac{\vartheta (t_n)}{\pi} + \frac{\arg \left( \zeta \left
+(
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \frac{1}{2} + \tmop{it} \right) \right)}{\pi} - \left( n - \frac{3}{2}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right) \pi
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \end{array} \label{ee}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   has a solution for each integer $n \geqslant 1$ where $t_n$ enumerate the
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   zeros of $Z$ on the real line and the zeros of $\zeta$ on the critical line
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \zeta \left( \frac{1}{2} + i t_n \right) = 0 \forall n \in \mathbbm{Z}^+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   where $\mathbbm{Z}^+$ denotes the positive integers. {\cite[Equation
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   14]{z0t}}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{conjecture}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\subsection{The Gram Points}
+
+*
+(Please type a command or say `\end')
+*The $n$-th Gram point is defined to be the solution of the equation
+! Missing number, treated as zero.
+<to be read again> 
+                   \r@tocindent2 
+<*> T
+     he $n$-th Gram point is defined to be the solution of the equation
+? \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \vartheta (t) = (n - 1) \pi
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? A very accurate approximation $\tilde{g} (n)$ to the Gram points is $g (n)$ i
+s
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? found by inverting $\tilde{\vartheta} (t)$ to get the exact solution
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{array}{cl}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \tilde{g} (n) & = \{ t : \tilde{\vartheta} (t) - (n - 1) \pi = 0 \}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     & = \left\{ t : \left( \frac{t \ln \left( \frac{t}{2 \pi e} \right)}{2} -
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \frac{\pi}{8} \right) - (n - 1) \pi = 0 \right\}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     & = \frac{(8 n - 7) \pi}{4 W \left( \frac{8 n - 7}{8 e} \right)}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     & = g (n) + O (\delta_n)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{array}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? where $W$ is the Lambert W function, and the approximation bounds $\delta_n$
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? when $n = 1$ is $\delta_1 = 0.00223698 \ldots$, followed by $\delta_2 =
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 0.00137812 \ldots$ and decreases monotonically with increasing $n$, that is,
+<to be read again> 
+                   \r@tocindent2 
+<*> T
+     he $n$-th Gram point is defined to be the solution of the equation
+? $\delta_{n + 1} < \delta_n$. \ The inverse of $\tilde{g} (n)$ is given by
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{array}{ll}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \tilde{g}^{- 1} (n) & = \{ t : \tilde{g} (n) = 0 \}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     & = \frac{t \ln \left( \frac{t}{2 \pi e} \right)}{2 \pi} + \frac{7}{8}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     & = \tilde{N} (t) - S (t)\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     & = \tilde{N} (t) - S (t)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{array}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? where $\tilde{N} (t)$=$\tilde{N}_s (t) = \tilde{N}_l (t)$.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \r@tocindent2 
+<*> T
+     he $n$-th Gram point is defined to be the solution of the equation
+? \subsubsection{An Expression for $S (t)$ at its Discontinuous Points}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*Define the infinite sequence of functions indexed by $n \in \mathbbm{Z}^+$
+
+*\begin{equation}
+
+Overfull \hbox (106.22261pt too wide) detected at line 0
+ \OT1/cmr/m/n/8 1.1.\OT1/cmr/bx/n/8 The
+ []
+
+
+Overfull \hbox (96.67798pt too wide) detected at line 0
+\OT1/cmr/bx/n/8 Gram
+ []
+
+
+Overfull \hbox (101.60466pt too wide) detected at line 0
+\OT1/cmr/bx/n/8 Points.[]
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 The
+ []
+
+
+Overfull \hbox (79.99084pt too wide) detected at line 0
+\OML/cmm/m/it/8 n$\OT1/cmr/m/n/8 -
+ []
+
+
+Overfull \hbox (80.0279pt too wide) detected at line 0
+\OT1/cmr/m/n/8 th
+ []
+
+
+Overfull \hbox (93.3142pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Gram
+ []
+
+
+Overfull \hbox (91.36139pt too wide) detected at line 0
+\OT1/cmr/m/n/8 point
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 de-
+ []
+
+
+Overfull \hbox (89.9447pt too wide) detected at line 0
+\OT1/cmr/m/n/8 fined
+ []
+
+
+Overfull \hbox (79.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 to
+ []
+
+
+Overfull \hbox (80.73624pt too wide) detected at line 0
+\OT1/cmr/m/n/8 be
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (82.43626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 so-
+ []
+
+
+Overfull \hbox (81.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 lu-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (92.06973pt too wide) detected at line 0
+\OT1/cmr/m/n/8 equa-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (85.10019pt too wide) detected at line 0
+\OT1/cmr/m/n/8 De-
+ []
+
+
+Overfull \hbox (85.22241pt too wide) detected at line 0
+\OT1/cmr/m/n/8 fine
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (81.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 in-
+ []
+
+
+Overfull \hbox (79.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 fi-
+ []
+
+
+Overfull \hbox (86.16687pt too wide) detected at line 0
+\OT1/cmr/m/n/8 nite
+ []
+
+
+Overfull \hbox (81.96404pt too wide) detected at line 0
+\OT1/cmr/m/n/8 se-
+ []
+
+
+Overfull \hbox (97.26425pt too wide) detected at line 0
+\OT1/cmr/m/n/8 quence
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (89.99193pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tions
+ []
+
+
+Overfull \hbox (81.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 in-
+ []
+
+
+Overfull \hbox (93.48642pt too wide) detected at line 0
+\OT1/cmr/m/n/8 dexed
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 by
+ []
+
+
+Overfull \hbox (85.18536pt too wide) detected at line 0
+\OML/cmm/m/it/8 n \OMS/cmsy/m/n/8 2
+ []
+
+
+Overfull \hbox (84.11113pt too wide) detected at line 0
+\U/bbm/m/n/8 Z[]$ 
+ []
+
+
+*  \begin{array}{cl}
+
+*    T_n (t) & = 1 + \lfloor \tilde{g}^{- 1} (n) \rfloor - n\\
+
+*    & = 1 + \lfloor \frac{t \ln \left( \frac{t}{2 \pi e} \right)}{2 \pi} +
+
+*    \frac{7}{8} \rfloor - n
+
+*  \end{array}
+
+*\end{equation}
+
+Overfull \hbox (207.75633pt too wide) detected at line 0
+[]
+ []
+
+
+*\begin{proposition}
+
+! LaTeX Error: Environment proposition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{proposition}
+                       
+?   For each ``bad'' Gram point $n$ there will be, within $n \pm 2$, a
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   corresponding zero on the critical line which has an argument not on the
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   principal branch. That is, if $n$ is a ``bad'' Gram point then $T_m (t_m)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \neq 0$ for some $m$ where $| m - n | \leqslant 2$.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{proposition}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*The function $T_n = T_n (t_n)$ determines how many multiples of $\pi$ to add
+
+*or subtract to $- \frac{1}{2} - \lfloor \frac{\vartheta (t_n)}{\pi} \rfloor$
+
+*so that it agrees with the argument of $\zeta$ at a zero on the critical line
+
+*where it is discontinuous, jumping by the multiplicity of the corresponding
+
+*root, and having the value $\left. \lim_{\varepsilon \rightarrow 0}
+
+*\frac{1}{2} ((S (\rho + i \varepsilon) - S (\rho - i \varepsilon) \right)$
+
+*when $\zeta (\rho) = 0$.
+
+*
+
+Overfull \hbox (88.52802pt too wide) detected at line 0
+ \OT1/cmr/m/n/8 The
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (86.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (91.03906pt too wide) detected at line 0
+\OML/cmm/m/it/8 T[] \OT1/cmr/m/n/8 =
+ []
+
+
+Overfull \hbox (96.86543pt too wide) detected at line 0
+\OML/cmm/m/it/8 T[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 de-
+ []
+
+
+Overfull \hbox (85.22935pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ter-
+ []
+
+
+Overfull \hbox (93.29753pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mines
+ []
+
+
+Overfull \hbox (86.87521pt too wide) detected at line 0
+\OT1/cmr/m/n/8 how
+ []
+
+
+Overfull \hbox (92.30585pt too wide) detected at line 0
+\OT1/cmr/m/n/8 many
+ []
+
+
+Overfull \hbox (88.76413pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mul-
+ []
+
+
+Overfull \hbox (80.50012pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ti-
+ []
+
+
+Overfull \hbox (86.2141pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ples
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (77.16812pt too wide) detected at line 0
+\OML/cmm/m/it/8 ^^Y$
+ []
+
+
+Overfull \hbox (79.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 to
+ []
+
+
+Overfull \hbox (85.69464pt too wide) detected at line 0
+\OT1/cmr/m/n/8 add
+ []
+
+
+Overfull \hbox (79.5626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 or
+ []
+
+
+Overfull \hbox (87.63078pt too wide) detected at line 0
+\OT1/cmr/m/n/8 sub-
+ []
+
+
+Overfull \hbox (89.95164pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tract
+ []
+
+
+Overfull \hbox (79.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 to
+ []
+
+
+Overfull \hbox (91.28902pt too wide) detected at line 0
+\OMS/cmsy/m/n/8 ^^@[] ^^@
+ []
+
+
+Overfull \hbox (100.00258pt too wide) detected at line 0
+\OMS/cmsy/m/n/8 b[]c$
+ []
+
+
+Overfull \hbox (79.60289pt too wide) detected at line 0
+\OT1/cmr/m/n/8 so
+ []
+
+
+Overfull \hbox (87.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 that
+ []
+
+
+Overfull \hbox (77.66675pt too wide) detected at line 0
+\OT1/cmr/m/n/8 it
+ []
+
+
+Overfull \hbox (94.72116pt too wide) detected at line 0
+\OT1/cmr/m/n/8 agrees
+ []
+
+
+Overfull \hbox (88.52802pt too wide) detected at line 0
+\OT1/cmr/m/n/8 with
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (82.39598pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ar-
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 gu-
+ []
+
+
+Overfull \hbox (90.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ment
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (76.28477pt too wide) detected at line 0
+\OML/cmm/m/it/8 ^^P$
+ []
+
+
+Overfull \hbox (79.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 at
+ []
+
+
+Overfull \hbox (76.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 a
+ []
+
+
+Overfull \hbox (87.11827pt too wide) detected at line 0
+\OT1/cmr/m/n/8 zero
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 on
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (87.5905pt too wide) detected at line 0
+\OT1/cmr/m/n/8 crit-
+ []
+
+
+Overfull \hbox (77.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (82.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 cal
+ []
+
+
+Overfull \hbox (85.22241pt too wide) detected at line 0
+\OT1/cmr/m/n/8 line
+ []
+
+
+Overfull \hbox (93.72948pt too wide) detected at line 0
+\OT1/cmr/m/n/8 where
+ []
+
+
+Overfull \hbox (77.66675pt too wide) detected at line 0
+\OT1/cmr/m/n/8 it
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (85.26964pt too wide) detected at line 0
+\OT1/cmr/m/n/8 dis-
+ []
+
+
+Overfull \hbox (87.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 con-
+ []
+
+
+Overfull \hbox (85.22241pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tin-
+ []
+
+
+Overfull \hbox (79.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 u-
+ []
+
+
+Overfull \hbox (86.68633pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ous,
+ []
+
+
+Overfull \hbox (93.95865pt too wide) detected at line 0
+\OT1/cmr/m/n/8 jump-
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 by
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (88.76413pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mul-
+ []
+
+
+Overfull \hbox (80.50012pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ti-
+ []
+
+
+Overfull \hbox (88.05579pt too wide) detected at line 0
+\OT1/cmr/m/n/8 plic-
+ []
+
+
+Overfull \hbox (81.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ity
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (86.17381pt too wide) detected at line 0
+\OT1/cmr/m/n/8 cor-
+ []
+
+
+Overfull \hbox (81.92375pt too wide) detected at line 0
+\OT1/cmr/m/n/8 re-
+ []
+
+
+Overfull \hbox (96.83925pt too wide) detected at line 0
+\OT1/cmr/m/n/8 spond-
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (89.71553pt too wide) detected at line 0
+\OT1/cmr/m/n/8 root,
+ []
+
+
+Overfull \hbox (85.69464pt too wide) detected at line 0
+\OT1/cmr/m/n/8 and
+ []
+
+
+Overfull \hbox (88.05579pt too wide) detected at line 0
+\OT1/cmr/m/n/8 hav-
+ []
+
+
+Overfull \hbox (83.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (91.12527pt too wide) detected at line 0
+\OT1/cmr/m/n/8 value
+ []
+
+
+Overfull \hbox (195.98276pt too wide) detected at line 0
+[]$
+ []
+
+
+Overfull \hbox (91.36139pt too wide) detected at line 0
+\OT1/cmr/m/n/8 when
+ []
+
+
+Overfull \hbox (96.22116pt too wide) detected at line 0
+\OML/cmm/m/it/8 ^^P\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 ^^Z\OT1/cmr/m/n/8 ) =
+ []
+
+
+Overfull \hbox (78.6112pt too wide) detected at line 0
+\OT1/cmr/m/n/8 0$. 
+ []
+
+(Please type a command or say `\end')
+*\begin{definition}
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{definition}
+                      
+?   Let
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \begin{array}{ll}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       S_n (t_{}) & = \frac{1}{2} - \tmop{frac} \left( \frac{\vartheta
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       (t)}{\pi} \right) - T_n (t)\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = \frac{1}{2} - \tmop{frac} \left( \frac{\vartheta (t)}{\pi} \right)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       - (1 + \lfloor \tilde{g}^{- 1} (n) \rfloor - n)\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & =_{} \frac{1}{2} - \tmop{frac} \left( \frac{\vartheta (t)}{\pi}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right) - 1 - \lfloor \tilde{g}^{- 1} (n) \rfloor + n\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & =_{} - \frac{1}{2} - \tmop{frac} \left( \frac{\vartheta (t)}{\pi}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right) - \lfloor \tilde{g}^{- 1} (n) \rfloor + n\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = n_{} - \frac{1}{2} - \tmop{frac} \left( \frac{\vartheta (t)}{\pi}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right) - \lfloor \tilde{g}^{- 1} (n) \rfloor\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & =_{} n - \frac{1}{2} - \tmop{frac} \left( \frac{\vartheta (t)}{\pi}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right) + \lfloor \frac{\vartheta (t)}{\pi} + 1 \rfloor\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = n - \frac{1}{2} - \left( \frac{\vartheta (t)}{\pi} + 1 \right)\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = n - \frac{1}{2} - \frac{\vartheta (t)}{\pi} - 1\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = n - \frac{3}{2} - \frac{\vartheta (t)}{\pi}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \end{array}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{definition}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*Where we see that
+
+*\begin{equation}
+
+Overfull \hbox (108.3184pt too wide) detected at line 0
+[]\OT1/cmr/m/n/8 Where
+ []
+
+
+Overfull \hbox (81.6807pt too wide) detected at line 0
+\OT1/cmr/m/n/8 we
+ []
+
+
+Overfull \hbox (82.9085pt too wide) detected at line 0
+\OT1/cmr/m/n/8 see
+ []
+
+
+Overfull \hbox (87.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 that 
+ []
+
+
+*  S_n (t_n) = n - \frac{3}{2} - \frac{\vartheta (t_n)}{\pi} = S (t_n)
+
+*\end{equation}
+
+Overfull \hbox (187.4539pt too wide) detected at line 0
+\OML/cmm/m/it/8 S[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 ) = \OML/c
+mm/m/it/8 n \OMS/cmsy/m/n/8 ^^@ [] ^^@ [] \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 S\OT
+1/cmr/m/n/8 (\OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 )
+ []
+
+
+*when $t_n$ is the imaginary part of a zero of $\zeta$ on the critical line.
+
+*Let $s_{\vartheta} (t) = \frac{\vartheta (t)}{| \vartheta (t) |}$ be the sign
+
+*of $\vartheta (t)$.
+
+*
+
+Overfull \hbox (91.36139pt too wide) detected at line 0
+\OT1/cmr/m/n/8 when
+ []
+
+
+Overfull \hbox (80.18752pt too wide) detected at line 0
+\OML/cmm/m/it/8 t[]$
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (92.77808pt too wide) detected at line 0
+\OT1/cmr/m/n/8 imag-
+ []
+
+
+Overfull \hbox (77.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (88.77107pt too wide) detected at line 0
+\OT1/cmr/m/n/8 nary
+ []
+
+
+Overfull \hbox (87.5905pt too wide) detected at line 0
+\OT1/cmr/m/n/8 part
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (76.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 a
+ []
+
+
+Overfull \hbox (87.11827pt too wide) detected at line 0
+\OT1/cmr/m/n/8 zero
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (76.28477pt too wide) detected at line 0
+\OML/cmm/m/it/8 ^^P$
+ []
+
+
+Overfull \hbox (80.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 on
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (87.5905pt too wide) detected at line 0
+\OT1/cmr/m/n/8 crit-
+ []
+
+
+Overfull \hbox (77.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (82.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 cal
+ []
+
+
+Overfull \hbox (87.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 line.
+ []
+
+
+Overfull \hbox (84.39185pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Let
+ []
+
+
+Overfull \hbox (99.58778pt too wide) detected at line 0
+\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 ) =
+ []
+
+
+Overfull \hbox (92.09843pt too wide) detected at line 0
+[]$
+ []
+
+
+Overfull \hbox (80.73624pt too wide) detected at line 0
+\OT1/cmr/m/n/8 be
+ []
+
+
+Overfull \hbox (83.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (86.68633pt too wide) detected at line 0
+\OT1/cmr/m/n/8 sign
+ []
+
+
+Overfull \hbox (78.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (89.09839pt too wide) detected at line 0
+\OML/cmm/m/it/8 #\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )$. 
+ []
+
+(Please type a command or say `\end')
+*\begin{conjecture}
+
+! LaTeX Error: Environment conjecture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{conjecture}
+                      
+?   \label{c}The normalized argument $S (t) = \pi^{- 1} \arg \zeta \left(
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \frac{1}{2} + i t \right)$ at the n-th non-trivial zero \ $\zeta \left(
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \frac{1}{2} + i t_n \right) = 0 \forall n \geqslant 1$ on the critical line
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   is equal to $s_{\vartheta} (t) S_n (t)$, that is
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \begin{array}{cl}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       S (t_n) & = S_n (t_n) = \frac{1}{2} (\lim_{t \rightarrow t^-_n} S (t_{}
+)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       + \lim_{t \rightarrow t^+_n} S (t_{}))\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = n - \frac{3}{2} - \frac{\vartheta (t_n)}{\pi}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \end{array} \label{een}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{conjecture}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{theorem}
+
+! LaTeX Error: Environment theorem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{theorem}
+                   
+?   If Conjecture \ref{c} is true then Conjecture \ref{ec} is true and, due to
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   $\tmop{Lemma}$ \ref{fl}, so is Conjecture \ref{RH}, the Riemann hypothesis.
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{theorem}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{proof}
+
+*  If $s_{\vartheta} (t) S_n (t_n)$=$S (t_n)$ then $S (t_n)$ is well-defined
+
+*  $\forall n \geqslant 1$ since $s_{\vartheta} (t) S_n (t_n)$ is well-defined
+
+*  $\forall n \geqslant 1$.
+
+*\end{proof}
+
+Overfull \hbox (99.60704pt too wide) detected at line 0
+[]
+ []
+
+
+Overfull \hbox (77.65842pt too wide) detected at line 0
+\OT1/cmr/m/n/8 If
+ []
+
+
+Overfull \hbox (142.72835pt too wide) detected at line 0
+\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )\OML/cmm/m/
+it/8 S[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 )$=$\OML/cmm/m/it/8 S
+\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (88.52802pt too wide) detected at line 0
+\OT1/cmr/m/n/8 then
+ []
+
+
+Overfull \hbox (92.41545pt too wide) detected at line 0
+\OML/cmm/m/it/8 S\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (89.23636pt too wide) detected at line 0
+\OT1/cmr/m/n/8 well-
+ []
+
+
+Overfull \hbox (98.44482pt too wide) detected at line 0
+\OT1/cmr/m/n/8 defined
+ []
+
+
+Overfull \hbox (90.46315pt too wide) detected at line 0
+\OMS/cmsy/m/n/8 8\OML/cmm/m/it/8 n \U/msa/m/n/8 >
+ []
+
+
+Overfull \hbox (76.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 1$
+ []
+
+
+Overfull \hbox (89.99193pt too wide) detected at line 0
+\OT1/cmr/m/n/8 since
+ []
+
+
+Overfull \hbox (115.70169pt too wide) detected at line 0
+\OML/cmm/m/it/8 s[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )\OML/cmm/m/
+it/8 S[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t[]\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (77.71397pt too wide) detected at line 0
+\OT1/cmr/m/n/8 is
+ []
+
+
+Overfull \hbox (89.23636pt too wide) detected at line 0
+\OT1/cmr/m/n/8 well-
+ []
+
+
+Overfull \hbox (98.44482pt too wide) detected at line 0
+\OT1/cmr/m/n/8 defined
+ []
+
+
+Overfull \hbox (90.46315pt too wide) detected at line 0
+\OMS/cmsy/m/n/8 8\OML/cmm/m/it/8 n \U/msa/m/n/8 >
+ []
+
+
+Overfull \hbox (78.6112pt too wide) detected at line 0
+\OT1/cmr/m/n/8 1$.
+ []
+
+
+Overfull \hbox (86.72237pt too wide) detected at line 0
+[]  [] 
+ []
+
+
+*
+(Please type a command or say `\end')
+*\begin{figure}[h]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{figure}[h]
+                     
+?   \resizebox{5.5in}{2.5in}{\includegraphics{liftedTwisted.eps}}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \caption{$S_n (t)$ and the imaginary parts of the roots of $\zeta \left(
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \frac{1}{2} + i t_n \right)$ marked with verticle lines just touching its
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   touching its corresponding pair of neighboring curves $S_n (t)$ for $n = 0
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \ldots 14$}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{figure}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{figure}[h]
+                     
+? \begin{figure}[h]
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \resizebox{5.5in}{2.5in}{\includegraphics{liftedTwistedAroundFirstBadGramPo
+ints.eps}}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \caption{$S_n (t)$ and the imaginary parts of the roots of $\zeta \left(
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \frac{1}{2} + i t_n \right)$ marked with verticle lines just touching its
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   touching its corresponding pair of neighboring curves $S_n (t)$ for $n = 12
+0
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \ldots 140$ which includes two ``bad'' Gram points at $n = 126$ and $n =
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   134$}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{figure}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Undefined control sequence.
+\@xfloat ...@fltovf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+<*> \begin{figure}[h]
+                     
+? \begin{theorem}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   $\arg \left( \zeta \left( \frac{1}{2} + i g (n) \right) \right) = 0 \forall
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   n \in \mathbbm{Z}^+$
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{theorem}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \color@vbox 
+<*> \begin{figure}[h]
+                     
+? \begin{proof}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   The argument of any positive number $x$ with $\tmop{Im} (x) = 0$ is equal t
+o
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   $0$ and $\tmop{Im} \left( \zeta \left( \frac{1}{2} + i g (n) \right) \right
+)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   = 0$ since by definition the Gram points are the points where the imaginary
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   part of $\zeta$ on the critical line vanishes.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{proof}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{conjecture}
+
+! LaTeX Error: Environment conjecture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{conjecture}
+                      
+?   $\tmop{frac} \left( \frac{\vartheta (t)}{\pi} \right) + S (t) \in \{ - 1, 0
+,
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   1 \} \forall 0 < t \in \mathbbm{R}$
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{conjecture}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{figure}[h]
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{figure}[h]
+                     
+?   \resizebox{5.5in}{3.5in}{\includegraphics{meet1.eps}}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \caption{Illustration of convergence around the first zero}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{figure}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+! LaTeX Error: Not in outer par mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{figure}[h]
+                     
+? \subsection{An Equivalent Expression for $S (t)$}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Undefined control sequence.
+\@xfloat ...@fltovf \fi \global \setbox \@currbox 
+                                                  \color@vbox \normalcolor \...
+<*> \begin{figure}[h]
+                     
+? Let
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   B (t) = N (t) + 2 = \frac{\vartheta (t)}{\pi} + S (t) + 3
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? which is Backlund's $\zeta$ zero counting function on the critical strip, plu
+s
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? $2$, which is valid without assuming the Riemann hypothesis.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Missing number, treated as zero.
+<to be read again> 
+                   \color@vbox 
+<*> \begin{figure}[h]
+                     
+? \begin{conjecture}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   An equivalent expression for $S (t) \forall 0 < t \in \mathbbm{R}$ is
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \begin{array}{cl}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \mathcal{S} (t) & = S_{B (t)} (t) - \frac{3}{2} + \frac{\frac{\vartheta
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       (t)}{| \vartheta (t) |} - 1}{2}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       S (t) & =_{} \left( \frac{3}{2} - \tmop{frac} \left( \frac{\vartheta
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       (t)}{\pi} \right) + \left( \lfloor \frac{\vartheta (t)}{\pi} \rfloor - 
+B
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       (t) \right) \right) - \frac{3}{2} + \frac{\frac{\vartheta (t)}{|
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \vartheta (t) |} - 1}{2}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       S (t) & =_{} \left( \frac{3}{2} - \tmop{frac} \left( \frac{\vartheta
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       (t)}{\pi} \right) + \left( \lfloor \frac{t \ln \left( \frac{t}{2 \pi e}
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right)}{2 \pi} + \frac{7}{8} \rfloor - B (t) \right) \right) -
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \frac{3}{2} + \frac{\frac{\vartheta (t)}{| \vartheta (t) |} - 1}{2}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       S (t) & = \left( \frac{3}{2} - \tmop{frac} \left( \frac{\vartheta
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       (t)}{\pi} \right) + \left( \lfloor \frac{t \ln \left( \frac{t}{2 \pi e}
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right)}{2 \pi} + \frac{7}{8} \rfloor - \left( \frac{\vartheta (t)}{\pi
+}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       + S (t) + 3 \right) \right) \right) - \frac{3}{2} +
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \frac{\frac{\vartheta (t)}{| \vartheta (t) |} - 1}{2}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \end{array}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   since $S (t)$ appears on the left side and $- S (t)$ on the right side, if
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   we subtract $S (t)$ from both sides we get $\forall 0 < t \in \mathbbm{R}$
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \begin{array}{ll}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       0 & = \left( \frac{3}{2} - \tmop{frac} \left( \frac{\vartheta (t)}{\pi}
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right) + \left( \lfloor \frac{t \ln \left( \frac{t}{2 \pi e} \right)}{
+2
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \pi} + \frac{7}{8} \rfloor - \left( \frac{\vartheta (t)}{\pi} + 2 S (t)
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       + 3 \right) \right) \right) - \frac{3}{2} + \frac{\frac{\vartheta (t)}{
+|
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \vartheta (t) |} - 1}{2}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = \frac{3}{2} - \tmop{frac} \left( \frac{\vartheta (t)}{\pi} \right)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       + \left( \lfloor \frac{t \ln \left( \frac{t}{2 \pi e} \right)}{2 \pi} +
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \frac{7}{8} \rfloor - \left( \frac{\vartheta (t)}{\pi} + 2 S (t) + 3
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \right) \right) - \frac{3}{2} + \frac{\frac{\vartheta (t)}{| \vartheta
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       (t) |} - 1}{2}\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = \left( \lfloor \frac{t \ln \left( \frac{t}{2 \pi e} \right)}{2 \pi}
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       + \frac{7}{8} \rfloor - \frac{\vartheta (t)}{\pi} + 2 S (t) + 3 \right)
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       + \frac{\frac{\vartheta (t)}{| \vartheta (t) |} - 1}{2} - \tmop{frac}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \left( \frac{\vartheta (t)}{\pi} \right)\\
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       & = \lfloor \frac{t \ln \left( \frac{t}{2 \pi e} \right)}{2 \pi} +
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \frac{7}{8} \rfloor - \frac{\vartheta (t)}{\pi} - 2 S (t) - 3
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \frac{\frac{\vartheta (t)}{| \vartheta (t) |} - 1}{2} - \tmop{frac}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?       \left( \frac{\vartheta (t)}{\pi} \right)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \end{array}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{conjecture}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\
+
+*
+(Please type a command or say `\end')
+*\begin{remark}
+
+! LaTeX Error: Environment remark undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{remark}
+                  
+?   The function $\frac{\frac{\vartheta (t)}{| \vartheta (t) |} - 1}{2}$ takes
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   the value $- 1$ when it is less than the non-zero root of $\vartheta (v) =
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   0$ at $v = 17.84559954 \ldots$ and the value $0$ when it is greater. If it
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   was left out of the expression for $\mathcal{S} (t)$ then the function woul
+d
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   not be equal to $S (t) \forall t < v$.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{remark}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*\section{Appendix}
+
+Overfull \hbox (47.98553pt too wide) detected at line 0
+ []\OT1/cmr/m/sc/8 Appendix 
+ []
+
+
+*
+(Please type a command or say `\end')
+*\subsection{Transcendental Equations Satisifed By The Nontrivial Riemann
+
+*Zeros}
+
+*
+(Please type a command or say `\end')
+*\begin{definition}
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{definition}
+                      
+?   The \tmverbatim{critical line} is the line in the complex plane defined by
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   $\tmop{Re} (t) = \frac{1}{2}$.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{definition}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{definition}
+
+! LaTeX Error: Environment definition undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{definition}
+                      
+?   The \tmverbatim{critical strip} is the strip in the complex plane defined b
+y
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   $0 < \tmop{Re} (t) < 1$.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{definition}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\
+
+*
+
+Overfull \hbox (82.28854pt too wide) detected at line 0
+  \OT1/cmr/m/n/8 2.1.\OT1/cmr/bx/n/8 Transcendental 
+ []
+
+
+Overfull \hbox (25.06964pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 Equa- 
+ []
+
+
+Overfull \hbox (20.7435pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 tions 
+ []
+
+
+Overfull \hbox (36.25752pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 Satisifed 
+ []
+
+
+Overfull \hbox (12.12788pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 By 
+ []
+
+
+Overfull \hbox (16.75014pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 The 
+ []
+
+
+Overfull \hbox (21.25015pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 Non- 
+ []
+
+
+Overfull \hbox (19.02238pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 triv- 
+ []
+
+
+Overfull \hbox (10.20842pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 ial 
+ []
+
+
+Overfull \hbox (17.80013pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 Rie- 
+ []
+
+
+Overfull \hbox (23.81964pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 mann 
+ []
+
+
+Overfull \hbox (13.74455pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 Ze- 
+ []
+
+
+Overfull \hbox (15.5379pt too wide) detected at line 0
+ \OT1/cmr/bx/n/8 ros.[] 
+ []
+
+(Please type a command or say `\end')
+*\begin{theorem}
+
+! LaTeX Error: Environment theorem undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{theorem}
+                   
+?   \label{le}If the limit
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \lim_{\delta \rightarrow 0^+} \arg \left( \zeta \left( \frac{1}{2} +
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \delta + i t \right) \right)
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   is exists and is well-defined $\forall t$ then the left-hand side of
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   Equation (\ref{ae}) is well-defined $\forall t$, and due to monotonicity,
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   there must be a unique solution for every $n \in \mathbbm{Z}^+$.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   {\cite[II.A]{z0t}}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{theorem}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\
+
+*
+(Please type a command or say `\end')
+*\begin{conjecture}
+
+! LaTeX Error: Environment conjecture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{conjecture}
+                      
+?   \label{RH}(The Riemann hypothesis) All solutions $t$ of the equation
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \begin{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?     \zeta (t) = 0
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \end{equation}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   besides the trivial solutions $t = - 2 n$ with $n \in \mathbbm{Z}^+$ have
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   real-part $\frac{1}{2}$, that is, $\tmop{Re} (t) = \frac{1}{2}$ when $\zeta
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   (t) = 0$ and $t \neq - 2 n$.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{conjecture}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{lemma}
+
+! LaTeX Error: Environment lemma undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> \begin{lemma}
+                 
+?   \label{fl}If the exact Equation (\ref{ee}) has a unique solution for each $
+n
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   \in \mathbbm{Z}^+$ then Conjecture \ref{RH}, the Riemann hypothesis,
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   follows.
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{lemma}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+*\begin{proof}
+
+*  If the exact equation has a unique solution for each $n$, then the zeros
+
+*  obtained from its solutions on the \tmverbatim{critical line} can be counted
+
+
+*  since they are enumerated by the integer $n$, leading to the counting
+
+*  function $N_0 (t)$ in Equation (\ref{N0}). The number of solutions obtained
+
+LaTeX Warning: Reference `N0' on page 1 undefined on input line 0.
+
+
+*  on the \tmverbatim{critical line} would saturate the counting function of
+
+*  the number of solutions on the \tmverbatim{critical strip} so that $N (t) =
+
+*  N_0 (t)$ and thus all of the non-trivial zeros of $\zeta$ would be
+
+*  enumerated in this manner. If there are zeros off of the critical line, or
+
+*  zeros with multiplicity $m \geqslant 2$, then the exact Equation (\ref{ee})
+
+LaTeX Warning: Reference `ee' on page 1 undefined on input line 0.
+
+
+*  would fail to capture all the zeros on the critical strip which would mean
+
+*  $N_0 (t) < N (t)$. \ {\cite[IX]{z0t}}
+\citation{z0t}
+
+LaTeX Warning: Citation `z0t' on page 1 undefined on input line 0.
+
+
+*\end{proof}
+
+Overfull \hbox (27.60704pt too wide) detected at line 0
+[]
+ []
+
+
+Overfull \hbox (5.65842pt too wide) detected at line 0
+\OT1/cmr/m/n/8 If
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (11.09738pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ex-
+ []
+
+
+Overfull \hbox (11.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 act
+ []
+
+
+Overfull \hbox (20.06973pt too wide) detected at line 0
+\OT1/cmr/m/n/8 equa-
+ []
+
+
+Overfull \hbox (14.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (12.32518pt too wide) detected at line 0
+\OT1/cmr/m/n/8 has
+ []
+
+
+Overfull \hbox (4.25006pt too wide) detected at line 0
+\OT1/cmr/m/n/8 a
+ []
+
+
+Overfull \hbox (24.79202pt too wide) detected at line 0
+\OT1/cmr/m/n/8 unique
+ []
+
+
+Overfull \hbox (10.43626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 so-
+ []
+
+
+Overfull \hbox (9.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 lu-
+ []
+
+
+Overfull \hbox (14.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (10.15987pt too wide) detected at line 0
+\OT1/cmr/m/n/8 for
+ []
+
+
+Overfull \hbox (16.2919pt too wide) detected at line 0
+\OT1/cmr/m/n/8 each
+ []
+
+
+Overfull \hbox (7.51862pt too wide) detected at line 0
+\OML/cmm/m/it/8 n$\OT1/cmr/m/n/8 ,
+ []
+
+
+Overfull \hbox (16.52802pt too wide) detected at line 0
+\OT1/cmr/m/n/8 then
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (10.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ze-
+ []
+
+
+Overfull \hbox (10.91544pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ros
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ob-
+ []
+
+
+Overfull \hbox (23.13922pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tained
+ []
+
+
+Overfull \hbox (17.2433pt too wide) detected at line 0
+\OT1/cmr/m/n/8 from
+ []
+
+
+Overfull \hbox (9.01958pt too wide) detected at line 0
+\OT1/cmr/m/n/8 its
+ []
+
+
+Overfull \hbox (10.43626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 so-
+ []
+
+
+Overfull \hbox (9.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 lu-
+ []
+
+
+Overfull \hbox (17.99193pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tions
+ []
+
+
+Overfull \hbox (8.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 on
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (34.00049pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 critical
+ []
+
+
+Overfull \hbox (17.00024pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 line
+ []
+
+
+Overfull \hbox (12.75018pt too wide) detected at line 0
+\OT1/cmr/m/n/8 can
+ []
+
+
+Overfull \hbox (8.73624pt too wide) detected at line 0
+\OT1/cmr/m/n/8 be
+ []
+
+
+Overfull \hbox (29.04208pt too wide) detected at line 0
+\OT1/cmr/m/n/8 counted
+ []
+
+
+Overfull \hbox (17.99193pt too wide) detected at line 0
+\OT1/cmr/m/n/8 since
+ []
+
+
+Overfull \hbox (16.2919pt too wide) detected at line 0
+\OT1/cmr/m/n/8 they
+ []
+
+
+Overfull \hbox (11.34044pt too wide) detected at line 0
+\OT1/cmr/m/n/8 are
+ []
+
+
+Overfull \hbox (15.81967pt too wide) detected at line 0
+\OT1/cmr/m/n/8 enu-
+ []
+
+
+Overfull \hbox (17.00719pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mer-
+ []
+
+
+Overfull \hbox (16.05579pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ated
+ []
+
+
+Overfull \hbox (8.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 by
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (9.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 in-
+ []
+
+
+Overfull \hbox (9.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 te-
+ []
+
+
+Overfull \hbox (11.34044pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ger
+ []
+
+
+Overfull \hbox (7.51862pt too wide) detected at line 0
+\OML/cmm/m/it/8 n$\OT1/cmr/m/n/8 ,
+ []
+
+
+Overfull \hbox (17.9447pt too wide) detected at line 0
+\OT1/cmr/m/n/8 lead-
+ []
+
+
+Overfull \hbox (11.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (7.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 to
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (23.37534pt too wide) detected at line 0
+\OT1/cmr/m/n/8 count-
+ []
+
+
+Overfull \hbox (11.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (18.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (14.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (20.59392pt too wide) detected at line 0
+\OML/cmm/m/it/8 N[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (7.08344pt too wide) detected at line 0
+\OT1/cmr/m/n/8 in
+ []
+
+
+Overfull \hbox (22.07254pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Equa-
+ []
+
+
+Overfull \hbox (14.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (18.228pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ([]).
+ []
+
+
+Overfull \hbox (14.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 The
+ []
+
+
+Overfull \hbox (19.12527pt too wide) detected at line 0
+\OT1/cmr/m/n/8 num-
+ []
+
+
+Overfull \hbox (12.04878pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ber
+ []
+
+
+Overfull \hbox (6.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (10.43626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 so-
+ []
+
+
+Overfull \hbox (9.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 lu-
+ []
+
+
+Overfull \hbox (17.99193pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tions
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ob-
+ []
+
+
+Overfull \hbox (23.13922pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tained
+ []
+
+
+Overfull \hbox (8.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 on
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (34.00049pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 critical
+ []
+
+
+Overfull \hbox (17.00024pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 line
+ []
+
+
+Overfull \hbox (21.95865pt too wide) detected at line 0
+\OT1/cmr/m/n/8 would
+ []
+
+
+Overfull \hbox (13.74187pt too wide) detected at line 0
+\OT1/cmr/m/n/8 sat-
+ []
+
+
+Overfull \hbox (7.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 u-
+ []
+
+
+Overfull \hbox (14.64604pt too wide) detected at line 0
+\OT1/cmr/m/n/8 rate
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (23.37534pt too wide) detected at line 0
+\OT1/cmr/m/n/8 count-
+ []
+
+
+Overfull \hbox (11.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ing
+ []
+
+
+Overfull \hbox (18.65305pt too wide) detected at line 0
+\OT1/cmr/m/n/8 func-
+ []
+
+
+Overfull \hbox (14.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (6.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (19.12527pt too wide) detected at line 0
+\OT1/cmr/m/n/8 num-
+ []
+
+
+Overfull \hbox (12.04878pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ber
+ []
+
+
+Overfull \hbox (6.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (10.43626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 so-
+ []
+
+
+Overfull \hbox (9.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 lu-
+ []
+
+
+Overfull \hbox (17.99193pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tions
+ []
+
+
+Overfull \hbox (8.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 on
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (34.00049pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 critical
+ []
+
+
+Overfull \hbox (21.2503pt too wide) detected at line 0
+\OT1/cmtt/m/n/8 strip
+ []
+
+
+Overfull \hbox (7.60289pt too wide) detected at line 0
+\OT1/cmr/m/n/8 so
+ []
+
+
+Overfull \hbox (15.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 that
+ []
+
+
+Overfull \hbox (26.25174pt too wide) detected at line 0
+\OML/cmm/m/it/8 N\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 ) =
+ []
+
+
+Overfull \hbox (20.59392pt too wide) detected at line 0
+\OML/cmm/m/it/8 N[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )$
+ []
+
+
+Overfull \hbox (13.69464pt too wide) detected at line 0
+\OT1/cmr/m/n/8 and
+ []
+
+
+Overfull \hbox (15.8669pt too wide) detected at line 0
+\OT1/cmr/m/n/8 thus
+ []
+
+
+Overfull \hbox (8.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 all
+ []
+
+
+Overfull \hbox (6.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (16.52802pt too wide) detected at line 0
+\OT1/cmr/m/n/8 non-
+ []
+
+
+Overfull \hbox (22.43782pt too wide) detected at line 0
+\OT1/cmr/m/n/8 trivial
+ []
+
+
+Overfull \hbox (10.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ze-
+ []
+
+
+Overfull \hbox (10.91544pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ros
+ []
+
+
+Overfull \hbox (6.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (4.28477pt too wide) detected at line 0
+\OML/cmm/m/it/8 ^^P$
+ []
+
+
+Overfull \hbox (21.95865pt too wide) detected at line 0
+\OT1/cmr/m/n/8 would
+ []
+
+
+Overfull \hbox (8.73624pt too wide) detected at line 0
+\OT1/cmr/m/n/8 be
+ []
+
+
+Overfull \hbox (15.81967pt too wide) detected at line 0
+\OT1/cmr/m/n/8 enu-
+ []
+
+
+Overfull \hbox (17.00719pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mer-
+ []
+
+
+Overfull \hbox (16.05579pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ated
+ []
+
+
+Overfull \hbox (7.08344pt too wide) detected at line 0
+\OT1/cmr/m/n/8 in
+ []
+
+
+Overfull \hbox (13.74187pt too wide) detected at line 0
+\OT1/cmr/m/n/8 this
+ []
+
+
+Overfull \hbox (18.88916pt too wide) detected at line 0
+\OT1/cmr/m/n/8 man-
+ []
+
+
+Overfull \hbox (14.17381pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ner.
+ []
+
+
+Overfull \hbox (5.65842pt too wide) detected at line 0
+\OT1/cmr/m/n/8 If
+ []
+
+
+Overfull \hbox (18.8961pt too wide) detected at line 0
+\OT1/cmr/m/n/8 there
+ []
+
+
+Overfull \hbox (11.34044pt too wide) detected at line 0
+\OT1/cmr/m/n/8 are
+ []
+
+
+Overfull \hbox (10.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ze-
+ []
+
+
+Overfull \hbox (10.91544pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ros
+ []
+
+
+Overfull \hbox (9.20847pt too wide) detected at line 0
+\OT1/cmr/m/n/8 off
+ []
+
+
+Overfull \hbox (6.84732pt too wide) detected at line 0
+\OT1/cmr/m/n/8 of
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (15.5905pt too wide) detected at line 0
+\OT1/cmr/m/n/8 crit-
+ []
+
+
+Overfull \hbox (5.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (10.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 cal
+ []
+
+
+Overfull \hbox (15.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 line,
+ []
+
+
+Overfull \hbox (7.5626pt too wide) detected at line 0
+\OT1/cmr/m/n/8 or
+ []
+
+
+Overfull \hbox (10.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ze-
+ []
+
+
+Overfull \hbox (10.91544pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ros
+ []
+
+
+Overfull \hbox (16.52802pt too wide) detected at line 0
+\OT1/cmr/m/n/8 with
+ []
+
+
+Overfull \hbox (16.76413pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mul-
+ []
+
+
+Overfull \hbox (8.50012pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ti-
+ []
+
+
+Overfull \hbox (16.05579pt too wide) detected at line 0
+\OT1/cmr/m/n/8 plic-
+ []
+
+
+Overfull \hbox (9.91681pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ity
+ []
+
+
+Overfull \hbox (16.102pt too wide) detected at line 0
+\OML/cmm/m/it/8 m \U/msa/m/n/8 >
+ []
+
+
+Overfull \hbox (6.6112pt too wide) detected at line 0
+\OT1/cmr/m/n/8 2$,
+ []
+
+
+Overfull \hbox (16.52802pt too wide) detected at line 0
+\OT1/cmr/m/n/8 then
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (11.09738pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ex-
+ []
+
+
+Overfull \hbox (11.3335pt too wide) detected at line 0
+\OT1/cmr/m/n/8 act
+ []
+
+
+Overfull \hbox (22.07254pt too wide) detected at line 0
+\OT1/cmr/m/n/8 Equa-
+ []
+
+
+Overfull \hbox (14.6391pt too wide) detected at line 0
+\OT1/cmr/m/n/8 tion
+ []
+
+
+Overfull \hbox (15.86685pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ([])
+ []
+
+
+Overfull \hbox (21.95865pt too wide) detected at line 0
+\OT1/cmr/m/n/8 would
+ []
+
+
+Overfull \hbox (11.56961pt too wide) detected at line 0
+\OT1/cmr/m/n/8 fail
+ []
+
+
+Overfull \hbox (7.55566pt too wide) detected at line 0
+\OT1/cmr/m/n/8 to
+ []
+
+
+Overfull \hbox (15.58356pt too wide) detected at line 0
+\OT1/cmr/m/n/8 cap-
+ []
+
+
+Overfull \hbox (15.11827pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ture
+ []
+
+
+Overfull \hbox (8.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 all
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (10.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ze-
+ []
+
+
+Overfull \hbox (10.91544pt too wide) detected at line 0
+\OT1/cmr/m/n/8 ros
+ []
+
+
+Overfull \hbox (8.97235pt too wide) detected at line 0
+\OT1/cmr/m/n/8 on
+ []
+
+
+Overfull \hbox (11.80573pt too wide) detected at line 0
+\OT1/cmr/m/n/8 the
+ []
+
+
+Overfull \hbox (15.5905pt too wide) detected at line 0
+\OT1/cmr/m/n/8 crit-
+ []
+
+
+Overfull \hbox (5.19452pt too wide) detected at line 0
+\OT1/cmr/m/n/8 i-
+ []
+
+
+Overfull \hbox (10.38904pt too wide) detected at line 0
+\OT1/cmr/m/n/8 cal
+ []
+
+
+Overfull \hbox (17.05441pt too wide) detected at line 0
+\OT1/cmr/m/n/8 strip
+ []
+
+
+Overfull \hbox (21.48642pt too wide) detected at line 0
+\OT1/cmr/m/n/8 which
+ []
+
+
+Overfull \hbox (21.95865pt too wide) detected at line 0
+\OT1/cmr/m/n/8 would
+ []
+
+
+Overfull \hbox (19.83362pt too wide) detected at line 0
+\OT1/cmr/m/n/8 mean
+ []
+
+
+Overfull \hbox (29.56627pt too wide) detected at line 0
+\OML/cmm/m/it/8 N[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 ) \OML/cmm/m
+/it/8 <
+ []
+
+
+Overfull \hbox (19.64053pt too wide) detected at line 0
+\OML/cmm/m/it/8 N\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )$.
+ []
+
+
+Overfull \hbox (9.35011pt too wide) detected at line 0
+\OT1/cmr/m/n/8 [[],
+ []
+
+
+Overfull \hbox (11.78906pt too wide) detected at line 0
+\OT1/cmr/m/n/8 IX]
+ []
+
+
+Overfull \hbox (14.72237pt too wide) detected at line 0
+[]  [] 
+ []
+
+
+*
+(Please type a command or say `\end')
+*\
+
+*
+(Please type a command or say `\end')
+*\begin{thebibliography}{1}
+
+Overfull \hbox (46.64867pt too wide) detected at line 0
+ []\OT1/cmr/m/sc/8 References 
+ []
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \r@tocindent0 
+<*> \begin{thebibliography}{1}
+                              
+?   \bibitem[1]{z0t}Guilherme Fran{\c c}a  and  Andr{\'e} LeClair.{\newblock}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   Transcendental equations satisfied by the individual zeros of riemann zeta,
+
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   dirichlet and modular l-functions.{\newblock} \tmtextit{Communications in
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?   Number Theory and Physics}, 2015.{\newblock}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? \end{thebibliography}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \r@tocindent0 
+<*> \begin{thebibliography}{1}
+                              
+? \end{document}
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, 
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+! Emergency stop.
+<to be read again> 
+                   \r@tocindent0 
+<*> \begin{thebibliography}{1}
+                              
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 2375 strings out of 494954
+ 27976 string characters out of 6181004
+ 106226 words of memory out of 5000000
+ 5496 multiletter control sequences out of 15000+600000
+ 11036 words of font info for 43 fonts, out of 8000000 for 9000
+ 175 hyphenation exceptions out of 8191
+ 33i,9n,32p,259b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.

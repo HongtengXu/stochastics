@@ -1,0 +1,249 @@
+<TeXmacs|1.99.5>
+
+<style|generic>
+
+<\body>
+  <doc-data|<doc-title|Recursive Exponential Powerlaw
+  Approximation>|<doc-author|<\author-data|<author-name|Stephen Crowley
+  \<less\>stephencrowley214@gmail.com\<gtr\>>|<\author-affiliation>
+    <date|>
+  </author-affiliation>>
+    \;
+  </author-data>>>
+
+  If
+
+  <\equation>
+    \<varphi\><rsub|e><around*|(|t|)>=<big|sum><rsub|j=1><rsup|P>\<alpha\><rsub|j>
+    e<rsup|-\<beta\><rsub|j> t>
+  </equation>
+
+  then the intensity of a Hawkes process can be expressed
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|>|<cell|>>|<row|<cell|\<lambda\><rsub|e><around*|(|t|)>>|<cell|=<big|int><rsub|-\<infty\>><rsup|t>\<varphi\><rsub|e><around*|(|t-s|)>\<mathd\>N<rsub|s>>>|<row|<cell|>|<cell|=<big|sum><rsub|t<rsub|k>\<less\>t>\<varphi\><rsub|e><around*|(|t-t<rsub|k>|)>>>|<row|<cell|>|<cell|=<big|sum><rsub|j=1><rsup|P>\<alpha\><rsub|j><big|sum><rsub|k=0><rsup|N<rsub|t>>e<rsup|-\<beta\><rsub|j><around*|(|t-t<rsub|k>|)>>>>|<row|<cell|>|<cell|=<big|sum><rsub|j=1><rsup|P>\<alpha\><rsub|j>
+    B<rsub|j><around*|(|N<rsub|t>|)>>>>>>
+  </equation>
+
+  where
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|B<rsub|j><around*|(|i|)>>|<cell|=<big|sum><rsub|k=0><rsup|i-1>e<rsup|-\<beta\><rsub|j><around*|(|t-t<rsub|k>|)>>>>|<row|<cell|>|<cell|=<around*|(|1+B<rsub|j><around*|(|i-1|)>|)>e<rsup|-\<beta\><rsub|j><around*|(|t-t<rsub|i>|)>>>>>>>
+  </equation>
+
+  with initial conditions <math|B<rsub|j><around*|(|0|)>=0>. For consecutive
+  events, the dual-predictable projection is expressed
+  (<reference|compensator>)
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|\<Lambda\><rsub|e><around*|(|t<rsub|i-1>,t<rsub|i>|)>>|<cell|=<big|int><rsub|t<rsub|i-1>><rsup|t<rsub|i>>\<lambda\><rsub|e><around*|(|t|)>\<mathd\>t>>|<row|<cell|>|<cell|=<big|int><rsub|t<rsub|i-1>><rsup|t<rsub|i>><around*|(|<big|sum><rsub|j=1><rsup|P>\<alpha\><rsub|j
+    >B<rsub|j><around*|(|N<rsub|t>|)>|)>\<mathd\>t>>|<row|<cell|>|<cell|=<big|int><rsub|t<rsub|i-1><rsup|>><rsup|t<rsub|i>><big|sum><rsub|j=1><rsup|P>\<alpha\><rsub|j><big|sum><rsub|k=0><rsup|i-1>
+    e<rsup|-\<beta\><rsub|j><around*|(|t-t<rsub|k>|)>>\<mathd\>t>>|<row|<cell|>|<cell|=<big|sum><rsub|j=1><rsup|P>\<alpha\><rsub|j><big|sum><rsub|k=0><rsup|i-1>
+    <big|int><rsub|t<rsub|i-1><rsup|>><rsup|t<rsub|i>>e<rsup|-\<beta\><rsub|j><around*|(|t-t<rsub|k>|)>>\<mathd\>t>>|<row|<cell|>|<cell|=<big|sum><rsub|k=0><rsup|i-1><big|sum><rsub|j=1><rsup|P><frac|\<alpha\><rsub|j>|\<beta\><rsub|j>><around*|(|e<rsup|-\<beta\><rsub|j><around*|(|t<rsub|i-1>-t<rsub|k>|)>>-e<rsup|-\<beta\><rsub|j><around*|(|t<rsub|i>-t<rsub|k>|)>>|)>>>|<row|<cell|>|<cell|=<big|sum><rsub|j=1><rsup|P><frac|\<alpha\><rsub|j>|\<beta\><rsub|j>><around*|(|1-e<rsup|-\<beta\><rsub|j>\<Delta\>t<rsub|i>>|)>A<rsub|j><around*|(|i-1|)>>>|<row|<cell|>|<cell|=<big|sum><rsub|j=1><rsup|P><frac|\<alpha\><rsub|j>|\<beta\><rsub|j>><around*|(|1-e<rsup|-\<beta\><rsub|j>\<Delta\>t<rsub|i>>|)>A<rsub|j><around*|(|i-1|)>>>>>>
+  </equation>
+
+  where
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|A<rsub|j><around*|(|i|)>>|<cell|=<big|sum><rsub|t<rsub|k>\<leqslant\>t<rsub|i>>e<rsup|-\<beta\><rsub|j><around*|(|t<rsub|i>-t<rsub|k>|)>>>>|<row|<cell|>|<cell|=<big|sum><rsub|k=0><rsup|i>e<rsup|-\<beta\><rsub|j><around*|(|t<rsub|i>-t<rsub|k>|)>>>>|<row|<cell|>|<cell|=1+e<rsup|-\<beta\><rsub|j><around*|(|t<rsub|i>-t<rsub|k>|)>>A<rsub|j><around*|(|i-1|)>>>>>><label|A>
+  </equation>
+
+  with <math|A<rsub|j><around*|(|0|)>=0> since the integral of the
+  exponential kernel \ is
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|<big|int><rsub|t<rsub|i-1>><rsup|t<rsub|i>>\<varphi\><rsub|e><around*|(|t|)>\<mathd\>t>|<cell|=<big|int><rsub|t<rsub|i-1><rsup|>><rsup|t<rsub|i>><big|sum><rsub|j=1><rsup|P>\<alpha\><rsub|j>
+    e<rsup|-\<beta\><rsub|j> <around*|(|t-t<rsub|k>|)>>\<mathd\>t>>|<row|<cell|>|<cell|=<big|sum><rsub|j=1><rsup|P><frac|\<alpha\><rsub|j>|\<beta\><rsub|j>>
+    <around*|(|e<rsup|-\<beta\><rsub|j> t<rsub|i>>-e<rsup|-\<beta\><rsub|j>t<rsub|i-1>>|)>>>>>>
+  </equation>
+
+  \ Does a similiar recursion for the exponential-powerlaw approximation
+  kernel <cite|cf>
+
+  <\equation>
+    \<varphi\><rsub|epl><around*|(|t|)>=<around*|(|<around*|(|<big|sum><rsub|i=0><rsup|M-1><around*|(|<frac|1|\<eta\>
+    m<rsup|i>>|)><rsup|1+\<varepsilon\>>e<rsup|-<frac|t|\<eta\>
+    m<rsup|i>>>|)>-S e<rsup|-<frac|t m|\<eta\> >>|)>Z
+  </equation>
+
+  where
+
+  <\equation>
+    S=<frac|\<eta\><rsup|-1-\<varepsilon\>><around*|(|m<rsup|1+\<varepsilon\>>-m<rsup|-<around*|(|1+\<varepsilon\>|)><around*|(|M-1|)>>|)>|m<rsup|1+\<varepsilon\>>-1>
+  </equation>
+
+  and\ 
+
+  <\equation>
+    Z=<frac|m<around*|(|m<rsup|<rsup|\<varepsilon\>>>-1|)>|\<eta\><around*|(|\<eta\><rsup|-1-\<varepsilon\>>
+    m<rsup|-\<varepsilon\>M+\<varepsilon\>+1>\<eta\><rsup|-1-\<varepsilon\>>
+    m<rsup|1+\<varepsilon\>>+S m<rsup|\<varepsilon\>>-S|)>>
+  </equation>
+
+  \ exist? The function <math|\<varphi\><rsub|epl><around*|(|t|)>> has the
+  same form as <math|\<varphi\><rsub|e>> after the substitutions
+
+  <\equation>
+    \<beta\><rsub|j>\<rightarrow\>\<eta\> m<rsup|-j> and
+    \<alpha\><rsub|j>\<rightarrow\>\<beta\><rsub|j><rsup|1+\<varepsilon\>>=<around*|(|\<eta\>
+    m<rsup|-j><rsup|>|)><rsup|1+\<varepsilon\>>
+  </equation>
+
+  and has the corresponding intensity
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|\<lambda\><rsub|epl><around*|(|t|)>>|<cell|=<big|int><rsub|-\<infty\>><rsup|t>\<varphi\><rsub|epl><around*|(|t-s|)>\<mathd\>N<rsub|s>>>|<row|<cell|>|<cell|=<big|sum><rsub|t<rsub|k>\<less\>t>\<varphi\><rsub|epl><around*|(|t-t<rsub|k>|)>>>|<row|<cell|>|<cell|=<around*|(|<around*|(|<big|sum><rsub|j=0><rsup|P-1><around*|(|\<eta\>
+    m<rsup|-j><rsup|>|)><rsup|1+\<varepsilon\>>
+    <big|sum><rsub|k=0><rsup|N<rsub|t>>e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t-t<rsub|k>|)>>|)>-S e<rsup|-<frac|t m|\<eta\>
+    >>|)>Z>>|<row|<cell|>|<cell|=<around*|(|<around*|(|<big|sum><rsub|j=0><rsup|M-1><around*|(|\<eta\>
+    m<rsup|-j><rsup|>|)><rsup|1+\<varepsilon\>>
+    C<rsub|j><around*|(|N<rsub|t>|)>|)>-S e<rsup|-<frac|t m|\<eta\>
+    >>|)>Z>>>>>
+  </equation>
+
+  where
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|C<rsub|j><around*|(|i|)>>|<cell|=<big|sum><rsub|k=0><rsup|i-1>e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t-t<rsub|k>|)>>>>|<row|<cell|>|<cell|=<around*|(|1+C<rsub|j><around*|(|i-1|)>|)>e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t-t<rsub|i>|)>>>>>>>
+  </equation>
+
+  The compensator, aka dual predictable projection, is
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|\<Lambda\><rsub|epl><around*|(|t<rsub|i-1>,t<rsub|i>|)>>|<cell|=<big|int><rsub|t<rsub|i-1>><rsup|t<rsub|i>>\<lambda\><rsub|epl><around*|(|t|)>\<mathd\>t>>|<row|<cell|>|<cell|=<big|int><rsub|t<rsub|i-1><rsup|>><rsup|t<rsub|i>><big|sum><rsub|k=0><rsup|i-1><big|int><rsub|t<rsub|i-1>><rsup|t<rsub|i>>\<rho\><rsub|epl><around*|(|t-t<rsub|k>|)>\<mathd\>t>>|<row|<cell|>|<cell|=<big|int><rsub|t<rsub|i-1>><rsup|t<rsub|i>><around*|(|<around*|(|<big|sum><rsub|j=0><rsup|M-1><around*|(|\<eta\>
+    m<rsup|-j><rsup|>|)><rsup|1+\<varepsilon\>>
+    C<rsub|j><around*|(|N<rsub|t>|)>|)>-S e<rsup|-<frac|t m|\<eta\>
+    >>|)>Z\<mathd\>t>>|<row|<cell|>|<cell|=<big|int><rsub|t<rsub|i-1><rsup|>><rsup|t<rsub|i>><big|sum><rsub|j=0><rsup|M-1><around*|(|\<eta\>
+    m<rsup|-j><rsup|>|)><rsup|1+\<varepsilon\>><big|sum><rsub|k=0><rsup|i-1>
+    e<rsup|-<around*|(|\<eta\> m<rsup|-j>|)><around*|(|t-t<rsub|k>|)>>\<mathd\>t>>|<row|<cell|>|<cell|=<big|sum><rsub|j=0><rsup|P-1><around*|(|\<eta\>
+    m<rsup|-j><rsup|>|)><rsup|1+\<varepsilon\>><big|sum><rsub|k=0><rsup|i-1>
+    <big|int><rsub|t<rsub|i-1><rsup|>><rsup|t<rsub|i>>e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t-t<rsub|k>|)>>\<mathd\>t>>|<row|<cell|>|<cell|=<big|sum><rsub|k=0><rsup|i-1><big|sum><rsub|j=0><rsup|P-1><frac|<around*|(|\<eta\>
+    m<rsup|-j><rsup|>|)><rsup|1+\<varepsilon\>>|\<eta\>
+    m<rsup|-j>><around*|(|e<rsup|-*<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t<rsub|i-1>-t<rsub|k>|)>>-e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t<rsub|i>-t<rsub|k>|)>>|)>>>|<row|<cell|>|<cell|=<big|sum><rsub|j=1><rsup|P><frac|<around*|(|\<eta\>
+    m<rsup|-j><rsup|>|)><rsup|1+\<varepsilon\>>|\<eta\>
+    m<rsup|-j>><around*|(|1-e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)>\<Delta\>t<rsub|i>>|)>D<rsub|j><around*|(|i-1|)>>>>>>
+  </equation>
+
+  and
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|D<rsub|j><around*|(|i|)>>|<cell|=<big|sum><rsub|t<rsub|k>\<leqslant\>t<rsub|i>>e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t<rsub|i>-t<rsub|k>|)>>>>|<row|<cell|>|<cell|=<big|sum><rsub|k=0><rsup|i-1>e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t<rsub|i>-t<rsub|k>|)>>>>|<row|<cell|>|<cell|=1+e<rsup|-<around*|(|\<eta\>
+    m<rsup|-j>|)><around*|(|t<rsub|i>-t<rsub|k>|)>>D<rsub|j><around*|(|i-1|)>>>>>><label|A>
+  </equation>
+
+  \;
+
+  \;
+
+  \;
+
+  In <cite|oaple> an explicit recursive method to approximate a power-law
+  function with a finite sum of weighted exponentials is detailed. Let\ 
+
+  <\equation>
+    f<around*|(|x|)>=x<rsup|-\<alpha\>>
+  </equation>
+
+  be a powerlaw function and
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|g<around*|(|x|)>>|<cell|=<big|sum><rsub|i=0><rsup|N>g<rsub|i><around*|(|x|)>>>|<row|<cell|>|<cell|=<big|sum><rsub|i=0><rsup|N>w<rsub|i>
+    e<rsup|-\<lambda\><rsub|i> x>>>>>>
+  </equation>
+
+  where
+
+  <\equation>
+    g<rsub|i><around*|(|x|)>=w<rsub|i> e<rsup|-\<lambda\><rsub|i> x>
+  </equation>
+
+  be a weighted sum of exponentials that approximates <math|f<around*|(|x|)>>
+  then the solution to
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|g<rsub|i><around*|(|x<rsub|i>|)>>|<cell|=f<around*|(|x<rsub|i>|)>>>|<row|<cell|w<rsub|i>
+    e<rsup|-\<lambda\><rsub|i> x>>|<cell|=x<rsub|i><rsup|-a>>>>>>
+  </equation>
+
+  \ <math|> and\ 
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|<wide|g|\<dot\>><around*|(|x<rsub|i>|)>>|<cell|=<wide|f|\<dot\>><around*|(|x<rsub|i>|)>>>>>>
+  </equation>
+
+  is given by
+
+  <\equation>
+    \<lambda\><rsub|i>=\<alpha\> \<beta\><rsup|-i>=<frac|1|\<alpha\>
+    \<beta\><rsup|i>>
+  </equation>
+
+  <\equation>
+    w<rsub|i>=<around*|(|<frac|e|\<beta\><rsup|i>>|)><rsup|\<alpha\>>
+  </equation>
+
+  so that
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|g<around*|(|x|)>>|<cell|=<big|sum><rsub|i=0><rsup|N>g<rsub|i><around*|(|x|)>>>|<row|<cell|>|<cell|=<big|sum><rsub|i=0><rsup|N>w<rsub|i>
+    e<rsup|-\<lambda\><rsub|i> x>>>|<row|<cell|>|<cell|=<big|sum><rsub|i=0><rsup|N><around*|(|<frac|e|\<beta\><rsup|i>>|)><rsup|\<alpha\>>
+    e<rsup|-<frac|x|\<alpha\> \<beta\><rsup|i> >>>>>>>
+  </equation>
+
+  where <math|\<alpha\>> is the scaling exponent and <math|\<beta\>> is the
+  amount of time each exponent spans.
+
+  <\bibliography|bib|tm-plain|references.bib>
+    <\bib-list|2>
+      <bibitem*|1><label|bib-oaple>T.<nbsp>Bochud<localize| and
+      >D.<nbsp>Challet. <newblock>Optimal approximations of power-laws with
+      exponentials. <newblock><with|font-shape|italic|ArXiv Physics
+      e-prints>, may 2006.<newblock>
+
+      <bibitem*|2><label|bib-cf>Stephen<nbsp>J.<nbsp>Hardiman, Nicolas
+      Bercot<localize|, and >Jean-Philippe Bouchaud. <newblock>Critical
+      reflexivity in financial markets: a hawkes process analysis.
+      <newblock><with|font-shape|italic|The European Physical Journal B>,
+      86(10):1\U9, 2013.<newblock>
+    </bib-list>
+  </bibliography>
+</body>
+
+<\initial>
+  <\collection>
+    <associate|page-type|letter>
+  </collection>
+</initial>
+
+<\references>
+  <\collection>
+    <associate|A|<tuple|5|2>>
+    <associate|auto-1|<tuple|22|4>>
+    <associate|bib-cf|<tuple|2|4>>
+    <associate|bib-oaple|<tuple|1|4>>
+  </collection>
+</references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|bib>
+      cf
+
+      oaple
+    </associate>
+    <\associate|toc>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|Bibliography>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-1><vspace|0.5fn>
+    </associate>
+  </collection>
+</auxiliary>

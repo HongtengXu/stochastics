@@ -1,0 +1,55 @@
+
+plugins {
+  id "net.java.openjdk.shinyafox.jshell.gradle.plugin" version "1.0.3"
+  }
+  
+  
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+apply plugin : 'eclipse'
+
+  
+group = 'sc'
+version = '7.0'
+
+description = "stochastics"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+
+
+  
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+
+repositories {
+        
+     maven { url "https://github.com/eugener/oxbow/raw/master/maven/repository" }
+     maven { url "http://amelentev.github.io/mvnrepo/" }
+     maven { url "https://github.com/neilpanchal/j-text-utils/raw/master/repo" }
+     maven { url "http://repo1.maven.org/maven2" }
+     maven { url "http://www.mvnrepository.com" }
+     maven { url "http://dev.mapfish.org/maven/repository/" }
+     maven { url "http://download.oracle.com/maven" }
+     maven { url "http://java.freehep.org/maven2" }
+     maven { url "https://raw.github.com/crowlogic/arb/mvn-repo/" }
+}
+dependencies {
+    compile group: 'org.eclipse.swt', name: 'org.eclipse.swt.gtk.linux.x86_64', version:'4.4',
+    compile group: 'org.fusesource.jansi', name: 'jansi', version:'1.16'
+    compile group: 'sc', name: 'fastmath', version:'7.2'
+    compile group: 'junit', name: 'junit', version:'4.12'
+    compile group: 'org.apache.commons', name: 'commons-math3', version:'3.6'
+}
+
+repositories {
+  mavenLocal()
+  }

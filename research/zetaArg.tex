@@ -1,0 +1,181 @@
+%% Created by Maple 2016.1, Windows XP
+%% Source Worksheet: zetaArg
+%% Generated: Mon Mar 13 13:04:21 GMT-06:00 2017
+\documentclass{article}
+\usepackage{maplestd2e}
+\def\emptyline{\vspace{12pt}}
+\begin{document}
+\pagestyle{empty}
+\DefineParaStyle{Maple Bullet Item}
+\DefineParaStyle{Maple Heading 1}
+\DefineParaStyle{Maple Warning}
+\DefineParaStyle{Maple Heading 4}
+\DefineParaStyle{Maple Heading 2}
+\DefineParaStyle{Maple Heading 3}
+\DefineParaStyle{Maple Dash Item}
+\DefineParaStyle{Maple Error}
+\DefineParaStyle{Maple Title}
+\DefineParaStyle{Maple Text Output}
+\DefineParaStyle{Maple Normal}
+\DefineCharStyle{Maple 2D Output}
+\DefineCharStyle{Maple 2D Input}
+\DefineCharStyle{Maple Maple Input}
+\DefineCharStyle{Maple 2D Math}
+\DefineCharStyle{Maple Hyperlink}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{with(cl); -1; with(plots); -1}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{vartheta := proc (t) options operator, arrow; -((1/2)*I)*(lnGAMMA(1/4+((1/2)*I)*t)-lnGAMMA(1/4-((1/2)*I)*t))-(1/2)*ln(Pi)*t end proc}{\[\vartheta\, := \,t\mapsto -i/2 \left( {\it lnGAMMA} \left( 1/4+i/2t \right) -{\it lnGAMMA} \left( 1/4-i/2t \right)  \right) \\
+\mbox{}-1/2\,\ln  \left( \pi \right) t\]}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{vartheta := proc (t) options operator, arrow; -((1/2)*I)*(lnGAMMA(1/4+((1/2)*I)*t)-lnGAMMA(1/4-((1/2)*I)*t))-(1/2)*ln(Pi)*t end proc}{\[\displaystyle \vartheta\, := \,t\mapsto -i/2 \left( {\it lnGAMMA} \left( 1/4+i/2t \right) -{\it lnGAMMA} \left( 1/4-i/2t \right)  \right) \\
+\mbox{}-1/2\,\ln  \left( \pi \right) t\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{S := cl:-to1pf(argument(Zeta(1/2+I*t))/Pi)}{\[S\, := \,{\it to1pf} \left( {\frac {{\it argument} \left( \zeta \left( 1/2+it \right)  \right) }{\pi}} \right) \]}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{S := proc (t) options operator, arrow; argument(Zeta(1/2+I*t))/Pi end proc}{\[\displaystyle S\, := \,t\mapsto {\frac {{\it argument} \left( \zeta \left( 1/2+it \right)  \right) }{\pi}}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{varthetaStirling := cl:-to1pf((1/2)*t*log(t/(2*Pi*exp(1)))-(1/8)*Pi)}{\[{\it varthetaStirling}\, := \,{\it to1pf} \left( 1/2\,t{\it log} \left( 1/2\,{\frac {t}{\pi\,{\rm e}}} \right) -\pi/8 \right) \]}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{varthetaStirling := proc (t) options operator, arrow; (1/2)*t*ln((1/2)*t/(Pi*exp(1)))-(1/8)*Pi end proc}{\[\displaystyle {\it varthetaStirling}\, := \,t\mapsto 1/2\,t\ln  \left( 1/2\,{\frac {t}{\pi\,{\rm e}}} \right) -\pi/8\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{N := cl:-to1pf(vartheta(t)/Pi+S(t)+1); 1}{\[\]}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{N := proc (t) options operator, arrow; (-((1/2)*I)*(lnGAMMA(1/4+((1/2)*I)*t)-lnGAMMA(1/4-((1/2)*I)*t))-(1/2)*ln(Pi)*t)/Pi+argument(Zeta(1/2+I*t))/Pi+1 end proc}{\[\displaystyle N\, := \,t\mapsto {\frac {-i/2 \left( {\it lnGAMMA} \left( 1/4+i/2t \right) -{\it lnGAMMA} \left( 1/4-i/2t \right)  \right) \\
+\mbox{}-1/2\,\ln  \left( \pi \right) t}{\pi}}+{\frac {{\it argument} \left( \zeta \left( 1/2+it \right)  \right) }{\pi}}\\
+\mbox{}+1\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{T := unapply(piecewise(n = 1, 1, 1+floor(t*ln(t/(2*Pi*exp(1)))/(2*Pi)+7/8)-n), n, t); 1}{\[\]}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{T := proc (n, t) options operator, arrow; piecewise(n = 1, 1, 1+floor((1/2)*t*ln((1/2)*t/(Pi*exp(1)))/Pi+7/8)-n) end proc}{\[\displaystyle T\, := \,( {n,t} )\mapsto \cases{1&$n=1$\cr 1+\left\lfloor 1/2\,{\frac {t}{\pi}\ln  \left( 1/2\,{\frac {t}{\pi\,{\rm e}}} \right) }+{\frac{7}{8}}\right\rfloor-n&otherwise\cr}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{zeros := readdata("c:\\maple\\zeros"); -1}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{Sn := unapply(1/2-frac(vartheta(t)/Pi)-T(n, t), t, n)}{\[{\it Sn}\, := \,{\it unapply} \left( 1/2-{\it frac} \left( {\frac {\vartheta \left( t \right) }{\pi}} \right) -T \left( n,t \right) \\
+\mbox{},t,n \right) \]}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Sn := proc (t, n) options operator, arrow; 1/2-frac((-((1/2)*I)*(lnGAMMA(1/4+((1/2)*I)*t)-lnGAMMA(1/4-((1/2)*I)*t))-(1/2)*ln(Pi)*t)/Pi)-piecewise(n = 1, 1, 1+floor((1/2)*t*ln((1/2)*t/(Pi*exp(1)))/Pi+7/8)-n) end proc}{\[\displaystyle {\it Sn}\, := \,( {t,n} )\mapsto 1/2-{\it frac} \left( {\frac {-i/2 \left( {\it lnGAMMA} \left( 1/4+i/2t \right) -{\it lnGAMMA} \left( 1/4-i/2t \right)  \right) \\
+\mbox{}-1/2\,\ln  \left( \pi \right) t}{\pi}} \right) -\cases{1&$n=1$\cr 1+\left\lfloor 1/2\,{\frac {t}{\pi}\ln  \left( 1/2\,{\frac {t}{\pi\,{\rm e}}} \right) }+{\frac{7}{8}}\right\rfloor-n&otherwise\cr}\]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{}{\[\]}
+\end{mapleinput}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{Zd := proc (n) options operator, arrow; evalf(Sn(zeros[n], n))*Pi-argument(Zeta(.50001+I*zeros[n])) end proc}{\[\]}
+\end{mapleinput}
+\mapleresult
+\begin{maplelatex}
+\mapleinline{inert}{2d}{Typesetting:-mrow(Typesetting:-mi("Zd", italic = "true", mathvariant = "italic"), Typesetting:-mo("&Assign;", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.2777778em", rspace = "0.2777778em"), Typesetting:-mi("n", italic = "true", mathvariant = "italic"), Typesetting:-mo("&map;", mathvariant = "normal", fence = "false", separator = "false", stretchy = "true", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.2777778em", rspace = "0.2777778em"), Typesetting:-mrow(Typesetting:-mrow(Typesetting:-mrow(Typesetting:-mi("evalf", italic = "true", mathvariant = "italic"), Typesetting:-mo("&ApplyFunction;", executable = "false", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.0em", rspace = "0.0em"), Typesetting:-mfenced(Typesetting:-mrow(Typesetting:-mi("Sn", italic = "true", mathvariant = "italic"), Typesetting:-mo("&ApplyFunction;", executable = "false", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.0em", rspace = "0.0em"), Typesetting:-mfenced(Typesetting:-mrow(Typesetting:-msub(Typesetting:-mi("zeros", italic = "true", mathvariant = "italic"), Typesetting:-mi("n", italic = "true", mathvariant = "italic"), subscriptshift = "0"), Typesetting:-mo(",", mathvariant = "normal", fence = "false", separator = "true", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.0em", rspace = "0.3333333em"), Typesetting:-mi("n", italic = "true", mathvariant = "italic")), mathvariant = "normal")), mathvariant = "normal")), Typesetting:-mo("&InvisibleTimes;", executable = "false", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.0em", rspace = "0.0em"), Typesetting:-mi("&pi;", italic = "false", mathvariant = "normal")), Typesetting:-mo("&minus;", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.2222222em", rspace = "0.2222222em"), Typesetting:-mrow(Typesetting:-mi("arg", italic = "true", mathvariant = "italic", Typesetting:-msemantics = "argument"), Typesetting:-mo("&ApplyFunction;", executable = "false", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.0em", rspace = "0.0em"), Typesetting:-mfenced(Typesetting:-mrow(Typesetting:-mi("&zeta;", italic = "false", mathvariant = "normal", Typesetting:-msemantics = "Zeta"), Typesetting:-mo("&ApplyFunction;", executable = "false", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.0em", rspace = "0.0em"), Typesetting:-mfenced(Typesetting:-mrow(Typesetting:-mn("0.50001", mathvariant = "normal"), Typesetting:-mo("&plus;", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.2222222em", rspace = "0.2222222em"), Typesetting:-mrow(Typesetting:-mn("&ImaginaryI;", mathvariant = "normal"), Typesetting:-mo("&InvisibleTimes;", executable = "false", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.0em", rspace = "0.0em"), Typesetting:-msub(Typesetting:-mi("zeros", italic = "true", mathvariant = "italic"), Typesetting:-mi("n", italic = "true", mathvariant = "italic"), subscriptshift = "0"))), mathvariant = "normal")), mathvariant = "normal"))))}{\[\displaystyle \]}
+\end{maplelatex}
+\end{maplegroup}
+\begin{maplegroup}
+\begin{mapleinput}
+\mapleinline{active}{2d}{Typesetting:-mrow(Typesetting:-mi("flist", italic = "true", mathvariant = "italic"), Typesetting:-mfenced(Typesetting:-mrow(Typesetting:-mi("Zd", italic = "true", mathvariant = "italic"), Typesetting:-mo(",", mathvariant = "normal", fence = "false", separator = "true", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.0em", rspace = "0.3333333em"), Typesetting:-mn("1", mathvariant = "normal"), Typesetting:-mo("..", mathvariant = "normal", fence = "false", separator = "false", stretchy = "false", symmetric = "false", largeop = "false", movablelimits = "false", accent = "false", lspace = "0.2222222em", rspace = "0.0em"), Typesetting:-mn("20", mathvariant = "normal")), mathvariant = "normal"))}{\[
