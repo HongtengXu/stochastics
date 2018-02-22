@@ -61,8 +61,6 @@ public class DiagonalExtendedApproximatePowerlawMututallyExcitingProcess extends
    */
   public double base = exp(log(60000) / M);
 
-  public Vector[] dT;
-
   @Override
   public BoundedParameter[]
          getBoundedParameters()
@@ -139,47 +137,9 @@ public class DiagonalExtendedApproximatePowerlawMututallyExcitingProcess extends
     return (dT[m] != null) ? dT[m] : (dT[m] = getTimes(m).diff());
   }
 
-  public void
-         appendTime(int m,
-                    double nextTime)
-  {
-    double dt = nextTime - (T.isEmpty() ? 0 : T.getRightmostValue());
-    assert dt >= 0 : "dt cannot be negative, dt=" + dt + " where nextTime=" + nextTime + " and max(T)=" + T.getRightmostValue();
-    if (trace)
-    {
-      out.println("appendTime(m=" + m + ", nextTime=" + nextTime);
-    }
-    T = T.copyAndAppend(nextTime);
-    K = K.copyAndAppend(m);
-    dT[m] = dT[m].copyAndAppend(dt);
-    if (A.length < T.size())
-    {
-      expandA();
-    }
-    // TODO: updated cachedSubTimes, upperEntries and lowerEntries instead of
-    // rebuilding it each call
-    cachedSubTimes = null;
-    upperEntries = null;
-    lowerEntries = null;
-  }
 
-  public void
-         expandA()
-  {
-    // if (trace)
-    {
-      out.println("Expanding A to size " + (int) (T.size() * 1.2));
-    }
-    double[][][][] newA = new double[(int) (T.size() * 1.2)][order()][dim()][dim()];
 
-    for (int i = 0; i < A.length; i++)
-    {
-      double[][][] bMatrix = A[i];
-      newA[i] = new double[order()][dim()][dim()];
-      System.arraycopy(bMatrix, 0, newA[i], 0, order());
-    }
-    A = newA;
-  }
+
 
   /**
    * @return an array whose elements correspond to this{@link #statisticNames}

@@ -50,8 +50,8 @@ public class MutuallyExcitingProcessSimulator
     int seed = args.length > 0 ? Integer.valueOf(args[0]) : 0;
     Vector hello = new Vector(threadCount);
     rangeClosed(0, threadCount - 1).parallel().forEach(thread -> {
-      DiagonalExtendedApproximatePowerlawMututallyExcitingProcess process =
-                                                                          FullyCovariantExtendedMututallyExcitingExponentialPowerlawApproximationProcessTest.constructLongerProcess();
+      FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximationProcess process =
+                                                                                            FullyCovariantExtendedMututallyExcitingExponentialPowerlawApproximationProcessTest.constructLongerProcess();
       // process.T = ;
       process.τ.assign(1);
       process.ε.assign(0);
@@ -70,34 +70,34 @@ public class MutuallyExcitingProcessSimulator
   }
 
   public static Vector
-         simulateProcess(DiagonalExtendedApproximatePowerlawMututallyExcitingProcess process,
+         simulateProcess(FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximationProcess process2,
                          int seed)
   {
     int lastRejectedPoint = -1;
     int rejects = 0;
     ExponentialDistribution expDist = new ExponentialDistribution(new JDKRandomGenerator(seed), 1);
     out.println("simulating " + ansi().fgBrightYellow()
-                + process
+                + process2
                 + ansi().fgDefault()
                 + " from "
-                + process.T.size()
+                + process2.T.size()
                 + " points with seed="
                 + seed
                 + " meanRecurrenceTimes="
-                + process.meanRecurrenceTimeVector());
-    int n = process.T.size();
+                + process2.meanRecurrenceTimeVector());
+    int n = process2.T.size();
     double nextTime = 0;
     int sampleCount = 130000;
     double startTime = currentTimeMillis();
-    process.setAsize(sampleCount);
+    process2.setAsize(sampleCount);
     for (int i = 0; i < sampleCount; i++)
     {
-      for (int m = 0; m < process.dim(); i++)
+      for (int m = 0; m < process2.dim(); i++)
       {
         double y = expDist.sample();
         // process.trace = false;
         // TODO: average over Λ and compare against the invariant projection
-        double dt = process.invΛ(m, y);
+        double dt = process2.invΛ(m, y);
         if (dt > 10000 || dt < 0.001)
         {
           int pointsSinceLastRejection = lastRejectedPoint == -1 ? 0 : (i - lastRejectedPoint);
@@ -128,14 +128,14 @@ public class MutuallyExcitingProcessSimulator
 
         // double dtRealFpValue = dtReal.fpValue();
         out.println("dt=" + dt + " for y=" + y);
-        double q = process.Λ(m, n - 1, dt);
-        nextTime = (!process.T.isEmpty() ? process.T.getRightmostValue() : 0) + dt;
+        double q = process2.Λ(m, n - 1, dt);
+        nextTime = (!process2.T.isEmpty() ? process2.T.getRightmostValue() : 0) + dt;
         // double marginalΛ = process.invΛ(m, 0.46);
         // out.println("marginalΛ=" + marginalΛ);
 
         TestCase.assertEquals("y != q", y, q, 1E-7);
         n++;
-        process.appendTime(m, nextTime);
+        process2.appendTime(m, nextTime);
         double Edt = nextTime / n;
         // out.println("T=" + process.T.toIntVector());
         // out.println("Λ=" + process.Λ().slice(max(0, process.T.size() - 10),
@@ -146,9 +146,9 @@ public class MutuallyExcitingProcessSimulator
           // + " marginal="
           // + marginalΛ
                        + " Λmean="
-                       + process.Λ(m).mean()
+                       + process2.Λ(m).mean()
                        + " Λvar="
-                       + process.Λ(m).variance()
+                       + process2.Λ(m).variance()
                        + " nextTime="
                        + nextTime
                        + " Edt="
@@ -169,14 +169,14 @@ public class MutuallyExcitingProcessSimulator
     double duration = startTime - currentTimeMillis();
 
     String fn = "simulated." + seed + ".mat";
-    MatFile.write(fn, process.T.setName("T").createMiMatrix());
+    MatFile.write(fn, process2.T.setName("T").createMiMatrix());
     out.println("write " + fn);
     double seconds = duration / 1000;
     double pointsPerSecond = sampleCount / seconds;
     out.println("simulation rate: " + pointsPerSecond + " points/second");
     // process.printA();
 
-    return process.T;
+    return process2.T;
   }
 
   public static void

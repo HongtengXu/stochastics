@@ -504,8 +504,6 @@ public abstract class ExponentialMutuallyExcitingProcess extends MutuallyExcitin
     return x / dim();
   }
 
-
-
   @Override
   public final double
          getMeanSquaredPredictionError(int m)
@@ -627,9 +625,6 @@ public abstract class ExponentialMutuallyExcitingProcess extends MutuallyExcitin
   {
     throw new UnsupportedOperationException("TODO");
   }
-
-
-
 
   /**
    * The mean of 1 minus the Kolmogorov Smirnov statistic averaged over each type
@@ -1302,7 +1297,7 @@ public abstract class ExponentialMutuallyExcitingProcess extends MutuallyExcitin
   {
     int tk = getTimes(m).size() - 1;
 
-    return φdt(m, dt, tk );
+    return φdt(m, dt, tk);
   }
 
   public double
@@ -1458,4 +1453,45 @@ public abstract class ExponentialMutuallyExcitingProcess extends MutuallyExcitin
     }
   }
 
+  public void
+         expandA()
+  {
+    // if (trace)
+    {
+      out.println("Expanding A to size " + (int) (T.size() * 1.2));
+    }
+    double[][][][] newA = new double[(int) (T.size() * 1.2)][order()][dim()][dim()];
+
+    for (int i = 0; i < A.length; i++)
+    {
+      double[][][] bMatrix = A[i];
+      newA[i] = new double[order()][dim()][dim()];
+      System.arraycopy(bMatrix, 0, newA[i], 0, order());
+    }
+    A = newA;
+  }
+
+  public void
+         appendTime(int m,
+                    double nextTime)
+  {
+    double dt = nextTime - (T.isEmpty() ? 0 : T.getRightmostValue());
+    assert dt >= 0 : "dt cannot be negative, dt=" + dt + " where nextTime=" + nextTime + " and max(T)=" + T.getRightmostValue();
+    if (trace)
+    {
+      out.println("appendTime(m=" + m + ", nextTime=" + nextTime);
+    }
+    T = T.copyAndAppend(nextTime);
+    K = K.copyAndAppend(m);
+    dT[m] = dT[m].copyAndAppend(dt);
+    if (A.length < T.size())
+    {
+      expandA();
+    }
+    // TODO: updated cachedSubTimes, upperEntries and lowerEntries instead of
+    // rebuilding it each call
+    cachedSubTimes = null;
+    upperEntries = null;
+    lowerEntries = null;
+  }
 }

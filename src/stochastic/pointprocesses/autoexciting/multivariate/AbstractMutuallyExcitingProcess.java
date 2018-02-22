@@ -362,6 +362,8 @@ public abstract class AbstractMutuallyExcitingProcess implements MultivariateFun
 
   protected Pair<Vector[], TreeMap<Double, Integer>[]> cachedSubTimes;
 
+  public Vector[] dT;
+
   /**
    * @see this{@link #forecastStartIndex}
    * 

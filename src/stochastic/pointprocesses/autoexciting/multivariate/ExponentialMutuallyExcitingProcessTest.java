@@ -92,10 +92,9 @@ public class ExponentialMutuallyExcitingProcessTest extends TestCase
   {
     ExtendedApproximatePowerlawSelfExcitingProcess uniprocess = ExtendedExponentialPowerlawSelfExcitingProcessTest.constructProcess();
 
-    DiagonalExtendedApproximatePowerlawMututallyExcitingProcess process =
-                                                                        FullyCovariantExtendedMututallyExcitingExponentialPowerlawApproximationProcessTest.constructLongerProcess();
-    process.ε.set(new double[]
-    { 0.0, 0.02 });
+    FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximationProcess process =
+                                                                                          FullyCovariantExtendedMututallyExcitingExponentialPowerlawApproximationProcessTest.constructLongerProcess();
+    process.ε.diag().set(0.0, 0.02);
 
     out.println(uniprocess);
     out.println(uniprocess.getαVector().toString());

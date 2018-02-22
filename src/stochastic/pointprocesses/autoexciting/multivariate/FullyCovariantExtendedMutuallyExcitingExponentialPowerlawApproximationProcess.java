@@ -201,4 +201,11 @@ public class FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximat
     throw new UnsupportedOperationException("TODO");
   }
 
+  public void
+         appendTime(int m,
+                    double nextTime)
+  {
+    throw new UnsupportedOperationException("TODO");
+  }
+
 }
