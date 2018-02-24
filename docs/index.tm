@@ -14,7 +14,7 @@
   autocorrletion is significant after a very large number of lags. It is a
   known fact that a long-memory point process like this indicates that the
   process is \Pat criticality\Q in that its branching ratio is fixed
-  precisely at 1.0, which is the boundary between extenction and explositoon.
+  precisely at 1.0, which is the boundary between extinction and explosion.
   See <hlink|Hawkes branching point processes without
   ancestors|https://github.com/crowlogic/stochastics/raw/master/docs/HawkesBranchingPointProcessesWithoutAncestors.pdf>
   for proof and <hlink|Critical reflexivity in financial markets: a Hawkes
@@ -319,6 +319,6 @@
   <\collection>
     <associate|auto-1|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
     <associate|auto-2|<tuple|2|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
-    <associate|gamma|<tuple|1|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|gamma|<tuple|?|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
   </collection>
 </references>
