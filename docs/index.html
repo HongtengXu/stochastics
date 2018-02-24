@@ -35,9 +35,19 @@
     <p>
       For example, you can download <a href="https://github.com/crowlogic/stochastics/raw/master/SPY.mat">SPY.mat</a> which is the data
       corresponding to a marked point process of trades of the SPDR S&amp;P
-      500 ETF on a particular 6.5 hour trading day sometime in 2016 and run
-      the program <a href="https://github.com/crowlogic/stochastics/blob/master/src/stochastic/pointprocesses/selfexciting/ProcessEstimator.java">ProcessEstimator</a> and you will see something
-      like this
+      500 ETF on a particular 6.5 hour trading day sometime in 2016, the
+      autocorrelation of the timing between trades has a long-memory where the
+      autocorrletion is significant after a very large number of lags. It is a
+      known fact that a long-memory point process like this indicates that the
+      process is &ldquo;at criticality&rdquo; in that its branching ratio is
+      fixed precisely at 1.0, which is the boundary between extenction and
+      explositoon. See <a href="https://github.com/crowlogic/stochastics/raw/master/docs/HawkesBranchingPointProcessesWithoutAncestors.pdf">Hawkes branching point processes without
+      ancestors</a> for proof and <a href="https://arxiv.org/abs/1302.1405">Critical reflexivity in financial
+      markets: a Hawkes process analysys</a> for further elaboration.
+    </p>
+    <p>
+      With this particular pointset loaded, run the java program <a href="https://github.com/crowlogic/stochastics/blob/master/src/stochastic/pointprocesses/selfexciting/ProcessEstimator.java">ProcessEstimator</a>
+      and you will see something like this
     </p>
     <p>
       <font size="-4"><p>

@@ -15,7 +15,13 @@
   known fact that a long-memory point process like this indicates that the
   process is \Pat criticality\Q in that its branching ratio is fixed
   precisely at 1.0, which is the boundary between extenction and explositoon.
-  See and run the program <hlink|ProcessEstimator|https://github.com/crowlogic/stochastics/blob/master/src/stochastic/pointprocesses/selfexciting/ProcessEstimator.java>
+  See <hlink|Hawkes branching point processes without
+  ancestors|https://github.com/crowlogic/stochastics/raw/master/docs/HawkesBranchingPointProcessesWithoutAncestors.pdf>
+  for proof and <hlink|Critical reflexivity in financial markets: a Hawkes
+  process analysys|https://arxiv.org/abs/1302.1405> for further elaboration.
+
+  With this particular pointset loaded, run the java program
+  <hlink|ProcessEstimator|https://github.com/crowlogic/stochastics/blob/master/src/stochastic/pointprocesses/selfexciting/ProcessEstimator.java>
   and you will see something like this
 
   <with|font-base-size|5|<\really-tiny>
@@ -303,6 +309,6 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
-    <associate|gamma|<tuple|?|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|gamma|<tuple|1|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
   </collection>
 </references>
