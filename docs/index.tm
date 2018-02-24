@@ -230,6 +230,24 @@
     where
 
     <\equation>
+      \<gamma\><rsup|n><rsup|><around*|(|k|)>=<big|prod><rsub|j=1><rsup|P><choice|<tformat|<table|<row|<cell|\<alpha\><rsub|j>>|<cell|j=k>>|<row|<cell|\<beta\><rsup|n><rsub|j>>|<cell|j\<neq\>k>>>>><label|gamma>
+    </equation>
+
+    and
+
+    <\equation>
+      \<gamma\><around*|(|k|)>=\<gamma\><rsup|1><around*|(|k|)>
+    </equation>
+
+    when <math|n> is not denoted and the exponential powerlaw weights
+    <math|\<alpha\><rsub|j>> and <math|\<beta\><rsub|j>> are a function of
+    the parameters <math|\<tau\>,\<varepsilon\>,\<eta\>,b> defined by
+
+    <\equation*>
+      \;
+    </equation*>
+
+    <\equation>
       \<alpha\><rsub|j>=<choice|<tformat|<table|<row|<cell|*<around*|(|\<tau\>
       m<rsup|i>|)><rsup|-<around*|(|1+\<varepsilon\>|)>>>|<cell|j\<less\>M>>|<row|<cell|b>|<cell|j=P>>>>>
     </equation>
@@ -270,3 +288,9 @@
     <associate|page-type|letter>
   </collection>
 </initial>
+
+<\references>
+  <\collection>
+    <associate|gamma|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+  </collection>
+</references>
