@@ -306,6 +306,11 @@
   <big-figure|<image|qq.png|429pt|371pt||>|QQ plot of <math|\<Lambda\>>
   versus the unit exponential distribution <math|e<rsup|-t>>>
 
+  <big-figure|<image|LambdaAutocor.png|419pt|314pt||>|The autocorrelation of
+  the compensator \<#39B\> indicates the vast majority of the autocorrelation
+  in the trading process has been accurately accounted for by the compensated
+  process >
+
   \;
 </body>
 
@@ -319,6 +324,7 @@
   <\collection>
     <associate|auto-1|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
     <associate|auto-2|<tuple|2|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|auto-3|<tuple|3|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
     <associate|gamma|<tuple|?|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
   </collection>
 </references>
