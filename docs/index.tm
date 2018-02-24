@@ -269,11 +269,11 @@
 
     <\equation>
       \<alpha\><rsub|j>=<choice|<tformat|<table|<row|<cell|*<around*|(|\<tau\>
-      m<rsup|i>|)><rsup|-<around*|(|1+\<varepsilon\>|)>>>|<cell|j\<less\>M>>|<row|<cell|b>|<cell|j=P>>>>>
+      m<rsup|i>|)><rsup|-<around*|(|1+\<varepsilon\>|)>>>|<cell|j\<leqslant\>M>>|<row|<cell|b>|<cell|j\<gtr\>M>>>>>
     </equation>
 
     <\equation*>
-      \<beta\><rsub|j>=<choice|<tformat|<table|<row|<cell|\<tau\>m<rsup|i><rsub|>>|<cell|j\<less\>P>>|<row|<cell|\<eta\><rsup|-1>>|<cell|j=P>>>>>
+      \<beta\><rsub|j>=<choice|<tformat|<table|<row|<cell|\<tau\>m<rsup|i><rsub|>>|<cell|j\<leqslant\>M>>|<row|<cell|\<eta\><rsup|-1>>|<cell|j\<gtr\>M>>>>>
     </equation*>
 
     and
