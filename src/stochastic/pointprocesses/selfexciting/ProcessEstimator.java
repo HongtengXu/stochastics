@@ -51,11 +51,11 @@ public class ProcessEstimator
   {
 
     Type type = Type.ExtendedApproximatePowerlaw;
-    String filename = args.length > 0 ? args[0] : "/home/stephen/git/fastmath/SPY.mat";
+    String filename = args[0];
     int cpuMultiplier = 2;
 
     int trajectoryCount = Runtime.getRuntime().availableProcessors() * cpuMultiplier;
-    String symbol = args.length > 1 ? args[1] : "SPY";
+    String symbol = args[1];
 
     out.println("Estimating parameters for " + filename);
     ArrayList<AbstractSelfExcitingProcess> processes = estimateSelfExcitingProcess(type, filename, trajectoryCount, symbol);
