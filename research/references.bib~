@@ -1160,8 +1160,8 @@
 }
 
 @Article{z0t,
-  Title                    = {Transcendental equations satisfied by the individual zeros of Riemann \zeta, Dirichlet and modular L-functions},
-  Author                   = {Guilherme França and André LeClair},
+  Title                    = {Transcendental equations satisfied by  the individual zeros of Riemann zeta, Dirichlet and modular L functions},
+  Author                   = {Guilherme Franca and Andre LeClair},
   Journal                  = {Communications in Number Theory and Physics},
   Year                     = {2015},
 
@@ -4202,6 +4202,92 @@ We model the arrival of mid-price changes in the E-mini S&P futures contract as 
   adsnote  = {Provided by the SAO/NASA Astrophysics Data System},
   adsurl   = {http://adsabs.harvard.edu/abs/2006physics...5149B},
   keywords = {Physics - Data Analysis, Statistics and Probability, Condensed Matter - Statistical Mechanics, Physics - Physics and Society, Quantitative Finance - Statistical Finance},
+}
+
+@Article{chp,
+  author    = {Brémaud, Pierre and Massoulié, Laurent},
+  title     = {Hawkes branching point processes without ancestors},
+  journal   = {J. Appl. Probab.},
+  year      = {2001},
+  volume    = {38},
+  number    = {1},
+  month     = {03},
+  pages     = {122--135},
+  doi       = {10.1239/jap/996986648},
+  url       = {https://doi.org/10.1239/jap/996986648},
+  fjournal  = {Journal of Applied Probability},
+  publisher = {Applied Probability Trust},
+}
+
+@Book{milnor2006dynamics,
+  author    = {Milnor, John},
+  title     = {Dynamics in One Complex Variable},
+  year      = {2006},
+  edition   = {2nd},
+  series    = {Annals of Mathematics Studies 160},
+  publisher = {Princeton University Press},
+}
+
+@Article{raadstrom1953iteration,
+  author    = {R{\aa}dstr{\"o}m, Hans},
+  title     = {On the iteration of analytic functions},
+  journal   = {Mathematica Scandinavica},
+  year      = {1953},
+  pages     = {85--92},
+  publisher = {JSTOR},
+}
+
+@Article{Johansson2017arb,
+  author  = {F. Johansson},
+  title   = {Arb: efficient arbitrary-precision midpoint-radius interval arithmetic},
+  journal = {IEEE Transactions on Computers},
+  year    = {2017},
+  volume  = {66},
+  issue   = {8},
+  pages   = {1281--1292},
+  doi     = {10.1109/TC.2017.2690633},
+}
+
+@WWW{zt,
+  author = {Andrew Odlyzko},
+  title  = {Tables of zeros of the Riemann zeta function},
+  url    = {http://www.dtc.umn.edu/~odlyzko/zeta_tables/index.html},
+}
+
+@Book{ramachandra1995lectures,
+  author    = {Ramachandra, Kanakanahalli},
+  title     = {Lectures on the mean-value and omega-theorems for the Riemann zeta-function},
+  year      = {1995},
+  volume    = {85},
+  publisher = {Springer},
+}
+
+@Book{engel1999one,
+  author    = {Engel, K.J. and Brendle, S. and Nagel, R. and Campiti, M. and Hahn, T. and Metafune, G. and Nickel, G. and Pallara, D. and Perazzoli, C. and Rhandi, A. and others},
+  title     = {One-Parameter Semigroups for Linear Evolution Equations},
+  year      = {1999},
+  series    = {Graduate Texts in Mathematics},
+  publisher = {Springer New York},
+  isbn      = {9780387984636},
+  url       = {https://books.google.com/books?id=xcYVVSyAOkgC},
+  lccn      = {99015366},
+}
+
+@Book{sibony2010holomorphic,
+  author    = {Sibony, Nessim and Schleicher, Dierk and Cuong, Dinh Tien and Brunella, Marco and Bedford, Eric and Abate, Marco},
+  title     = {Holomorphic Dynamical Systems: Lectures Given at the CIME Summer School Held in Cetraro, Italy, July 7-12, 2008},
+  year      = {2010},
+  publisher = {Springer},
+}
+
+@Article{lallouache2016limits,
+  author  = {Lallouache, Mehdi and Challet, Damien},
+  title   = {The limits of statistical significance of Hawkes processes fitted to financial data},
+  journal = {Quantitative Finance},
+  year    = {2016},
+  volume  = {16},
+  number  = {1},
+  pages   = {1--11},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

@@ -24,11 +24,18 @@ export procopts, ri, ria, sucratio, sucdiff, sexpand, oddchr, hypersum, simp, nd
     one, hstep, gsf, himp, timeval, hilen, ind, maxstep, minstep, grid, translist, riaf, evalgf, tmatrix, uniq, div0handler, invophandler, inithandlers,
     loadtable, savetable, tostr, remtable, saveremtable,merge,mergeremtable,listsum,longeval,reslist,signchanges,rialistplot,writegif,spd,Madelung,w,remind,
     pif,croots,writeimg,writeimages,rgb,zetaf,hnpw,hn,hm,hmzn,hmzeta,hmzoffset,zerof,hsym,imsort,relist, imlist,abslist,findsublist,resort,crootsn,crootlist,
-    pw,sucmax,topw,wmrad,torat,iimt,iilt,zwm,zwmlt,wl,cplot,plotparams,pp, wnc,hnc,minmax,wmarq,wm1r,pc,fadisp,wb,lnl,toset,ua,remtablesize,tset,expandPow;
+    pw,sucmax,topw,wmrad,torat,iimt,iilt,zwm,zwmlt,wl,cplot,plotparams,pp, wnc,hnc,minmax,wmarq,wm1r,pc,fadisp,wb,lnl,toset,ua,remtablesize,tset,expandPow,vartheta,S,Z;
 
 option package;
 
-uses LinearAlgebra,gfun,PolynomialTools,plots,StringTools,RootFinding;
+uses LinearAlgebra,gfun,PolynomialTools,plots,StringTools,RootFinding,vartheta;
+
+    vartheta := proc (t) options operator, arrow; -((1/2)*I)*(lnGAMMA(1/4+((1/2)*I)*t)-lnGAMMA(1/4-((1/2)*I)*t))-(1/2)*ln(Pi)*t end proc:
+
+    S := to1pf(argument(Zeta(1/2+I*t))/Pi):
+
+    Z := to1pf(exp(I*vartheta(t))*Zeta(1/2+I*t)):
+
 
 expandPow := proc (l)
 local newl, i, x, var, mult;

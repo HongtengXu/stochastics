@@ -1829,14 +1829,6 @@
   Timestamp                = {2008.09.19}
 }
 
-@Article{,
-  Title                    = {Newton flow of the Riemann zeta function: separatrices control the appearance of zeros},
-  Author                   = {J W Neuberger, C Feiler, H Maier and W P Schleich},
-
-  Owner                    = {crow},
-  Timestamp                = {2015.10.16}
-}
-
 @Book{ppta,
   Title                    = {Point Process Theory and Applications: Marked Point and Piecewise Deterministic Processes},
   Author                   = {Martin Jacobsen},
@@ -4155,11 +4147,6 @@
   Timestamp                = {2015.09.09}
 }
 
-@Article{,
-  Owner                    = {crow},
-  Timestamp                = {2015.10.14}
-}
-
 @Article{rubin72,
   author   = {I. Rubin},
   title    = {Regular point processes and their detection},
@@ -4278,6 +4265,36 @@ We model the arrival of mid-price changes in the E-mini S&P futures contract as 
   title     = {Holomorphic Dynamical Systems: Lectures Given at the CIME Summer School Held in Cetraro, Italy, July 7-12, 2008},
   year      = {2010},
   publisher = {Springer},
+}
+
+@Article{lallouache2016limits,
+  author  = {Lallouache, Mehdi and Challet, Damien},
+  title   = {The limits of statistical significance of Hawkes processes fitted to financial data},
+  journal = {Quantitative Finance},
+  year    = {2016},
+  volume  = {16},
+  number  = {1},
+  pages   = {1--11},
+}
+
+@Article{lowRZHurstExponent,
+  author    = {Shanker, O},
+  title     = {Explanation of low Hurst exponent for Riemann zeta zeros},
+  year      = {2011},
+  volume    = {2},
+  month     = {06},
+  booktitle = {Rejecta Mathematica},
+}
+
+@Book{et,
+  author    = {Kornfelʹd, I.P. and Fomin, S.V. and Sinaj, J.G.},
+  title     = {Ergodic Theory},
+  year      = {1982},
+  series    = {Grundlehren der mathematischen Wissenschaften : a series of comprehensive studies in mathematics},
+  publisher = {Springer-Verlag},
+  isbn      = {9783540905806},
+  url       = {https://books.google.com/books?id=RGrEQgAACAAJ},
+  lccn      = {lc81005355},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

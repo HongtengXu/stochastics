@@ -1,4 +1,4 @@
-\documentclass{elsarticle}
+\documentclass{article}
 \usepackage[english]{babel}
 \usepackage{geometry,amsmath,amssymb,graphicx,bbm,latexsym,theorem}
 \geometry{letterpaper}
@@ -33,7 +33,10 @@ Imaginary Parts of the Zeros of the Riemann Zeta Function}
 
 \author{
   Stephen Crowley <stephencrowley214@gmail.com>
+  \tmaffiliation{February 11, 2018}
 }
+
+\maketitle
 
 \begin{abstract}
   A sequence of Cauchy sequences which conjecturally converge to the Riemann
@@ -41,9 +44,13 @@ Imaginary Parts of the Zeros of the Riemann Zeta Function}
   Riemann hypothesis. 
 \end{abstract}
 
-\maketitle
+\
 
-\section{Introduction}
+{\tableofcontents}
+
+\
+
+\section{Preliminary Outline}
 
 \subsection{Definitions}
 
@@ -103,16 +110,6 @@ normalized argument of $\zeta (t)$ on the critical line
 Zeros}
 
 \begin{definition}
-  The \tmverbatim{critical line} is the line in the complex plane defined by
-  $\tmop{Re} (t) = \frac{1}{2}$.
-\end{definition}
-
-\begin{definition}
-  The \tmverbatim{critical strip} is the strip in the complex plane defined by
-  $0 < \tmop{Re} (t) < 1$.
-\end{definition}
-
-\begin{definition}
   The \tmverbatim{exact equation} for the $n$-th zero of the Hardy $Z$
   function $y_n$ is given by {\cite[Equation 20]{z0t}}
   \begin{equation}
@@ -121,7 +118,7 @@ Zeros}
   where $y_n$ enumerate the zeros of $Z$ on the real line and the zeros of
   $\zeta$ on the critical line
   \begin{equation}
-    \Zeta (y_n) = 0 \tmop{and} \zeta \left( \frac{1}{2} + i y_n \right)
+    \Zeta (y_n) = 0 \tmop{and} \zeta \left( \frac{1}{2} + i y_n \right) = 0
     \forall n \in \mathbbm{Z}^+
   \end{equation}
   where $\mathbbm{Z}^+$ denotes the positive integers. {\cite[Equation
@@ -254,7 +251,40 @@ which counts the number of zeros \tmverbatim{on the critical line}.
   \in \mathbbm{Z}^+$. {\cite[IX]{z0t}}
 \end{corollary}
 
-\subsection{Iterated Function Systems}
+\subsection{The Argument S(t)}
+
+\begin{figure}[h]
+  \resizebox{6in}{3in}{\includegraphics{liftedTwisted.eps}}
+  \caption{}
+\end{figure}
+
+\begin{figure}[h]
+  \resizebox{6in}{3in}{\includegraphics{liftedTwistedAroundFirstBadGramPoints.eps}}
+  \caption{}
+\end{figure}
+
+\subsubsection{The Gram Points}
+
+Let
+\begin{equation}
+  g (n) = 2 \pi e^{1 + W \left( \frac{8 n + 1}{8 e} \right)}
+\end{equation}
+be the approximate value of the $n$-th Gram point. Now define
+\begin{equation}
+  G (n) = \frac{Z (g (n))}{| Z (g (n)) |} + \frac{Z (g (n + 1))}{| Z (g (n +
+  1)) |}
+\end{equation}
+then the function defined by
+\begin{equation}
+  B (n) = \frac{1}{4} G (n - 1) G (n)
+\end{equation}
+takes on the value $1$ when $n$ is a ``bad'' Gram point for which $(- 1)^{n +
+1} Z (g (n)) > 0$ and the value $0$ when it is a ``good'' Gram point $(- 1)^{n
++ 1} Z (g (n)) < 0$.
+
+\section{Iterated Function Systems}
+
+\subsection{Fixed-Points of Functions}
 
 \begin{definition}
   A fixed-point $\alpha$ of a function $f (x)$ is a value $\alpha$ such that
@@ -280,6 +310,24 @@ which counts the number of zeros \tmverbatim{on the critical line}.
   to be superattractive fixed-point of $f
   (t)${\cite[3.]{raadstrom1953iteration}}
 \end{definition}
+
+\begin{lemma}
+  The Banach Fixed-Point Theorem
+  
+  If $f (x)$ is a continuous function defined on $[a, b]$ and
+  \begin{equation}
+    f (x) \in [a, b] \forall x \in [a, b]
+  \end{equation}
+  and there exists some constant $0 < c < 1$ such that
+  \begin{equation}
+    \text{$\frac{| f (x) - f (y) |}{x - y} \leqslant c$} \label{lc}
+  \end{equation}
+  then $f (x)$ has a unique fixed-point $x \in [a, b]$ and the sequence $f
+  (x_0), f (f (x_0)), f (f (f (x_0))), \ldots$ converges to the unique
+  fixed-point of $f (x)$ in the interval $[a, b]$.
+\end{lemma}
+
+\subsubsection{An Iteration Function Which Successively Removes Roots}
 
 \begin{definition}
   Let
@@ -338,6 +386,8 @@ which counts the number of zeros \tmverbatim{on the critical line}.
   (t) = t + \cos (\pi n) 0 = t + 0 = t$ when $Z (t) = 0$.
 \end{proof}
 
+\subsubsection{Indifferent Fixed-Points}
+
 \begin{theorem}
   $Y_{n, m} (t)$ has indifferent fixed-points at each point $y_k$ where $k = 1
   \ldots n - 1$
@@ -382,6 +432,8 @@ which counts the number of zeros \tmverbatim{on the critical line}.
   at $t = 1 - n \forall n \in \mathbbm{Z}^+$. Since $| \tanh (\infty) | = 1$
   the multiplier is equal to 1 at each $- \frac{i}{2} (- 4 n - 1)$.
 \end{proof}
+
+\subsubsection{Alternating Attractive and Repulsive Fixed-Points}
 
 \begin{proposition}
   \label{podd}When $n$ is an odd number, $Y_n (t)$ has attractive fixed-points
@@ -429,6 +481,8 @@ which counts the number of zeros \tmverbatim{on the critical line}.
   possibly getting stuck in a $2$-cycle in computer implementations.
 \end{remark}
 
+\subsection{Contraction Mappings}
+
 \begin{theorem}
   \label{cm}The Lipschitz constant $M$ of the map $Y_{n, m} (t) < 1 \forall t
   > e$ therefore $Y_{n, m} (t)$ is a contraction mapping
@@ -456,6 +510,8 @@ which counts the number of zeros \tmverbatim{on the critical line}.
   \right| \neq 1 \forall t \in \mathbbm{R}$ and the Lipschitz constant $M$ is
   strictly less than 1.
 \end{proof}
+
+\subsubsection{Sequential Convergence to the Nearest Fixed-Points}
 
 \begin{proposition}
   \label{p1}The limit
@@ -540,7 +596,7 @@ which counts the number of zeros \tmverbatim{on the critical line}.
 \begin{lemma}
   Let
   \begin{equation}
-    Y^-_{n, m} (t) = \left\{ \begin{array}{ll}
+    Y^+_{n, m} (t) = \left\{ \begin{array}{ll}
       t & m = 0\\
       t + h_{n, m} \cos (\pi n) \tanh \left( \frac{Z (Y_{n, m - 1} (t))}{|
       \Omega (t) | \prod_{k = 1}^{n - 1} \tanh (Y_{n, m - 1} (t) - y_k)}
@@ -654,54 +710,79 @@ is the first derivative of the Newton map of $f (t)$
   (\varepsilon) < 1$.
 \end{conjecture}
 
+\section{A Point Process Model For the Riemann Zeros}
+
+The Riemann zeros have a Hurst exponent of $\sim 0.1$ according to
+{\cite{lowRZHurstExponent}}.
+
+\begin{figure}[h]
+  \resizebox{850px}{500px}{\includegraphics{zetazeroautocorr.png}}
+  \caption{Autocorrelation spectrum of $y_n - y_{n - 1}$ where $y_n$ is the
+  $n$-th zero $\zeta \left( \frac{1}{2} + i y_n \right) = 0$}
+\end{figure}
+
+If the integral of the autocovariance diverges then that means the
+self-exciting point process model it follows is necessarily critical with a
+branching rate precisely equal to 1. The branching rate is the integral of the
+kernel function over its domain of definition. {\cite{chp}} Since the 1st
+several autocorrelations are negative and the remaining ones are positive that
+implies that the kernel function which controls their rate of appearance is a
+mixture of a repelling component and an attracting component, or in other
+words, an inhibiting and an exciting component.
+
+
+
 \section{Appendix}
 
-\begin{lemma}
-  The Banach Fixed-Point Theorem
-  
-  If $f (x)$ is a continuous function defined on $[a, b]$ and
-  \begin{equation}
-    f (x) \in [a, b] \forall x \in [a, b]
-  \end{equation}
-  and there exists some constant $0 < c < 1$ such that
-  \begin{equation}
-    \text{$\frac{| f (x) - f (y) |}{x - y} \leqslant c$} \label{lc}
-  \end{equation}
-  then $f (x)$ has a unique fixed-point $x \in [a, b]$ and the sequence $f
-  (x_0), f (f (x_0)), f (f (f (x_0))), \ldots$ converges to the unique
-  fixed-point of $f (x)$ in the interval $[a, b]$.
-\end{lemma}
+\subsection{Definitions}
+
+\begin{definition}
+  The \tmverbatim{critical line} is the line in the complex plane defined by
+  $\tmop{Re} (t) = \frac{1}{2}$.
+\end{definition}
+
+\begin{definition}
+  The \tmverbatim{critical strip} is the strip in the complex plane defined by
+  $0 < \tmop{Re} (t) < 1$.
+\end{definition}
 
 \begin{thebibliography}{1}
-  \bibitem[1]{z0t}Guilherme Franca  and  Andre LeClair.
+  \bibitem[1]{chp}Pierre Br{\'e}maud  and  Laurent Massouli{\'e}.
+  {\newblock}Hawkes branching point processes without ancestors.
+  {\newblock}\tmtextit{J. Appl. Probab.}, 38(1):122--135, 03 2001.{\newblock}
+  
+  \bibitem[2]{z0t}Guilherme Franca  and  Andre LeClair.
   {\newblock}Transcendental equations satisfied by the individual zeros of
   riemann zeta, dirichlet and modular l functions.
   {\newblock}\tmtextit{Communications in Number Theory and Physics},
   2015.{\newblock}
   
-  \bibitem[2]{HardyZ}A.~Ivi{\'c}. {\newblock}\tmtextit{The Theory of Hardy's
+  \bibitem[3]{HardyZ}A.~Ivi{\'c}. {\newblock}\tmtextit{The Theory of Hardy's
   Z-Function}. {\newblock}Cambridge Tracts in Mathematics. Cambridge
   University Press, 2013.{\newblock}
   
-  \bibitem[3]{Johansson2017arb}F.~Johansson. {\newblock}Arb: efficient
+  \bibitem[4]{Johansson2017arb}F.~Johansson. {\newblock}Arb: efficient
   arbitrary-precision midpoint-radius interval arithmetic.
   {\newblock}\tmtextit{IEEE Transactions on Computers}, 66:1281--1292,
   2017.{\newblock}
   
-  \bibitem[4]{milnor2006dynamics}John Milnor. {\newblock}\tmtextit{Dynamics in
+  \bibitem[5]{milnor2006dynamics}John Milnor. {\newblock}\tmtextit{Dynamics in
   One Complex Variable}. {\newblock}Annals of Mathematics Studies 160.
   Princeton University Press, 2nd  edition, 2006.{\newblock}
   
-  \bibitem[5]{zt}Andrew Odlyzko. {\newblock}Tables of zeros of the riemann
+  \bibitem[6]{zt}Andrew Odlyzko. {\newblock}Tables of zeros of the riemann
   zeta function.{\newblock}
   
-  \bibitem[6]{raadstrom1953iteration}Hans R{\r a}dstr{\"o}m. {\newblock}On the
+  \bibitem[7]{raadstrom1953iteration}Hans R{\r a}dstr{\"o}m. {\newblock}On the
   iteration of analytic functions. {\newblock}\tmtextit{Mathematica
   Scandinavica},  pages  85--92, 1953.{\newblock}
   
-  \bibitem[7]{ramachandra1995lectures}Kanakanahalli Ramachandra.
+  \bibitem[8]{ramachandra1995lectures}Kanakanahalli Ramachandra.
   {\newblock}\tmtextit{Lectures on the mean-value and omega-theorems for the
   Riemann zeta-function},  volume~85. {\newblock}Springer, 1995.{\newblock}
+  
+  \bibitem[9]{lowRZHurstExponent}O Shanker. {\newblock}Explanation of low
+  hurst exponent for riemann zeta zeros. {\newblock}2, 06 2011.{\newblock}
 \end{thebibliography}
 
 \end{document}
