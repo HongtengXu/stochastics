@@ -311,7 +311,30 @@
   in the trading process has been accurately accounted for by the compensated
   process >
 
-  \;
+  The 1-step ahead innovation process's histogram looks like this
+
+  <big-figure|<image|innov.png|465pt|421pt||>|The expected value of the
+  inverse is given by the inverse evaluated at the point <math|y=1> which is
+  the mean of the unit exponential distribution subtracted from the actual
+  value observed when the next point of the process actually occured so that
+  it could be compared>
+
+  The 1-step innovation looks very much like it could be described by a
+  <hlink|Normal-Inverse Gaussian|https://en.wikipedia.org/wiki/Normal-inverse_Gaussian_distribution>
+  distribution whose probability density function is given by
+
+  <\equation>
+    <tabular|<tformat|<table|<row|<cell|NIG<around*|(|\<mu\>,\<alpha\>,\<beta\>,\<delta\>|)>>|<cell|=<frac|\<alpha\>\<delta\>K<rsub|1><around*|(|\<alpha\><sqrt|\<delta\><rsup|2>+<around*|(|x-\<mu\>|)><rsup|2>>|)>|\<pi\><sqrt|\<delta\><rsup|2>+<around*|(|x-\<mu\>|)><rsup|2>>>e<rsup|\<delta\><sqrt|a<rsup|2>-\<beta\><rsup|2>>+\<beta\><around*|(|x-\<mu\>|)>>>>>>>
+  </equation>
+
+  where <math|K<rsub|1>> is a modified Bessel function of the third kind,
+  <math|\<mu\>> is a location parameter, <math|\<alpha\>> is a tail-heaviness
+  parameter, <math|\<beta\>> is an assymetry parameter, and <math|\<delta\>>
+  is a scale parameter. Let the location <math|\<mu\>=-48.0799> be set to the
+  empirical sample mean which is -48.0799 milliseconds. Here is a paper which
+  describes finding the parameters of the NIG distribution , <hlink|Fitting
+  the normal inverse gaussian distribution to the S&P500 stock return
+  data|https://compmath.files.wordpress.com/2012/08/jfernandes7_freports2012.pdf>.
 </body>
 
 <\initial>
@@ -325,6 +348,7 @@
     <associate|auto-1|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
     <associate|auto-2|<tuple|2|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
     <associate|auto-3|<tuple|3|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|auto-4|<tuple|4|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
     <associate|gamma|<tuple|?|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
   </collection>
 </references>

@@ -393,7 +393,45 @@
       </tr></tbody>
     </table>
     <p>
-      
+      The 1-step ahead innovation process's histogram looks like this
+    </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="text-align: center; padding-left: 0em; padding-right: 0em"><img src="innov.png" height="591.8583032" width="653.715228"></img></td>
+      </tr><tr>
+        <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+      </tr><tr>
+        <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><p>
+          <font size="-1"><p>
+            <b>Figure 4. </b><a id="auto-4"></a>The expected value of the inverse is
+            given by the inverse evaluated at the point <img src="index-38.png" style="vertical-align: -1.86181818181818px"></img>
+            which is the mean of the unit exponential distribution subtracted
+            from the actual value observed when the next point of the process
+            actually occured so that it could be compared
+          </p></font>
+        </p></td>
+      </tr></tbody>
+    </table>
+    <p>
+      The 1-step innovation looks very much like it could be described by a <a
+      href="https://en.wikipedia.org/wiki/Normal-inverse_Gaussian_distribution">Normal-Inverse Gaussian</a> distribution whose probability density
+      function is given by
+    </p>
+    <table width="100%">
+      <tr>
+        <td width="100%" align="center"><img src="index-39.png" style="vertical-align: -21.9890909090909px"></img></td>
+        <td align="right">(4)</td>
+      </tr>
+    </table>
+    <p>
+      where <img src="index-40.png" style="vertical-align: -2.45863636363636px"></img> is a modified Bessel function of the third
+      kind, <img src="index-41.png" style="vertical-align: -3.60727272727273px"></img> is a location parameter, <img src="index-42.png" style="vertical-align: -0.349090909090909px"></img>
+      is a tail-heaviness parameter, <img src="index-43.png" style="vertical-align: -3.25818181818182px"></img> is an assymetry
+      parameter, and <img src="index-44.png" style="vertical-align: -0.465454545454545px"></img> is a scale parameter. Let the
+      location <img src="index-45.png" style="vertical-align: -3.60727272727273px"></img> be set to the empirical sample mean
+      which is -48.0799 milliseconds. Here is a paper which describes finding
+      the parameters of the NIG distribution , <a href="https://compmath.files.wordpress.com/2012/08/jfernandes7_freports2012.pdf">Fitting the normal
+      inverse gaussian distribution to the S&amp;P500 stock return data</a>.
     </p>
   </body>
 </html>
