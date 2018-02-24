@@ -24,6 +24,8 @@ import stochastic.pointprocesses.autoexciting.multivariate.AbstractMutuallyExcit
 import stochastic.pointprocesses.autoexciting.multivariate.diagonal.DiagonalExtendedApproximatePowerlawMututallyExcitingProcess;
 import stochastic.pointprocesses.finance.TradingProcess;
 import stochastic.pointprocesses.finance.TradingStrategy;
+import umontreal.iro.lecuyer.probdist.DistributionFactory;
+import umontreal.iro.lecuyer.probdist.NormalInverseGaussianDist;
 import util.TerseThreadFactory;
 
 public class ProcessEstimator
@@ -177,7 +179,9 @@ public class ProcessEstimator
     Vector intensity = process.λvector().setName("intensity");
     out.println("writing timestamp data, compensator, intensity, and innovation to " + testFile.getAbsolutePath() + " and parameters to " + modelFile);
     Vector innovation = process.getInnovationSequence().setName("innov");
-
+    
+    NormalInverseGaussianDist nigDist = DistributionFactory.getDistributionMLE(NormalInverseGaussianDist.class, innovation.toDoubleArray(), innovation.size() );
+    
     try
     {
       process.storeParameters(modelFile);
