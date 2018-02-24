@@ -70,9 +70,11 @@ public class FullyCovariantExtendedMututallyExcitingExponentialPowerlawApproxima
 		final FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximationProcess process = new FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximationProcess(
 				2);
 
-		process.τ.diag().assign(1, 1);
+		process.τ.assign(1);
 		process.ε.diag().assign(0, 0.01);
 		process.η.diag().assign(3, 2.99);
+		process.η.assignAboveDiag(2.5);
+		process.η.assignBelowDiag(2.5);
 		process.b.diag().assign(1.78, 1.75);
 
 		process.T = new Vector(3);

@@ -74,10 +74,7 @@ public class FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximat
               int m,
               int n)
   {
-    if (j == M)
-    {
-      return βS(m, n);
-    }
+
     return j < M ? (τ.get(m, n) * pow(base, -j)) : βS(m, n);
   }
 

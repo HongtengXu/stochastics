@@ -733,11 +733,14 @@ public abstract class ExponentialMutuallyExcitingProcess extends MutuallyExcitin
       Vector λvector = λvector(m).slice(1, N(m) - 1);
 
       Vector lslice = λvector.log();
-      double compsum = sum(i -> sum(n -> sum(j -> (α(j, m, n) / β(j, m, n)) * (1 - exp(-β(j, m, n) * (maxT - T(m, i)))), 0, order() - 1), 0, dim() - 1),
-                           0,
-                           N(m) - 1)
-                       / Z(m, m);
-      // out.println("compsum(m=" + m + ")=" + compsum);
+      double compsum = sum(i -> sum(n -> sum(j -> {
+        double α = α(j, m, n);
+        double β = β(j, m, n);
+        double x = ((α / β) * (1 - exp(-β * (maxT - T(m, i))))) / Z(m, n);
+        // out.format("j=%d m=%d n=%d α=%f β=%f x=%f\n",j,m,n,α,β,x);
+        return x;
+      }, 0, order() - 1), 0, dim() - 1), 0, N(m) - 1);
+      out.println("compsum(m=" + m + ")=" + compsum);
       return lslice.sum() - compsum;
     }, 0, dim() - 1) + (maxT - T.getLeftmostValue());
     if (llcnt++ % 25 == 1)
