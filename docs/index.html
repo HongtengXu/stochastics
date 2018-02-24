@@ -43,8 +43,24 @@
       fixed precisely at 1.0, which is the boundary between extenction and
       explositoon. See <a href="https://github.com/crowlogic/stochastics/raw/master/docs/HawkesBranchingPointProcessesWithoutAncestors.pdf">Hawkes branching point processes without
       ancestors</a> for proof and <a href="https://arxiv.org/abs/1302.1405">Critical reflexivity in financial
-      markets: a Hawkes process analysys</a> for further elaboration.
+      markets: a Hawkes process analysys</a> for further elaboration. 
     </p>
+    <table style="width: 100%">
+      <tbody><tr>
+        <td style="text-align: center; padding-left: 0em; padding-right: 0em"><img src="Tautocorr.png" height="441.4335088" width="589.0466248"></img></td>
+      </tr><tr>
+        <td style="text-align: center; padding-left: 0em; padding-right: 0em; height: 0.5em"></td>
+      </tr><tr>
+        <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><p>
+          <font size="-1"><p>
+            <b>Figure 1. </b><a id="auto-1"></a>Autocorrelation of time between trades
+            during the first 30 minutes of trading of SPY on one particular
+            day in the year 2016. This autocorrelation spectrum is very
+            typical of almost every other day.
+          </p></font>
+        </p></td>
+      </tr></tbody>
+    </table>
     <p>
       With this particular pointset loaded, run the java program <a href="https://github.com/crowlogic/stochastics/blob/master/src/stochastic/pointprocesses/selfexciting/ProcessEstimator.java">ProcessEstimator</a>
       and you will see something like this
@@ -179,15 +195,20 @@
     </p>
     <p>
       The output of this process is two files called 'test0.mat' and
-      'test0.mat.eapl.model', the first one is a matlab compatible file that
-      has the input data, along with the estimated intensity and compensator
-      of the process which can be tested for goodness-of-fit and verifying
-      certain hypothesis about the data such as the compensator being a
-      unit-rate Poisson process with no auto-correlation, that is, if the
-      model is a good fit to the data then the mean and variance of the
-      variable '<strong>compensator</strong>' (otherwise denoted <img src="index-1.png"
-      style="vertical-align: -0.232727272727273px"></img> since matlab doesn't support UTF characters in variable
-      names) in test0.mat are both equal to 1 and there will be no detectable
+      'test0.mat.eapl.model', the second one is just a raw binary
+      representation of the parameters of the process, whereas the first one
+      is a matlab compatible file that has the input data, along with the
+      estimated intensity and compensator of the process,  which can be tested
+      for goodness-of-fit and verifying certain hypothesis about the data. The
+      innovation process, which is the difference betweem the predicted
+      durations vs the actual observed durations, is also written to the
+      ProcessEstimator output .mat file. If the model is a good fit for the
+      data then the the compensator will be a unit-rate Poisson process with
+      no auto-correlation, that is, if the model is a good fit to the data
+      then the mean and variance of the variable
+      '<strong>compensator</strong>' (otherwise denoted <img src="index-1.png" style="vertical-align: -0.232727272727273px"></img>
+      since matlab doesn't support UTF characters in variable names) in
+      test0.mat are both equal to 1 and there will be no detectable
       autocorrelation for any lags other than 0. These tests are determined by
       comparing the statistics of each of the candidate solutions
     </p>
@@ -349,7 +370,7 @@
       </tr><tr>
         <td style="text-align: center; padding-left: 0em; padding-right: 0em; padding-left: 1.5em; padding-right: 1.5em"><p>
           <font size="-1"><p>
-            <b>Figure 1. </b><a id="auto-1"></a>QQ plot of <img src="index-36.png" style="vertical-align: -0.232727272727273px"></img>
+            <b>Figure 2. </b><a id="auto-2"></a>QQ plot of <img src="index-36.png" style="vertical-align: -0.232727272727273px"></img>
             versus the unit exponential distribution <img src="index-37.png" style="vertical-align: -0.349090909090909px"></img>
           </p></font>
         </p></td>

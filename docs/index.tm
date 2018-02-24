@@ -18,7 +18,12 @@
   See <hlink|Hawkes branching point processes without
   ancestors|https://github.com/crowlogic/stochastics/raw/master/docs/HawkesBranchingPointProcessesWithoutAncestors.pdf>
   for proof and <hlink|Critical reflexivity in financial markets: a Hawkes
-  process analysys|https://arxiv.org/abs/1302.1405> for further elaboration.
+  process analysys|https://arxiv.org/abs/1302.1405> for further elaboration.\ 
+
+  <big-figure|<image|Tautocorr.png|419pt|314pt||>|Autocorrelation of time
+  between trades during the first 30 minutes of trading of SPY on one
+  particular day in the year 2016. This autocorrelation spectrum is very
+  typical of almost every other day.>
 
   With this particular pointset loaded, run the java program
   <hlink|ProcessEstimator|https://github.com/crowlogic/stochastics/blob/master/src/stochastic/pointprocesses/selfexciting/ProcessEstimator.java>
@@ -151,17 +156,21 @@
   </really-tiny>>
 
   The output of this process is two files called 'test0.mat' and
-  'test0.mat.eapl.model', the first one is a matlab compatible file that has
-  the input data, along with the estimated intensity and compensator of the
-  process which can be tested for goodness-of-fit and verifying certain
-  hypothesis about the data such as the compensator being a unit-rate Poisson
-  process with no auto-correlation, that is, if the model is a good fit to
-  the data then the mean and variance of the variable '<strong|compensator>'
-  (otherwise denoted <math|\<Lambda\>> since matlab doesn't support UTF
-  characters in variable names) in test0.mat are both equal to 1 and there
-  will be no detectable autocorrelation for any lags other than 0. These
-  tests are determined by comparing the statistics of each of the candidate
-  solutions
+  'test0.mat.eapl.model', the second one is just a raw binary representation
+  of the parameters of the process, whereas the first one is a matlab
+  compatible file that has the input data, along with the estimated intensity
+  and compensator of the process, \ which can be tested for goodness-of-fit
+  and verifying certain hypothesis about the data. The innovation process,
+  which is the difference betweem the predicted durations vs the actual
+  observed durations, is also written to the ProcessEstimator output .mat
+  file. If the model is a good fit for the data then the the compensator will
+  be a unit-rate Poisson process with no auto-correlation, that is, if the
+  model is a good fit to the data then the mean and variance of the variable
+  '<strong|compensator>' (otherwise denoted <math|\<Lambda\>> since matlab
+  doesn't support UTF characters in variable names) in test0.mat are both
+  equal to 1 and there will be no detectable autocorrelation for any lags
+  other than 0. These tests are determined by comparing the statistics of
+  each of the candidate solutions
 
   <math|<block|<tformat|<cwith|1|-1|1|-1|font-base-size|5>|<table|<row|<cell|#>|<cell|\<tau\>>|<cell|\<varepsilon\>>|<cell|\<eta\>>|<cell|b>|<cell|Log-Lik>|<cell|KS<around*|(|\<Lambda\>|)>>|<cell|mean<around*|(|\<Lambda\>|)>>|<cell|var<around*|(|\<Lambda\>|)>>|<cell|M
   M<around*|(|\<Lambda\>|)>>|<cell|LB<around*|(|\<Lambda\>|)>>|<cell|MMLB<around*|(|\<Lambda\>|)>>|<cell|E<around*|[|dt|]>>>|<row|<cell|1>|<cell|1.0>|<cell|0.0>|<cell|3.0255794239386953>|<cell|1.7241903564322218>|<cell|1718889.4428270115>|<cell|0.8663131085461994>|<cell|0.9994320079874562>|<cell|0.9597784615931496>|<cell|0.021246591921049607>|<cell|1299.8388017200318>|<cell|0.15235430852694057>|<cell|135.67514849842505>>|<row|<cell|2>|<cell|1.0>|<cell|0.0>|<cell|3.0255810148945113>|<cell|
@@ -309,6 +318,7 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|auto-2|<tuple|2|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
     <associate|gamma|<tuple|1|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
   </collection>
 </references>
