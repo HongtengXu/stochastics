@@ -9,8 +9,13 @@
 
   For example, you can download <hlink|SPY.mat|https://github.com/crowlogic/stochastics/raw/master/SPY.mat>
   which is the data corresponding to a marked point process of trades of the
-  SPDR S&P 500 ETF on a particular 6.5 hour trading day sometime in 2016 and
-  run the program <hlink|ProcessEstimator|https://github.com/crowlogic/stochastics/blob/master/src/stochastic/pointprocesses/selfexciting/ProcessEstimator.java>
+  SPDR S&P 500 ETF on a particular 6.5 hour trading day sometime in 2016, the
+  autocorrelation of the timing between trades has a long-memory where the
+  autocorrletion is significant after a very large number of lags. It is a
+  known fact that a long-memory point process like this indicates that the
+  process is \Pat criticality\Q in that its branching ratio is fixed
+  precisely at 1.0, which is the boundary between extenction and explositoon.
+  See and run the program <hlink|ProcessEstimator|https://github.com/crowlogic/stochastics/blob/master/src/stochastic/pointprocesses/selfexciting/ProcessEstimator.java>
   and you will see something like this
 
   <with|font-base-size|5|<\really-tiny>
@@ -298,6 +303,6 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
-    <associate|gamma|<tuple|1|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|gamma|<tuple|?|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
   </collection>
 </references>
