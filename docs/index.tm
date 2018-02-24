@@ -280,6 +280,12 @@
   the compensator is also very close to 1, and the autocorrelation is
   relatively small compared to the input data.
 
+  Here is a qqplot, or quantile-quantile plot, of the compensated process
+  <math|\<#39B\><rsub|i>> versus the unit exponential distribution,
+
+  <big-figure|<image|qq.png|429pt|371pt||>|QQ plot of <math|\<Lambda\>>
+  versus the unit exponential distribution <math|e<rsup|-t>>>
+
   \;
 </body>
 
@@ -291,6 +297,7 @@
 
 <\references>
   <\collection>
-    <associate|gamma|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|auto-1|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|gamma|<tuple|1|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
   </collection>
 </references>
