@@ -9,9 +9,6 @@ import stochastic.pointprocesses.selfexciting.BoundedParameter;
 public abstract class MutuallyExcitingProcess extends AbstractMutuallyExcitingProcess
 {
 
-  public int dim;
-
-
   public MutuallyExcitingProcess()
   {
     super();
@@ -46,7 +43,7 @@ public abstract class MutuallyExcitingProcess extends AbstractMutuallyExcitingPr
 
     try
     {
-      MutuallyExcitingProcess spawn = getClass().getDeclaredConstructor(int.class).newInstance(dim);
+      AbstractMutuallyExcitingProcess spawn = getClass().getDeclaredConstructor(int.class).newInstance(dim);
       spawn.assignParameters(getParameters().toDoubleArray());
       spawn.T = T;
       spawn.X = X;

@@ -23,6 +23,7 @@ import org.apache.commons.math3.optim.PointValuePair;
 import org.apache.commons.math3.optim.SimpleBounds;
 
 import dnl.utils.text.table.TextTable;
+import fastmath.DoubleColMatrix;
 import fastmath.DoubleMatrix;
 import fastmath.IntVector;
 import fastmath.Pair;
@@ -364,6 +365,8 @@ public abstract class AbstractMutuallyExcitingProcess implements MultivariateFun
 
   public Vector[] dT;
 
+  public int dim;
+
   /**
    * @see this{@link #forecastStartIndex}
    * 
@@ -589,6 +592,25 @@ public abstract class AbstractMutuallyExcitingProcess implements MultivariateFun
       upperEntries[m][n][i] = upperEntry;
     }
     return upperEntry;
+  }
+
+  /**
+   * 
+   * @return matrix of normalization factors which insures that the branching rate
+   *         equals 1
+   */
+  public DoubleColMatrix
+         Zmatrix()
+  {
+    DoubleColMatrix dcm = new DoubleColMatrix(dim, dim);
+    for (int m = 0; m < dim; m++)
+    {
+      for (int n = 0; n < dim; n++)
+      {
+        dcm.set(m, n, Z(m, n));
+      }
+    }
+    return dcm.setName("Z");
   }
 
 }

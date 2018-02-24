@@ -11,6 +11,7 @@ import java.util.TreeMap;
 
 import org.apache.commons.math3.optim.PointValuePair;
 
+import fastmath.DoubleColMatrix;
 import fastmath.IntVector;
 import fastmath.Pair;
 import fastmath.Vector;
@@ -320,12 +321,14 @@ public class FullyCovariantExtendedMututallyExcitingExponentialPowerlawApproxima
   {
     AbstractMutuallyExcitingProcess process = constructProcess();
 
+    DoubleColMatrix Zmatrix = process.Zmatrix();
+
+    out.println("Z=" + Zmatrix );
+    
     double z0 = process.Z(0, 0);
-    out.println("z0=" + z0);
     assertEquals(20.34, z0, pow(10, -13));
 
     double z1 = process.Z(1, 1);
-    out.println("z1=" + z1);
     assertEquals(19.488945713548063, z1, pow(10, -13));
 
   }
@@ -333,7 +336,7 @@ public class FullyCovariantExtendedMututallyExcitingExponentialPowerlawApproxima
   public void
          testAlphaBetaAndGamma()
   {
-    DiagonalExtendedApproximatePowerlawMututallyExcitingProcess mprocess = new DiagonalExtendedApproximatePowerlawMututallyExcitingProcess(1);
+    FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximationProcess mprocess = new FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximationProcess(1);
     ExtendedApproximatePowerlawSelfExcitingProcess process = ExtendedExponentialPowerlawSelfExcitingProcessTest.constructProcess();
     mprocess.assignParameters(process.getParameters().toDoubleArray());
     for (int j = 0; j < process.M; j++)

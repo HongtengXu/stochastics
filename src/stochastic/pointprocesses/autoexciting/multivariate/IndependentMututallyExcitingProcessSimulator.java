@@ -33,7 +33,7 @@ public class IndependentMututallyExcitingProcessSimulator {
 
 	private AbstractMutuallyExcitingProcess process;
 
-	public IndependentMututallyExcitingProcessSimulator(MutuallyExcitingProcess process) {
+	public IndependentMututallyExcitingProcessSimulator(AbstractMutuallyExcitingProcess process) {
 		this.process = (AbstractMutuallyExcitingProcess) process;
 	}
 

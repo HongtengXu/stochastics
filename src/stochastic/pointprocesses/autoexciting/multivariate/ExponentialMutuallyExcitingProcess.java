@@ -740,7 +740,7 @@ public abstract class ExponentialMutuallyExcitingProcess extends MutuallyExcitin
         // out.format("j=%d m=%d n=%d α=%f β=%f x=%f\n",j,m,n,α,β,x);
         return x;
       }, 0, order() - 1), 0, dim() - 1), 0, N(m) - 1);
-      out.println("compsum(m=" + m + ")=" + compsum);
+      //out.println("compsum(m=" + m + ")=" + compsum);
       return lslice.sum() - compsum;
     }, 0, dim() - 1) + (maxT - T.getLeftmostValue());
     if (llcnt++ % 25 == 1)

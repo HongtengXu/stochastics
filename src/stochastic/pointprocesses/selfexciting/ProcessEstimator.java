@@ -42,7 +42,7 @@ public class ProcessEstimator
 
   public ProcessEstimator(SelfExcitingProcess process)
   {
-    this.process = (AbstractSelfExcitingProcess) process;
+   this.process = (AbstractSelfExcitingProcess) process;
   }
 
   public static void
@@ -155,14 +155,14 @@ public class ProcessEstimator
     estimator.setTrajectoryCount(trajectoryCount);
     estimator.estimate(slice);
 
-    AbstractMutuallyExcitingProcess multivarProcess = new DiagonalExtendedApproximatePowerlawMututallyExcitingProcess(1);
-    multivarProcess.T = slice;
-    multivarProcess.K = new IntVector(slice.size());
-    out.println("estimating multivar ");
-    ParallelMultistartMultivariateOptimizer opt = multivarProcess.estimateParameters(10, ev -> {
-    }, filename, section);
-    multivarProcess.printResults(opt);
-    out.println("estimated " + multivarProcess);
+//    AbstractMutuallyExcitingProcess multivarProcess = new DiagonalExtendedApproximatePowerlawMututallyExcitingProcess(1);
+//    multivarProcess.T = slice;
+//    multivarProcess.K = new IntVector(slice.size());
+//    out.println("estimating multivar ");
+//    ParallelMultistartMultivariateOptimizer opt = multivarProcess.estimateParameters(10, ev -> {
+//    }, filename, section);
+//    multivarProcess.printResults(opt);
+//    out.println("estimated " + multivarProcess);
 
     return process;
   }

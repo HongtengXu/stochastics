@@ -185,7 +185,7 @@ public class FullyCovariantExtendedMutuallyExcitingExponentialPowerlawApproximat
          getParamString()
   {
     StringBuilder sb = new StringBuilder();
-    range(0, getParamCount()).forEachOrdered(k -> sb.append(getMatrixField(k).toString()));
+    range(0, getParamCount()).forEachOrdered(k -> sb.append(getMatrixField(k).asVector().toString()));
     return sb.toString();
   }
 

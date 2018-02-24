@@ -16,9 +16,13 @@
   <with|font-base-size|5|<\really-tiny>
     Estimating parameters for SPY.mat
 
-    E[dt]=180.0731913776857
+    E[dt]=180.0731913776857<space|2em>\<less\><with|color|red|Average time
+    between trades across the entire 6.5 hour session , in units of
+    milliseconds >)
 
-    E_0[dt]=101.08133459977739
+    E_0[dt]=101.08133459977739<space|1em><with|color|red|\<less\>Average time
+    vetween trades of the first 30 minutes of regularly scheduled trading, in
+    units of milliseconds> )
 
     \[[31;107mspawning \[[95m24\[[32m ExtendedApproximatePowerlawSelfExcitingProcess\[[31;107mes
     to estimate the model parameters \[[94m[,,,b\[[31;107m] most likely to
@@ -45,73 +49,7 @@
     1.0000000000 0.0000000000 3.0255781444 1.7241991514 \ with LL score
     1718889.4428270238\[[39m
 
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-1 \ \ \ \ \ #7/24 \ Storing
-    1.0000000000 0.0000000000 3.0255614783 1.7242083516 \ with LL score
-    1718889.4428270066\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ thread-11 \ \ \ \ \ #6/24 \ Storing
-    1.0000000000 0.0000000000 3.0255745415 1.7242116484 \ with LL score
-    1718889.4428270014\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-9 \ \ \ \ #11/24 \ Storing
-    1.0000000000 0.0000000000 3.0255608911 1.7242063143 \ with LL score
-    1718889.4428270063\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-2 \ \ \ \ #10/24 \ Storing
-    1.0000000000 0.0000000000 3.0255558096 1.7241933313 \ with LL score
-    1718889.4428269528\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ thread-10 \ \ \ \ \ #9/24 \ Storing
-    1.0000000000 0.0000000000 3.0256132009 1.7241987317 \ with LL score
-    1718889.4428269141\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ main \ \ \ \ \ #8/24 \ Storing
-    1.0000000000 0.0000000000 3.0255808158 1.7242055529 \ with LL score
-    1718889.4428270133\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-8 \ \ \ \ #16/24 \ Storing
-    1.0000000000 0.0000000000 3.0255781462 1.7241991521 \ with LL score
-    1718889.442827024\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-3 \ \ \ \ #15/24 \ Storing
-    1.0000000000 0.0000000000 3.0255810149 1.7241910595 \ with LL score
-    1718889.442827015\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-6 \ \ \ \ #14/24 \ Storing
-    1.0000000000 0.0000000000 3.0255783152 1.7242002492 \ with LL score
-    1718889.4428270236\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ thread-15 \ \ \ \ #13/24 \ Storing
-    1.0000000000 0.0000000000 3.0255781483 1.7241991518 \ with LL score
-    1718889.4428270238\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-4 \ \ \ \ #12/24 \ Storing
-    1.0000000000 0.0000000000 3.0255781766 1.7241993269 \ with LL score
-    1718889.4428270238\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-9 \ \ \ \ #20/24 \ Storing
-    1.0000000000 0.0000000000 3.0255770753 1.7241997431 \ with LL score
-    1718889.4428270238\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ thread-10 \ \ \ \ #19/24 \ Storing
-    1.0000000000 0.0000000000 3.0255774588 1.7241996254 \ with LL score
-    1718889.4428270238\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ thread-11 \ \ \ \ #18/24 \ Storing
-    1.0000000000 0.0000000000 3.0255814604 1.7241979468 \ with LL score
-    1718889.442827023\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ thread-13 \ \ \ \ #17/24 \ Storing
-    1.0000000000 0.0000000000 3.0255794239 1.7241903564 \ with LL score
-    1718889.4428270115\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-1 \ \ \ \ #24/24 \ Storing
-    1.0000000000 0.0000000000 3.0255661715 1.7242003860 \ with LL score
-    1718889.4428270126\[[39m
-
-    \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-3 \ \ \ \ #23/24 \ Storing
-    1.0000000000 0.0000000000 3.0255779544 1.7241993086 \ with LL score
-    1718889.4428270238\[[39m
+    ............
 
     \[[31m \ \ \ \ \ \ \ \ \ \ \ thread-8 \ \ \ \ #22/24 \ Storing
     1.0000000000 0.0000000000 3.0255731777 1.7242194415 \ with LL score
@@ -136,7 +74,7 @@
 
     \ \ \ \ \|====================================================================================================================================================================================================================\|
 
-    \ 1. \| 1.0\| 0.0\| 3.0295636875196883\| 1.7206915111784111\|
+    \ 1. \| 1.0\| 0.03.0295636875196883\| \| 1.7206915111784111\|
     1718889.4412852346\| 0.866404942169227 \| 0.9994319031632158\|
     0.9601678843210508\| 0.02105209014603504 \| 1300.3947948630428\|
     0.15096857806824288\| 135.725254656012 \ \|
@@ -161,70 +99,7 @@
     0.959777480464975 \| 0.021247082064086764\| 1299.8354973653923\|
     0.15235776925594738\| 135.67504778074579\|
 
-    \ 6. \| 1.0\| 0.0\| 3.0255781444374037\| 1.7241991513777553\|
-    1718889.4428270238\| 0.8663129419467512\| 0.9994320086730825\|
-    0.9597768513975126\| 0.02124739564800493 \| 1299.845471222868 \|
-    0.15236018080050287\| 135.67482111447688\|
-
-    \ 7. \| 1.0\| 0.0\| 3.0255781462421782\| 1.724199152136319 \|
-    1718889.442827024 \| 0.866312941946478 \| 0.9994320086732346\|
-    0.9597768511197725\| 0.0212473957865712 \ \| 1299.8454735698488\|
-    0.15236018183246416\| 135.67482104196844\|
-
-    \ 8. \| 1.0\| 0.0\| 3.0255781483278175\| 1.7241991517791673\|
-    1718889.4428270238\| 0.8663129419682118\| 0.9994320086733051\|
-    0.9597768510377042\| 0.021247395827464155\| 1299.8454751803924\|
-    0.15236018215200398\| 135.67482100825092\|
-
-    \ 9. \| 1.0\| 0.0\| 3.025581460431477 \| 1.7241979467731574\|
-    1718889.442827023 \| 0.8663129878819558\| 0.9994320087313183\|
-    0.9597768442119655\| 0.021247399124339816\| 1299.847463283594 \|
-    0.15236023826585934\| 135.67479335085 \ \ \|
-
-    10. \| 1.0\| 0.0\| 3.025577954383579 \| 1.7241993086020795\|
-    1718889.4428270238\| 0.866312937738011 \| 0.9994320086772407\|
-    0.9597768347344365\| 0.02124740397122904 \| 1299.8454357905189\|
-    0.1523602399056906 \| 135.67481912663155\|
-
-    11. \| 1.0\| 0.0\| 3.0255799154636853\| 1.724198579210497 \|
-    1718889.4428270236\| 0.8663129652077174\| 0.9994320087102374\|
-    0.9597768337741969\| 0.02124740438537409 \| 1299.8465987268257\|
-    0.15236026187028168\| 135.67480339668577\|
-
-    12. \| 1.0\| 0.0\| 3.0255770752680986\| 1.7241997431145983\|
-    1718889.4428270238\| 0.8663129235019182\| 0.9994320086715901\|
-    0.959776814342003 \| 0.02124741417874365 \| 1299.8450104932137\|
-    0.152360306154814 \ \| 135.6748218133547 \|
-
-    13. \| 1.0\| 0.0\| 3.025578176628461 \| 1.7241993268565134\|
-    1718889.4428270238\| 0.8663129390475611\| 0.9994320086895583\|
-    0.9597768150854787\| 0.021247413771079526\| 1299.8456576929448\|
-    0.15236031380261353\| 135.67481324815395\|
-
-    14. \| 1.0\| 0.0\| 3.0255774588001167\| 1.7241996253566927\|
-    1718889.4428270238\| 0.8663129284293808\| 0.9994320086801592\|
-    0.9597768093346202\| 0.021247416665301833\| 1299.8452601561432\|
-    0.15236032806323066\| 135.67481772677925\|
-
-    15. \| 1.0\| 0.0\| 3.02556089110427 \ \| 1.7242063143309097\|
-    1718889.4428270063\| 0.8663126869415804\| 0.9994320084461793\|
-    0.9597767154333523\| 0.021247464083762657\| 1299.8359058645435\|
-    0.15236051530043682\| 135.67492923415998\|
-
-    16. \| 1.0\| 0.0\| 3.0255783152036826\| 1.7242002492095596\|
-    1718889.4428270236\| 0.8663129235833859\| 0.999432008774675 \|
-    0.9597766264426093\| 0.021247507922329434\| 1299.8466094855507\|
-    0.15236100448576176\| 135.67477260913802\|
-
-    17. \| 1.0\| 0.0\| 3.0255960056881728\| 1.7241934396940415\|
-    1718889.4428270042\| 0.8663131754889819\| 0.9994320090527912\|
-    0.9597766622891645\| 0.021247489442977385\| 1299.8568949049911\|
-    0.15236103997168263\| 135.6746400421906 \|
-
-    18. \| 1.0\| 0.0\| 3.025561478305729 \| 1.7242083515718498\|
-    1718889.4428270066\| 0.8663126548542947\| 0.9994320086477975\|
-    0.9597762783871252\| 0.02124768220375417 \| 1299.8382681579535\|
-    0.15236211797241195\| 135.67483297463835\|
+    \R\R\R\R\R,
 
     19. \| 1.0\| 0.0\| 3.0255808158401374\| 1.724205552880895 \|
     1718889.4428270133\| 0.8663128472027217\| 0.9994320093466433\|
@@ -255,7 +130,139 @@
     1718889.442804567 \| 0.8663022985818155\| 0.9994320274511848\|
     0.9597196394329696\| 0.02127596408473742 \| 1299.8839023458731\|
     0.15256566703137792\| 135.66585037341952\|
+
+    \;
+
+    writing timestamp data, compensator, intensity, and innovation to
+    stochastics/test0.mat and parameters to stochastics/test0.mat.eapl.model
+
+    \;
   </really-tiny>>
+
+  The output of this process is two files called 'test0.mat' and
+  'test0.mat.eapl.model', the first one is a matlab compatible file that has
+  the input data, along with the estimated intensity and compensator of the
+  process which can be tested for goodness-of-fit and verifying certain
+  hypothesis about the data such as the compensator being a unit-rate Poisson
+  process with no auto-correlation, that is, if the model is a good fit to
+  the data then the mean and variance of the variable '<strong|compensator>'
+  (otherwise denoted <math|\<Lambda\>> since matlab doesn't support UTF
+  characters in variable names) in test0.mat are both equal to 1 and there
+  will be no detectable autocorrelation for any lags other than 0. These
+  tests are determined by comparing the statistics of each of the candidate
+  solutions
+
+  <math|<block|<tformat|<cwith|1|-1|1|-1|font-base-size|5>|<table|<row|<cell|#>|<cell|\<tau\>>|<cell|\<varepsilon\>>|<cell|\<eta\>>|<cell|b>|<cell|Log-Lik>|<cell|KS<around*|(|\<Lambda\>|)>>|<cell|mean<around*|(|\<Lambda\>|)>>|<cell|var<around*|(|\<Lambda\>|)>>|<cell|M
+  M<around*|(|\<Lambda\>|)>>|<cell|LB<around*|(|\<Lambda\>|)>>|<cell|MMLB<around*|(|\<Lambda\>|)>>|<cell|E<around*|[|dt|]>>>|<row|<cell|1>|<cell|1.0>|<cell|0.0>|<cell|3.0255794239386953>|<cell|1.7241903564322218>|<cell|1718889.4428270115>|<cell|0.8663131085461994>|<cell|0.9994320079874562>|<cell|0.9597784615931496>|<cell|0.021246591921049607>|<cell|1299.8388017200318>|<cell|0.15235430852694057>|<cell|135.67514849842505>>|<row|<cell|2>|<cell|1.0>|<cell|0.0>|<cell|3.0255810148945113>|<cell|
+  1.724191059476018>|<cell|1718889.442827015>|<cell|
+  0.8663131076913555>|<cell| 0.9994320081242861>|<cell|0.9597782101066586>|<cell|0.021246717390713044>|<cell|1299.8409012782388>|<cell|0.15235524253260319>|<cell|135.67508318612306>>|<row|<cell|3>|<cell|1.0>|<cell|0.0>|<cell|3.025566171530826>|<cell|1.7242003859853978>|<cell|1718889.4428270126>|<cell|0.8663128317578>|<cell|0.9994320081980411>|<cell|0.959777480464975>|<cell|0.021247082064086764>|<cell|
+  1299.8354973653923>|<cell|0.15235776925594738>|<cell|135.67504778074579>>|<row|<cell|4>|<cell|1.0>|<cell|0.0>|<cell|
+  3.025560746696718>|<cell|1.7242055316875902>|<cell|1718889.4428270059>|<cell|0.8663126998659925>|<cell|\|
+  0.9994320083726566>|<cell|0.9597768774468013>|<cell|0.02124738322404185>|<cell|1299.8350734465043>|<cell|0.15235992187817635>|<cell|135.67496433748133>>|<row|<cell|\<ldots\>>|<cell|\<ldots\>.>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>|<cell|\<ldots\>>>|<row|<cell|24>|<cell|1.0>|<cell|0.10164\<ldots\>>|<cell|0.1>|<cell|0.0>|<cell|1718423.379808068>|<cell|0.8685636719501787>|<cell|0.9995379499758154>|<cell|1.0588055428354197>|<cell|0.029402878162822277>|<cell|4026.1017131795033>|<cell|0.24406747627945283>|<cell|239.45818456723876>>>>>>
+
+  \;
+
+  The column-labels indicate the parameters and summary statistics of a set
+  of candidate solutions which are local minimima of the likelihood surface
+  of the data given the parameters <math|\<tau\>,\<varepsilon\>,\<eta\>,b>
+  and they are ranked in order of best fit to worst fit according to the
+  column <math|MMLB<around*|(|\<Lambda\>|)>>. The summary statistics are
+
+  <\itemize-dot>
+    <item>Log-Lik=<math|<with|mode|text|>ln\<cal-L\><around*|(|N<around*|(|t|)><rsub|t\<in\><around*|[|0,T|]>>|)>>
+    is the logarithm of the likelihood score which is defined in closed-form
+    by
+
+    <\equation*>
+      <tabular|<tformat|<table|<row|<cell|<with|mode|text|>ln\<cal-L\><around*|(|N<around*|(|t|)><rsub|t\<in\><around*|[|0,T|]>>|)>>|<cell|=<big|int><rsub|0><rsup|T><around*|(|1-\<lambda\><around*|(|s|)>|)>\<mathd\>s+<big|int><rsub|0><rsup|T>ln\<lambda\><around*|(|s|)>\<mathd\>N<rsub|s>>>|<row|<cell|>|<cell|=T-<big|int><rsub|0><rsup|T>\<lambda\><around*|(|s|)>\<mathd\>s+<big|int><rsub|0><rsup|T>ln\<lambda\><around*|(|s|)>\<mathd\>N<rsub|s>>>>>>
+    </equation*>
+
+    <item><math|KS<around*|(|\<Lambda\>|)>> is actually 1 minus the
+    Kolomogorov-Smirnov statistic\ 
+
+    <\equation*>
+      D<rsub|n>=sup<rsub|x><around*|\||F<rsub|n><around*|(|x|)>-F<around*|(|x|)>|\|>
+    </equation*>
+
+    <item>mean(\<#39B\>)=<math|<frac|1|n><big|sum><rsub|i=1><rsup|n>\<Lambda\><rsub|i>>
+
+    <item><math|var<around*|(|\<Lambda\>|)>=<frac|1|n><big|sum><rsub|i=1><rsup|n><around*|(|\<Lambda\><rsub|i>-mean<around*|(|\<Lambda\>|)>|)><rsup|2>>
+
+    <item><math|MM<around*|(|\<Lambda\>|)>> is a moment-matching measure
+    defined by
+
+    <\equation*>
+      M M<around*|(|\<Lambda\>|)>=<around*|\||mean<around*|(|\<#39B\>|)>-1|\|>+<around*|\||var<around*|(|\<Lambda\>|)>-1|\|>
+    </equation*>
+
+    <item><math|LB<around*|(|\<Lambda\>|)>> is the Ljung-Box statistic, which
+    tests for serial autocorrelation, defined by
+
+    <\equation*>
+      Q=n<around*|(|n+2|)><big|sum><rsub|k=1><rsup|h><frac|<wide|\<rho\>|^><rsup|2><rsub|\<kappa\>>|n-k>
+    </equation*>
+
+    where <math|<wide|\<rho\>|^><rsub|k>> is the sample autocorrelation at
+    lag <math|k> given by\ 
+
+    <\equation*>
+      <wide|\<rho\>|^><rsub|k>=<frac|1|<around*|(|n-k|)>><big|sum><rsub|i=1><rsup|n-k>\<Lambda\><rsub|i>
+      \<Lambda\><rsub|i+k>
+    </equation*>
+
+    <item>MMLB(<math|\<Lambda\>>) is a combination moment-matching
+    autocorrelation minimizing metric
+
+    <\equation*>
+      MMLB<around*|(|\<Lambda\>|)>=M M<around*|(|\<Lambda\>|)>*log<around*|(|1+LB<around*|(|\<Lambda\>|)>|)>
+    </equation*>
+
+    <item>and finally <math|E<around*|[|dt|]>> is the unconditional expected
+    mean time between points of the process
+
+    <\equation*>
+      <tabular|<tformat|<table|<row|<cell|E<around*|[|dt|]>>|<cell|=<big|int><rsub|0><rsup|\<infty\>>t
+      f<around*|(|t|)>\<mathd\>t>>|<row|<cell|>|<cell|=<big|int><rsub|0><rsup|\<infty\>>
+      <frac|t|Z><big|sum><rsub|j=1><rsup|P>\<alpha\><rsub|j>
+      e<rsup|-\<beta\><rsub|j> t>\<mathd\>t>>|<row|<cell|>|<cell|=<frac|<big|sum><rsub|j=1><rsup|P>\<gamma\><around*|(|j,2|)>|<around*|(|<big|prod><rsub|j=1><rsup|P>\<beta\><rsub|j>|)><around*|(|<big|sum><rsub|j=1><rsup|P>\<gamma\><around*|(|j,1|)>|)>Z>>>>>>
+    </equation*>
+
+    where
+
+    <\equation>
+      \<alpha\><rsub|j>=<choice|<tformat|<table|<row|<cell|*<around*|(|\<tau\>
+      m<rsup|i>|)><rsup|-<around*|(|1+\<varepsilon\>|)>>>|<cell|j\<less\>M>>|<row|<cell|b>|<cell|j=P>>>>>
+    </equation>
+
+    <\equation*>
+      \<beta\><rsub|j>=<choice|<tformat|<table|<row|<cell|\<tau\>m<rsup|i><rsub|>>|<cell|j\<less\>P>>|<row|<cell|\<eta\><rsup|-1>>|<cell|j=P>>>>>
+    </equation*>
+
+    and
+
+    <\equation*>
+      Z=<big|sum><rsub|j=1><rsup|P><frac|\<alpha\><rsub|j>|\<beta\><rsub|j>>
+    </equation*>
+
+    with <math|P=M+1> and <math|M=15> and
+    <math|m=e<rsup|<frac|ln<around*|(|60000|)>|M>>>so that the exponential
+    powerlaw-approximation covers about 15 minutes with a resolution of 1
+    minute. The additional weight <math|b> to allow for a smooth-drop to zero
+    as described in <hlink|Critical reflexivity in financial markets: a
+    Hawkes process analysys|https://arxiv.org/abs/1302.1405>
+  </itemize-dot>
+
+  \;
+
+  All times are in units of milliseconds unless otherwise specified. As we
+  can see, the theoretical mean of the estimated model is 135.67..ms which is
+  not far from the emperical sample mean of
+  <math|E<rsub|0>>[dt]=101.08133459977739 which is the sample mean of the
+  mean time between trades in the first 30 minutes. The mean and variance of
+  the compensator is also very close to 1, and the autocorrelation is
+  relatively small compared to the input data.
+
+  \;
 </body>
 
 <\initial>

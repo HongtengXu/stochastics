@@ -221,7 +221,7 @@ public class FullyCovariantMutuallyExcitingProcessEstimator
     return trajectoryCount;
   }
 
-  public MutuallyExcitingProcess
+  public AbstractMutuallyExcitingProcess
          estimate(DoubleMatrix markedPoints,
                   IntVector types,
                   String filename,
