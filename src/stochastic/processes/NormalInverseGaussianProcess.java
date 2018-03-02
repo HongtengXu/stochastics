@@ -2,6 +2,8 @@ package stochastic.processes;
 
 import static fastmath.Functions.sum;
 import static fastmath.Functions.uniformRandom;
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
 import static java.lang.System.currentTimeMillis;
 import static java.lang.System.out;
 import static java.util.Arrays.asList;
@@ -38,38 +40,56 @@ import fastmath.optim.ParallelMultistartMultivariateOptimizer;
 import fastmath.optim.PointValuePairComparator;
 import fastmath.optim.SolutionValidator;
 import stochastic.pointprocesses.selfexciting.BoundedParameter;
-import umontreal.iro.lecuyer.rng.RandomStream;
-import umontreal.iro.lecuyer.stochprocess.InverseGaussianProcess;
 
-public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochprocess.NormalInverseGaussianProcess implements MultivariateFunction
+public class NormalInverseGaussianProcess implements MultivariateFunction
 {
 
-  public NormalInverseGaussianProcess(double x0, double alpha, double beta, double mu, double delta, RandomStream streamBrownian, InverseGaussianProcess igP)
+  @Override
+  public String
+         toString()
   {
-    super(x0, alpha, beta, mu, delta, streamBrownian, igP);
+    return String.format("NormalInverseGaussianProcess[α=%s, β=%s, μ=%s, δ=%s]", α, β, μ, δ);
   }
 
-  public NormalInverseGaussianProcess(double x0,
-                                      double alpha,
-                                      double beta,
-                                      double mu,
-                                      double delta,
-                                      RandomStream streamBrownian,
-                                      RandomStream streamIG1,
-                                      RandomStream streamIG2,
-                                      String igType)
+  @Override
+  protected Object
+            clone() throws CloneNotSupportedException
   {
-    super(x0, alpha, beta, mu, delta, streamBrownian, streamIG1, streamIG2, igType);
+    NormalInverseGaussianProcess copy = new NormalInverseGaussianProcess();
+    copy.α = α;
+    copy.β = β;
+    copy.μ = μ;
+    copy.δ = δ;
+    copy.x = x;
+    return copy;
   }
 
-  public NormalInverseGaussianProcess(double x0, double alpha, double beta, double mu, double delta, RandomStream streamAll, String igType)
+  public NormalInverseGaussianProcess(double α, double β, double γ, double μ, double δ)
   {
-    super(x0, alpha, beta, mu, delta, streamAll, igType);
+    super();
+    this.α = α;
+    this.β = β;
+    this.μ = μ;
+    this.δ = δ;
   }
+
+  /**
+   * smaller values of α implies heavy tails and larger values imply lighter tails
+   */
+  public double α;
+
+  /**
+   * 
+   */
+  public double β;
+
+  public double μ;
+
+  public double δ;
 
   protected static enum Parameter implements BoundedParameter
   {
-    x0(-10, 10), alpha(-10, 10), beta(10, 10), mu(-10000, -10000), delta(10, 10);
+    α(0, 0.2), β(0, 0.2), μ(0, 10), δ(0, 70);
 
     private double min;
     private double max;
@@ -110,8 +130,53 @@ public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochpro
 
   }
 
+  public double
+         γ()
+  {
+    return sqrt(pow(α, 2) - pow(β, 2));
+  }
+
+  public double
+         logLik(double[] x)
+  {
+    this.x = x;
+    final int n = x.length;
+    return sum(i -> {
+      double y = x[i - 1];
+      double c = Math.exp(δ * Math.sqrt(α * α - β * β) - β * μ + β * y);
+      double fuck = α * Math.sqrt(δ * δ + μ * μ - 0.2e1 * y * μ + y * y);
+      double b = c * Bessel.k1(fuck) * Math.pow(δ * δ + μ * μ - 0.2e1 * y * μ + y * y, -0.1e1 / 0.2e1) * α * δ;
+      double a = Math.log(b);
+      try
+      {
+
+      }
+      catch (ArithmeticException ae)
+      {
+        out.println("fuck=" + fuck);
+      }
+
+      if (Double.isNaN(a))
+      {
+        return a;
+      }
+      return a;
+
+    }, 1, n);
+  }
+
   private boolean verbose;
   private Field[] parameterFields;
+
+  public NormalInverseGaussianProcess(double point, double point2, double point3, double point4)
+  {
+    assignParameters(new double[]
+    { point, point2, point3, point4 });
+  }
+
+  public NormalInverseGaussianProcess()
+  {
+  }
 
   public BoundedParameter[]
          getBoundedParameters()
@@ -240,23 +305,28 @@ public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochpro
                             double x[],
                             IntConsumer progressNotifier)
   {
+    this.x = x;
     int maxIters = Integer.MAX_VALUE;
 
     MaxEval maxEval = new MaxEval(maxIters);
     SimpleBounds simpleBounds = getParameterBounds();
 
     SolutionValidator validator = point -> {
-      return true;
+      NormalInverseGaussianProcess process = newProcess(point.getPoint());
+      process.x = x;
+      double ll = process.logLik();
+      // out.println("validating " + process + " with LL score " + ll);
+      return Double.isFinite(ll);
     };
 
-    Supplier<MultivariateOptimizer> optimizerSupplier = () -> new ExtendedBOBYQAOptimizer(getParamCount() * 2 + 1, 10, 1E-4);
+    Supplier<MultivariateOptimizer> optimizerSupplier = () -> new ExtendedBOBYQAOptimizer(getParamCount() * 2 + 1, 100, 1E-14);
 
-    ParallelMultistartMultivariateOptimizer multiopt = new ParallelMultistartMultivariateOptimizer(optimizerSupplier,
-                                                                                                   numStarts,
-                                                                                                   getRandomVectorGenerator(simpleBounds));
+    ParallelMultistartMultivariateOptimizer μltiopt = new ParallelMultistartMultivariateOptimizer(optimizerSupplier,
+                                                                                                  numStarts,
+                                                                                                  getRandomVectorGenerator(simpleBounds));
 
-    PointValuePairComparator momentMatchingAutocorrelationComparator = (a,
-                                                                        b) -> {
+    PointValuePairComparator logLikComparator = (a,
+                                                 b) -> {
       NormalInverseGaussianProcess processA = newProcess(a.getPoint());
       NormalInverseGaussianProcess processB = newProcess(b.getPoint());
       double mma = processA.logLik(x);
@@ -265,27 +335,28 @@ public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochpro
     };
 
     double startTime = currentTimeMillis();
-    PointValuePair optimum = multiopt.optimize(progressNotifier,
-                                               GoalType.MAXIMIZE,
-                                               momentMatchingAutocorrelationComparator,
-                                               validator,
-                                               maxEval,
-                                               objectiveFunctionSupplier,
-                                               simpleBounds);
+    PointValuePair optiμm =
+                          μltiopt.optimize(progressNotifier, GoalType.MAXIMIZE, logLikComparator, validator, maxEval, objectiveFunctionSupplier, simpleBounds);
     double stopTime = currentTimeMillis();
     double secondsElapsed = (stopTime - startTime) / 1000;
-    double evaluationsPerSecond = multiopt.getEvaluations() / secondsElapsed;
+    double evaluationsPerSecond = μltiopt.getEvaluations() / secondsElapsed;
     double minutesElapsed = secondsElapsed / 60;
 
-    assignParameters(optimum.getKey());
+    assignParameters(optiμm.getKey());
 
     out.format("estimation completed in %f minutes at %f evals/sec\n", minutesElapsed, evaluationsPerSecond);
 
     // plot("λ(t)", this::λ, T.fmin(), T.fmax(), 5000 );
 
-    printResults(multiopt, x);
+    printResults(μltiopt, x);
 
-    return multiopt;
+    return μltiopt;
+  }
+
+  public double
+         logLik()
+  {
+    return logLik(x);
   }
 
   public NormalInverseGaussianProcess
@@ -304,7 +375,7 @@ public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochpro
   }
 
   public TextTable
-         printResults(ParallelMultistartMultivariateOptimizer multiopt,
+         printResults(ParallelMultistartMultivariateOptimizer μltiopt,
                       double[] x)
   {
 
@@ -312,7 +383,7 @@ public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochpro
 
     println("parameter estimates for " + toString());
 
-    PointValuePair[] optima = multiopt.getOptima().toArray(new PointValuePair[0]);
+    PointValuePair[] optima = μltiopt.getOptima().toArray(new PointValuePair[0]);
 
     return printResults(optima, x);
   }
@@ -374,9 +445,27 @@ public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochpro
     // out.println(compensated.autocor(30));
 
     Object[] statisticsVector = new Object[]
-    { process.logLik(x), 1, 2, 3 };
+    { process.logLik(x), process.mean(), process.stdev(), 3 };
 
     return addAll(stream(getParameterFields()).map(param -> process.getFieldValue(param)).toArray(), statisticsVector);
+  }
+
+  public double
+         stdev()
+  {
+    return sqrt(var());
+  }
+
+  public double
+         var()
+  {
+    return δ * pow(α, 2) / pow(γ(), 3);
+  }
+
+  public double
+         mean()
+  {
+    return μ + δ * β / γ();
   }
 
   public static String[] statisticNames =
@@ -407,7 +496,7 @@ public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochpro
         double[] point = rangeClosed(0,
                                      bounds.getLower().length - 1).mapToDouble(dim -> uniformRandom(new Pair<>(bounds.getLower()[dim], bounds.getUpper()[dim])))
                                                                   .toArray();
-
+        point[Parameter.α.ordinal()] = point[Parameter.α.ordinal()] + point[Parameter.β.ordinal()];
         return point;
       }
       catch (Exception e)
@@ -424,32 +513,20 @@ public class NormalInverseGaussianProcess extends umontreal.iro.lecuyer.stochpro
     return getBoundedParameters().length;
   }
 
-  public double
-         logLik(double[] x)
-  {
-    final int n = x.length;
-    return -n * Math.log(Math.PI) + n * Math.log(alpha)
-           + n * (gamma * delta - beta * mu)
-           - n / 0.2e1
-           - n * mu * mu * Math.pow(gamma, -0.2e1) / 0.2e1
-           + sum(i -> Math.pow(gamma, -0.2e1) * x[i - 1] * mu - Math.pow(gamma, -0.2e1) * Math.pow(x[i - 1], 0.2e1) / 0.2e1
-                      + beta * x[i - 1]
-                      + Bessel.k1(delta * alpha * Math.sqrt(0.1e1 + Math.pow(x[i - 1] - mu, 0.2e1) * Math.pow(gamma, -0.2e1))),
-                 0,
-                 n);
-  }
-
   private NormalInverseGaussianProcess
           newProcess(double[] point)
   {
-    return new NormalInverseGaussianProcess(point[0], point[1], point[2], alpha, alpha, streamBrownian, igProcess);
+    NormalInverseGaussianProcess newProcess = new NormalInverseGaussianProcess(point[0], point[1], point[2], point[3]);
+    newProcess.x = x;
+    return newProcess;
   }
 
   @Override
   public double
          value(double[] point)
   {
-    return logLik(x);
+    NormalInverseGaussianProcess process = newProcess(point);
+    return process.logLik(x);
   }
 
 }

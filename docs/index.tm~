@@ -369,10 +369,37 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
-    <associate|auto-2|<tuple|2|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
-    <associate|auto-3|<tuple|3|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
-    <associate|auto-4|<tuple|4|?|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
-    <associate|gamma|<tuple|?|2|../../../.TeXmacs/texts/scratch/no_name_23.tm>>
+    <associate|auto-1|<tuple|1|?>>
+    <associate|auto-2|<tuple|2|?>>
+    <associate|auto-3|<tuple|3|?>>
+    <associate|auto-4|<tuple|4|?>>
+    <associate|gamma|<tuple|1|2>>
   </collection>
 </references>
+
+<\auxiliary>
+  <\collection>
+    <\associate|figure>
+      <tuple|normal|<surround|<hidden|<tuple>>||Autocorrelation of time
+      between trades during the first 30 minutes of trading of SPY on one
+      particular day in the year 2016. This autocorrelation spectrum is very
+      typical of almost every other day.>|<pageref|auto-1>>
+
+      <tuple|normal|<surround|<hidden|<tuple>>||QQ plot of
+      <with|mode|<quote|math>|\<Lambda\>> versus the unit exponential
+      distribution <with|mode|<quote|math>|e<rsup|-t>>>|<pageref|auto-2>>
+
+      <tuple|normal|<surround|<hidden|<tuple>>||The autocorrelation of the
+      compensator \<#39B\> indicates the vast majority of the autocorrelation
+      in the trading process has been accurately accounted for by the
+      compensated process >|<pageref|auto-3>>
+
+      <tuple|normal|<surround|<hidden|<tuple>>||The expected value of the
+      inverse is given by the inverse evaluated at the point
+      <with|mode|<quote|math>|y=1> which is the mean of the unit exponential
+      distribution subtracted from the actual value observed when the next
+      point of the process actually occured so that it could be
+      compared>|<pageref|auto-4>>
+    </associate>
+  </collection>
+</auxiliary>

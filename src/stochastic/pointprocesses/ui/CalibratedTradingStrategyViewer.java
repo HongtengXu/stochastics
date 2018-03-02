@@ -30,6 +30,7 @@ import fastmath.matfile.MatFile;
 import stochastic.pointprocesses.finance.TradingFiltration;
 import stochastic.pointprocesses.finance.TradingStrategy;
 import stochastic.pointprocesses.selfexciting.AbstractSelfExcitingProcess;
+import stochastic.pointprocesses.selfexciting.ExponentialSelfExcitingProcess;
 import stochastic.pointprocesses.selfexciting.Type;
 import util.DateUtils;
 import util.Plotter;
@@ -43,7 +44,7 @@ public class CalibratedTradingStrategyViewer
 
   public JFrame frame;
   private JTable table;
-  private List<AbstractSelfExcitingProcess> processes;
+  private List<ExponentialSelfExcitingProcess> processes;
   private XChartPanel<XYChart> priceChartPanel;
   private JPanel bottomPanel;
 
@@ -55,13 +56,13 @@ public class CalibratedTradingStrategyViewer
 
     TradingFiltration filtration = new TradingFiltration(MatFile.loadMatrix(matFile, symbol));
 
-    ArrayList<AbstractSelfExcitingProcess> processes = TradingStrategy.getCalibratedProcesses(matFile, filtration, Type.ExtendedApproximatePowerlaw);
+    ArrayList<ExponentialSelfExcitingProcess> processes = TradingStrategy.getCalibratedProcesses(matFile, filtration, Type.ExtendedApproximatePowerlaw);
 
     CalibratedTradingStrategyViewer.launchModelViewer(processes);
 
   }
 
-  public CalibratedTradingStrategyViewer(List<AbstractSelfExcitingProcess> processes)
+  public CalibratedTradingStrategyViewer(List<ExponentialSelfExcitingProcess> processes)
   {
     Object[][] data = getProcessParametersAndStatisticsMatrix(processes);
 
@@ -84,7 +85,7 @@ public class CalibratedTradingStrategyViewer
   }
 
   public static Object[][]
-         getProcessParametersAndStatisticsMatrix(List<AbstractSelfExcitingProcess> processes)
+         getProcessParametersAndStatisticsMatrix(List<ExponentialSelfExcitingProcess> processes)
   {
     List<Object[]> processStats = processes.stream()
                                            .map(process -> process.evaluateParameterStatistics(process.getParameters().toDoubleArray()))
@@ -142,14 +143,14 @@ public class CalibratedTradingStrategyViewer
   public void
          plotData()
   {
-    AbstractSelfExcitingProcess firstProcess = processes.get(0);
+    ExponentialSelfExcitingProcess firstProcess = processes.get(0);
 
     plotProcess(firstProcess);
 
   }
 
   public void
-         plotProcess(AbstractSelfExcitingProcess process)
+         plotProcess(ExponentialSelfExcitingProcess process)
   {
 
     XYChart priceChart = getLogPriceChart(process);
@@ -181,7 +182,7 @@ public class CalibratedTradingStrategyViewer
   }
 
   public static CalibratedTradingStrategyViewer
-         launchModelViewer(ArrayList<AbstractSelfExcitingProcess> processes)
+         launchModelViewer(ArrayList<ExponentialSelfExcitingProcess> processes)
   {
     CalibratedTradingStrategyViewer viewer = new CalibratedTradingStrategyViewer(processes);
     viewer.show();

@@ -30,6 +30,7 @@ import fastmath.matfile.MatFile;
 import stochastic.pointprocesses.finance.TradingFiltration;
 import stochastic.pointprocesses.finance.TradingStrategy;
 import stochastic.pointprocesses.selfexciting.AbstractSelfExcitingProcess;
+import stochastic.pointprocesses.selfexciting.ExponentialSelfExcitingProcess;
 import stochastic.pointprocesses.selfexciting.Type;
 import util.DateUtils;
 import util.Plotter;
@@ -55,7 +56,7 @@ public class ModelFitter
     final String symbol = args.length > 1 ? args[1] : "SPY";
 
     TradingFiltration filtration = new TradingFiltration(MatFile.loadMatrix(matFile, symbol));
-    ArrayList<AbstractSelfExcitingProcess> processes = TradingStrategy.getCalibratedProcesses(matFile, filtration, Type.ExtendedApproximatePowerlaw);
+    ArrayList<ExponentialSelfExcitingProcess> processes = TradingStrategy.getCalibratedProcesses(matFile, filtration, Type.ExtendedApproximatePowerlaw);
 
     CalibratedTradingStrategyViewer.launchModelViewer(processes);
 

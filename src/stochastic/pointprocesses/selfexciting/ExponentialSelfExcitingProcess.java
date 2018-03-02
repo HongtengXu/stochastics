@@ -942,7 +942,13 @@ public abstract class ExponentialSelfExcitingProcess extends AbstractSelfExcitin
     if (val == 0)
     {
       double intersection = 1;
-      val = intersection + (exp(-β(j) * (T.get(tk) - T.get(tk - 1))) * A(j, tk - 1));
+      // double a = A(j, tk - 1);
+      double a = A[tk - 1][j];
+      if (a == 0)
+      {
+        throw new IllegalArgumentException("A not populated at j=" + j + " tk=" + tk);
+      }
+      val = intersection + (exp(-β(j) * (T.get(tk) - T.get(tk - 1))) * a);
       assert val != 0 : String.format("A[%d][%d]=%s\n", tk, j, val);
       A[tk][j] = val;
     }

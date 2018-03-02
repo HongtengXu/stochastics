@@ -1,7 +1,10 @@
 package stochastic.pointprocesses.ui;
 
+import static fastmath.Functions.seq;
 import static java.lang.System.out;
 import static util.Plotter.plot;
+
+import java.util.function.IntToDoubleFunction;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -14,6 +17,7 @@ import org.knowm.xchart.style.XYStyler;
 
 import fastmath.Pair;
 import stochastic.pointprocesses.selfexciting.AbstractSelfExcitingProcess;
+import stochastic.pointprocesses.selfexciting.ExponentialSelfExcitingProcess;
 import util.Plotter;
 import util.RelativeLayout;
 
@@ -36,13 +40,11 @@ public class KernelPanel extends JPanel
   double H = 0;
   private XChartPanel<XYChart> integratedImpulseResponseChartPanel;
 
-  public KernelPanel(AbstractSelfExcitingProcess process)
+  public KernelPanel(ExponentialSelfExcitingProcess process)
   {
     super(new RelativeLayout());
     this.process = process;
     assert process != null;
-
-
 
     impulseResponseChartPanel = plot("t (ms)", KERNEL, process == null ? t -> 0 : process::f, 0, f_MAXRANGE);
     impulseResponseChart = impulseResponseChartPanel.getChart();
@@ -59,7 +61,16 @@ public class KernelPanel extends JPanel
     add(impulseResponseChartPanel);
     add(inverseIntegratedImpulseResponseChartPanel);
     add(inverseIntegratedImpulseResponseChartPanel);
-    add( HphasePanel = plot("t (ms)", "Hphase(H,t)", process == null ? t -> 0 : t -> process.φδ(H, t), 0, 3) );
+    out.println( "Calculating A...");
+    for ( int j = 0; j < process.order(); j++ )
+    {
+      for ( int tk = 0; tk < process.T.size(); tk++ )
+      {
+        process.A(j, tk);
+      }
+    }
+    out.println( "Done");
+    add(HphasePanel = plot("t (ms)", "Hphase(H,t)", process == null ? t -> 0 : t -> process.φδ(H, t), 0, 3));
     JSlider Hslider = new JSlider(SwingConstants.VERTICAL, 0, 1000, 500);
     Hslider.addChangeListener(event -> {
       H = Hslider.getValue() / 1000;
@@ -80,23 +91,29 @@ public class KernelPanel extends JPanel
          refreshGraphs()
   {
     out.println("refresh graphs " + process.getParamString());
-  //  Pair<double[], double[]> invhSample = Plotter.sampleFunction(process::invH, SAMPLES, 0, 1, t -> t);
-//    inverseIntegratedHazardChart.updateXYSeries(ANTI_H, invhSample.left, invhSample.right, null);
-//    inverseIntegratedHazardChartPanel.revalidate();
-//    inverseIntegratedHazardChartPanel.repaint();
+    // Pair<double[], double[]> invhSample = Plotter.sampleFunction(process::invH,
+    // SAMPLES, 0, 1, t -> t);
+    // inverseIntegratedHazardChart.updateXYSeries(ANTI_H, invhSample.left,
+    // invhSample.right, null);
+    // inverseIntegratedHazardChartPanel.revalidate();
+    // inverseIntegratedHazardChartPanel.repaint();
 
     Pair<double[], double[]> νSample = Plotter.sampleFunction(process::f, SAMPLES, 0, f_MAXRANGE, t -> t);
     impulseResponseChart.updateXYSeries(KERNEL, νSample.left, νSample.right, null);
 
-  //  Pair<double[], double[]> hSample = Plotter.sampleFunction(process::h, SAMPLES, 0, f_MAXRANGE, t -> t);
-   // impulseResponseChart.updateXYSeries(HAZARD, hSample.left, hSample.right, null);
+    // Pair<double[], double[]> hSample = Plotter.sampleFunction(process::h,
+    // SAMPLES, 0, f_MAXRANGE, t -> t);
+    // impulseResponseChart.updateXYSeries(HAZARD, hSample.left, hSample.right,
+    // null);
     impulseResponseChartPanel.revalidate();
     impulseResponseChartPanel.repaint();
 
-   // Pair<double[], double[]> ihSample = Plotter.sampleFunction(process::H, SAMPLES, 0, f_MAXRANGE, t -> t);
+    // Pair<double[], double[]> ihSample = Plotter.sampleFunction(process::H,
+    // SAMPLES, 0, f_MAXRANGE, t -> t);
     Pair<double[], double[]> iνSample = Plotter.sampleFunction(process::F, SAMPLES, 0, f_MAXRANGE, t -> t);
 
- //   integratedImpulseResponseChart.updateXYSeries(INT_HAZARD, ihSample.left, ihSample.right, null);
+    // integratedImpulseResponseChart.updateXYSeries(INT_HAZARD, ihSample.left,
+    // ihSample.right, null);
     integratedImpulseResponseChart.updateXYSeries(INT_KERNEL, iνSample.left, iνSample.right, null);
 
     inverseIntegratedImpulseResponseChartPanel.revalidate();

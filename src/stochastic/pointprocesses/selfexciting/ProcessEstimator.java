@@ -180,7 +180,7 @@ public class ProcessEstimator
     out.println("writing timestamp data, compensator, intensity, and innovation to " + testFile.getAbsolutePath() + " and parameters to " + modelFile);
     Vector innovation = process.getInnovationSequence().setName("innov");
     
-    NormalInverseGaussianDist nigDist = DistributionFactory.getDistributionMLE(NormalInverseGaussianDist.class, innovation.toDoubleArray(), innovation.size() );
+    //NormalInverseGaussianDist nigDist = DistributionFactory.getDistributionMLE(NormalInverseGaussianDist.class, innovation.toDoubleArray(), innovation.size() );
     
     try
     {
