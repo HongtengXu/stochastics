@@ -52,7 +52,7 @@ public abstract class AbstractSelfExcitingProcess implements MultivariateFunctio
       spawn.assignParameters(getParameters().toDoubleArray());
       spawn.T = T;
       spawn.X = X;
-      
+
       return spawn;
     }
     catch (Exception e)
@@ -374,7 +374,7 @@ public abstract class AbstractSelfExcitingProcess implements MultivariateFunctio
          getInnovationSequence()
   {
     int n = T.size() - 1;
-    return new Vector(seq((IntToDoubleFunction) tk -> invΛ(tk, 1) - (T.get(tk + 1) - T.get(tk)), 0, n)).slice(forecastStartIndex, n);
+    return new Vector(seq((IntToDoubleFunction) tk -> (invΛ(tk, 1) - (T.get(tk + 1) - T.get(tk))) + T.diff().mean() / 2, 0, n)).slice(forecastStartIndex, n);
   }
 
   public abstract double
@@ -435,5 +435,4 @@ public abstract class AbstractSelfExcitingProcess implements MultivariateFunctio
   public abstract Vector
          λvector();
 
-  
 };

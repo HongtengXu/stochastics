@@ -2,6 +2,7 @@ package stochastic.pointprocesses.ui;
 
 import static java.lang.Math.exp;
 import static java.lang.String.format;
+import static java.lang.System.out;
 import static java.util.stream.Collectors.toList;
 import static util.Plotter.plot;
 
@@ -9,6 +10,10 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.GridLayout;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +24,9 @@ import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSplitPane;
 import javax.swing.JTable;
+import javax.swing.ListSelectionModel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 
 import org.knowm.xchart.XChartPanel;
@@ -81,10 +89,20 @@ public class CalibratedTradingStrategyViewer
     };
     tableModel.setDataVector(data, columnHeaders);
     table.setModel(tableModel);
+    table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+    table.getSelectionModel().addListSelectionListener(e -> {
+      if (e.getValueIsAdjusting() == false)
+      {
+        // TODO: switch 30-minute segment heere
+        out.println("row selected " + e);
+      }
+    });
     this.processes = processes;
+
   }
 
   public static Object[][]
+
          getProcessParametersAndStatisticsMatrix(List<ExponentialSelfExcitingProcess> processes)
   {
     List<Object[]> processStats = processes.stream()
